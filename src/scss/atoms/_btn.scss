@@ -1,0 +1,66 @@
+@use "../settings/variables";
+@use "../tools/functions";
+@use "../tools/mixins";
+
+.btn {
+  border: none;
+  box-shadow: none;
+  outline: none;
+  height: 3em;
+  padding: 0 1em;
+  cursor: pointer;
+  @include mixins.calculate-font-size(0.8, 0.2);
+  &-sm {
+    @include mixins.calculate-font-size(0.7);
+  }
+  &-rounded {
+    border-radius: 14px;
+  }
+  &-block {
+    width: 100%;
+  }
+  &-white {
+    color: variables.$black-color;
+    background: variables.$white-color;
+  }
+  &-primary {
+    color: variables.$white-color;
+    background: #{functions.light-dark(variables.$primary-color, variables.$primary-inverted-color)};
+  }
+  &-secondary {
+    color: variables.$white-color;
+    background: #{functions.light-dark(variables.$secondary-color, variables.$primary-inverted-color)};
+  }
+  &-gray-1 {
+    color: variables.$white-color;
+    background: variables.$gray-color-1;
+  }
+  &-gray-2 {
+    color: variables.$white-color;
+    background: variables.$gray-color-2;
+  }
+  &-gray-3 {
+    color: variables.$white-color;
+    background: variables.$gray-color-3;
+  }
+  &-accent {
+    color: variables.$gray-color-3;
+    background: variables.$accent-color;
+  }
+}
+
+// .hover\:bg-caqui:hover {
+//   $background: #{functions.light-dark(variables.$caqui-color, variables.$primary-inverted-color)};
+
+//   color: variables.$white-color;
+//   background: $background;
+// }
+
+// @media (max-width: variables.$max-width-lg) {
+//   .lg\:bg-blue-1 {
+//     $background: #{functions.light-dark(variables.$blue-color-1, variables.$primary-inverted-color)};
+
+//     color: variables.$white-color;
+//     background: $background;
+//   }
+// }

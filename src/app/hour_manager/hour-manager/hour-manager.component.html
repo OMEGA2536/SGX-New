@@ -1,0 +1,35 @@
+<app-top-bar title="Gestor de horas"></app-top-bar>
+<section class="py-8 px-40">
+  <app-card>
+    <form action="">
+      <section class="d-flex gap-x-1">
+        <section class="form-control">
+          <label class="label" for="">ID Requerimiento</label>
+          <input type="text" class="input-text">
+        </section>
+
+        <section class="form-control">
+          <label class="label" for="">Estado</label>
+          <input type="text" class="input-text">
+        </section>
+
+        <section class="form-control">
+          <label class="label" for="">Ficha de registro</label>
+          <input type="text" class="input-text">
+        </section>
+
+        <section class="mt-13">
+          <button type="button" class="btn btn-sm btn-secondary btn-rounded">
+            <app-svg-filter className="scale-3"></app-svg-filter>
+          </button>
+        </section>
+        
+        <section class="mt-13">
+          <button type="button" class="btn btn-sm btn-primary btn-rounded flex-center">
+            Agregar <app-svg-add className="scale-3 ml-8"></app-svg-add>
+          </button>
+        </section>
+      </section>
+    </form>
+  </app-card>
+</section>

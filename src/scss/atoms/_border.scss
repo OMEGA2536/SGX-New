@@ -1,0 +1,6 @@
+@use "../settings/variables";
+@use "../tools/functions";
+
+.border-top-1-primary {
+  border-top: 1px solid #{functions.light-dark(variables.$primary-color, variables.$primary-inverted-color)};
+}

@@ -1,0 +1,49 @@
+@use "../settings/variables";
+
+.grid-template-columns-4 {
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+}
+
+@for $i from 1 through 6 {
+  .grid-columns-#{$i} {
+    grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: variables.$max-width-lg) {
+  @for $i from 1 through 6 {
+    .lg\:grid-columns-#{$i} {
+      grid-template-columns: repeat(#{$i}, minmax(0, 1fr));
+    }
+  }
+}
+
+@for $i from 1 through 20 {
+  .gap-#{$i} {
+    gap: #{$i}rem;
+  }
+
+  .gap-x-#{$i} {
+    gap: 0 #{$i}rem;
+  }
+
+  .gap-y-#{$i} {
+    gap: #{$i}rem 0;
+  }
+}
+
+@media (max-width: variables.$max-width-lg) {
+  @for $i from 1 through 20 {
+    .lg\:gap-#{$i} {
+      gap: #{$i}rem;
+    }
+
+    .lg\:gap-x-#{$i} {
+      gap: 0 #{$i}rem;
+    }
+
+    .lg\:gap-y-#{$i} {
+      gap: #{$i}rem 0;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+$numbers: 0, 10, 20, 30, 40, 50, auto;
+
+@each $number in $numbers {
+  .z-#{$number} {
+    z-index: $number;
+  }
+}
