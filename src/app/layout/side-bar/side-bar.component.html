@@ -1,16 +1,24 @@
 <section>
-  <section class="flex-center">
+  <section class="flex-center h-6">
     <app-svg-logo className="scale-1"></app-svg-logo>
   </section>
   
   <section>
-    <section class="d-flex">
-      <div class="w-5 bg-primary"></div>
-      <section class="bg-primary-100 py-2 w-100">
-        <section class="flex-center">
-          <app-svg-operations className="scale-3"></app-svg-operations>
+    <section class="item-menu item-menu--active" (click)="toogleOptions()">
+      <div class="item-menu__bar"></div>
+
+      <section class="item-menu__wrapper">
+        <section class="item-menu__svg">
+          <app-svg-user className="scale-3"></app-svg-user>
         </section>
-        <p class="text-center text-gray-2 text-6">Operaciones</p>
+        <p class="item-menu__text">Operaciones</p>
+      </section>
+
+      <section class="item-menu__options" (blur)="toogleOptions()" *ngIf="itemMenuVisible" tabindex="-1" (mousedown)="$event.preventDefault()">
+        <ul>
+          <li>Requerimientos</li>
+          <li>Registro de horas</li>
+        </ul>
       </section>
     </section>
   </section>

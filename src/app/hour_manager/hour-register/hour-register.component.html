@@ -1,1 +1,71 @@
-<p>hour-register works!</p>
+<app-top-bar title="Gestor de horas"></app-top-bar>
+<section class="pt-30 pb-8 px-30">
+  <app-card>
+    <p class="text-8 text-primary text-600 mb-3">Registrar horas</p>
+    <form action="">
+      <section id="hour-register-form">
+        <section class="form-control" id="user">
+          <label class="label" for="">Usuario</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="date">
+          <label class="label" for="">Fecha de registro</label>
+          <input type="date" class="input-text">
+        </section>
+        <section class="form-control" id="customer">
+          <label class="label" for="">Cliente</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="id">
+          <label class="label" for="">ID Requerimiento</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="featured">
+          <label class="label" for="">Descripción de Requerimiento</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="task">
+          <label class="label" for="">ID Tarea</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="description">
+          <label class="label" for="">Descripción</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="type">
+          <label class="label" for="">Tipo</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="state">
+          <label class="label" for="">Estado</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="hour">
+          <label class="label" for="">Hora</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="place">
+          <label class="label" for="">Lugar</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="info">
+          <label class="label" for="">Más Información</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="additional">
+          <label class="label" for="">Info Adicional</label>
+          <input type="text" class="input-text">
+        </section>
+      </section>
+      <section class="d-flex justify-flex-end mt-4">
+        <button class="type" class="btn btn-rounded btn-lg btn-outline-primary d-flex justify-flex-end items-center">
+          Cancelar
+        </button>
+        <button class="type" class="btn btn-rounded btn-primary btn-lg ml-2 d-flex items-center justify-space-between">
+          <p>Registrar horas</p>
+          <app-svg-add class="scale-3"></app-svg-add>
+        </button>
+      </section>
+    </form>
+  </app-card>
+</section>

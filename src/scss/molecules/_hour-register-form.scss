@@ -1,0 +1,20 @@
+#hour-register-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas:
+    "user user date date customer customer customer"
+    "id id featured featured featured featured featured"
+    "task task description description description description description"
+    "type type type state state hour place"
+    "info info info info info info info"
+    "additional additional additional additional additional additional additional";
+}
+
+$fields: user, date, customer, id, featured, task, description, type, state, hour, place, info, additional;
+
+@each $field in $fields {
+  ##{$field} {
+    grid-area: #{$field};
+  }
+}

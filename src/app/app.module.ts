@@ -18,6 +18,13 @@ import { CardComponent } from './components/card/card.component';
 import { SvgFilterComponent } from './svg/svg-filter/svg-filter.component';
 import { SvgAddComponent } from './svg/svg-add/svg-add.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { SvgFileComponent } from './svg/svg-file/svg-file.component';
+import { SvgUpdateComponent } from './svg/svg-update/svg-update.component';
+import { SvgEditComponent } from './svg/svg-edit/svg-edit.component';
+import { SvgDeleteComponent } from './svg/svg-delete/svg-delete.component';
+import { SvgInfoComponent } from './svg/svg-info/svg-info.component';
+import { SvgFilesComponent } from './svg/svg-files/svg-files.component';
+import { SvgArrowBottomComponent } from './svg/svg-arrow-bottom/svg-arrow-bottom.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +44,13 @@ import { ModalComponent } from './components/modal/modal.component';
     SvgFilterComponent,
     SvgAddComponent,
     ModalComponent,
+    SvgFileComponent,
+    SvgUpdateComponent,
+    SvgEditComponent,
+    SvgDeleteComponent,
+    SvgInfoComponent,
+    SvgFilesComponent,
+    SvgArrowBottomComponent,
   ],
   imports: [
     BrowserModule,

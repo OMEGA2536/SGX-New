@@ -4,7 +4,7 @@
 
 .select {
   @include mixins.input-base();
-  p {
-    padding: 0.3rem 0 0 0;
-  }
+  background: url("/assets/svg/arrow-bottom.svg") no-repeat right;
+  -webkit-appearance: none;
+  background-position-x: 225px;
 }

@@ -407,6 +407,9 @@ ul {
     font-size: calc(1.1vw + 1.1vh);
   }
 }
+.btn-lg {
+  min-width: 15rem;
+}
 .btn-rounded {
   border-radius: 14px;
 }
@@ -419,11 +422,16 @@ ul {
 }
 .btn-primary {
   color: #ffffff;
-  background: var(--light, #1d84b0) var(--dark, #a45964);
+  background: var(--light, #00a1df) var(--dark, #00a1df);
+}
+.btn-outline-primary {
+  border: 1px solid #00a1df;
+  color: #00a1df;
+  background: var(--light, #ffffff) var(--dark, #00a1df);
 }
 .btn-secondary {
   color: #ffffff;
-  background: var(--light, #00a34b) var(--dark, #a45964);
+  background: var(--light, #00a34b) var(--dark, #00a1df);
 }
 .btn-gray-1 {
   color: #ffffff;
@@ -443,10 +451,11 @@ ul {
 }
 
 .input-text {
-  background: var(--light, #ffffff) var(--dark, #f5f5f5);
+  background: #ffffff;
   box-shadow: none;
+  color: #767676;
   outline: none;
-  border-radius: 10px;
+  border-radius: 6px;
   width: 100%;
   margin: 0.2rem 0 0.1rem 0;
   height: 3.2rem;
@@ -455,14 +464,16 @@ ul {
 }
 
 .input-text-2 {
-  background: var(--light, #ffffff) var(--dark, #f5f5f5);
+  background: #ffffff;
   box-shadow: none;
+  color: #767676;
   outline: none;
-  border-radius: 10px;
+  border-radius: 6px;
   width: 100%;
   margin: 0.2rem 0 0.1rem 0;
   height: 3.2rem;
   padding: 1rem;
+  border: 1px solid #d1d1d1;
   border: 2px solid #767676;
   height: 3.7rem;
 }
@@ -559,7 +570,7 @@ ul {
   color: var(--light, #000000) var(--dark, #000000);
 }
 .text-primary {
-  color: var(--light, #1d84b0) var(--dark, #a45964);
+  color: var(--light, #00a1df) var(--dark, #00a1df);
 }
 .text-gray-1 {
   color: var(--light, #d1d1d1) var(--dark, #d1d1d1);
@@ -585,13 +596,16 @@ ul {
 .text-decoration-none {
   text-decoration: none;
 }
+.text-underline {
+  text-decoration: underline;
+}
 
 @media (max-width: 992px) {
   .lg\:text-black {
     color: var(--light, #000000) var(--dark, #ffffff);
   }
   .lg\:text-primary {
-    color: var(--light, #1d84b0) var(--dark, #a45964);
+    color: var(--light, #00a1df) var(--dark, #00a1df);
   }
 }
 /* font-weight */
@@ -1005,7 +1019,7 @@ ul {
 }
 
 .border-top-1-primary {
-  border-top: 1px solid var(--light, #1d84b0) var(--dark, #a45964);
+  border-top: 1px solid var(--light, #00a1df) var(--dark, #00a1df);
 }
 
 .border-radius-1 {
@@ -1057,7 +1071,7 @@ ul {
 }
 
 .bg-primary {
-  background: var(--light, #1d84b0) var(--dark, #a45964);
+  background: var(--light, #00a1df) var(--dark, #00a1df);
 }
 
 .bg-secondary {
@@ -1101,151 +1115,151 @@ ul {
 }
 
 .bg-primary-gradient-right-10 {
-  background: var(--light, linear-gradient(to right, #1d84b0 0%, #1d84b0 10%, transparent 10%, transparent 100%)) var(--dark, linear-gradient(to right, #a45964 0%, #a45964 10%, transparent 10%, transparent 100%));
+  background: var(--light, linear-gradient(to right, #00a1df 0%, #00a1df 10%, transparent 10%, transparent 100%)) var(--dark, linear-gradient(to right, #00a1df 0%, #00a1df 10%, transparent 10%, transparent 100%));
 }
 
 .bg-primary-gradient-left-10 {
-  background: var(--light, linear-gradient(to left, #1d84b0 0%, #1d84b0 10%, transparent 10%, transparent 100%)) var(--dark, linear-gradient(to left, #a45964 0%, #a45964 10%, transparent 10%, transparent 100%));
+  background: var(--light, linear-gradient(to left, #00a1df 0%, #00a1df 10%, transparent 10%, transparent 100%)) var(--dark, linear-gradient(to left, #00a1df 0%, #00a1df 10%, transparent 10%, transparent 100%));
 }
 
 .bg-primary-gradient-top-10 {
-  background: var(--light, linear-gradient(to top, #1d84b0 0%, #1d84b0 10%, transparent 10%, transparent 100%)) var(--dark, linear-gradient(to top, #a45964 0%, #a45964 10%, transparent 10%, transparent 100%));
+  background: var(--light, linear-gradient(to top, #00a1df 0%, #00a1df 10%, transparent 10%, transparent 100%)) var(--dark, linear-gradient(to top, #00a1df 0%, #00a1df 10%, transparent 10%, transparent 100%));
 }
 
 .bg-primary-gradient-bottom-10 {
-  background: var(--light, linear-gradient(to bottom, #1d84b0 0%, #1d84b0 10%, transparent 10%, transparent 100%)) var(--dark, linear-gradient(to bottom, #a45964 0%, #a45964 10%, transparent 10%, transparent 100%));
+  background: var(--light, linear-gradient(to bottom, #00a1df 0%, #00a1df 10%, transparent 10%, transparent 100%)) var(--dark, linear-gradient(to bottom, #00a1df 0%, #00a1df 10%, transparent 10%, transparent 100%));
 }
 
 .bg-primary-gradient-right-20 {
-  background: var(--light, linear-gradient(to right, #1d84b0 0%, #1d84b0 20%, transparent 20%, transparent 100%)) var(--dark, linear-gradient(to right, #a45964 0%, #a45964 20%, transparent 20%, transparent 100%));
+  background: var(--light, linear-gradient(to right, #00a1df 0%, #00a1df 20%, transparent 20%, transparent 100%)) var(--dark, linear-gradient(to right, #00a1df 0%, #00a1df 20%, transparent 20%, transparent 100%));
 }
 
 .bg-primary-gradient-left-20 {
-  background: var(--light, linear-gradient(to left, #1d84b0 0%, #1d84b0 20%, transparent 20%, transparent 100%)) var(--dark, linear-gradient(to left, #a45964 0%, #a45964 20%, transparent 20%, transparent 100%));
+  background: var(--light, linear-gradient(to left, #00a1df 0%, #00a1df 20%, transparent 20%, transparent 100%)) var(--dark, linear-gradient(to left, #00a1df 0%, #00a1df 20%, transparent 20%, transparent 100%));
 }
 
 .bg-primary-gradient-top-20 {
-  background: var(--light, linear-gradient(to top, #1d84b0 0%, #1d84b0 20%, transparent 20%, transparent 100%)) var(--dark, linear-gradient(to top, #a45964 0%, #a45964 20%, transparent 20%, transparent 100%));
+  background: var(--light, linear-gradient(to top, #00a1df 0%, #00a1df 20%, transparent 20%, transparent 100%)) var(--dark, linear-gradient(to top, #00a1df 0%, #00a1df 20%, transparent 20%, transparent 100%));
 }
 
 .bg-primary-gradient-bottom-20 {
-  background: var(--light, linear-gradient(to bottom, #1d84b0 0%, #1d84b0 20%, transparent 20%, transparent 100%)) var(--dark, linear-gradient(to bottom, #a45964 0%, #a45964 20%, transparent 20%, transparent 100%));
+  background: var(--light, linear-gradient(to bottom, #00a1df 0%, #00a1df 20%, transparent 20%, transparent 100%)) var(--dark, linear-gradient(to bottom, #00a1df 0%, #00a1df 20%, transparent 20%, transparent 100%));
 }
 
 .bg-primary-gradient-right-30 {
-  background: var(--light, linear-gradient(to right, #1d84b0 0%, #1d84b0 30%, transparent 30%, transparent 100%)) var(--dark, linear-gradient(to right, #a45964 0%, #a45964 30%, transparent 30%, transparent 100%));
+  background: var(--light, linear-gradient(to right, #00a1df 0%, #00a1df 30%, transparent 30%, transparent 100%)) var(--dark, linear-gradient(to right, #00a1df 0%, #00a1df 30%, transparent 30%, transparent 100%));
 }
 
 .bg-primary-gradient-left-30 {
-  background: var(--light, linear-gradient(to left, #1d84b0 0%, #1d84b0 30%, transparent 30%, transparent 100%)) var(--dark, linear-gradient(to left, #a45964 0%, #a45964 30%, transparent 30%, transparent 100%));
+  background: var(--light, linear-gradient(to left, #00a1df 0%, #00a1df 30%, transparent 30%, transparent 100%)) var(--dark, linear-gradient(to left, #00a1df 0%, #00a1df 30%, transparent 30%, transparent 100%));
 }
 
 .bg-primary-gradient-top-30 {
-  background: var(--light, linear-gradient(to top, #1d84b0 0%, #1d84b0 30%, transparent 30%, transparent 100%)) var(--dark, linear-gradient(to top, #a45964 0%, #a45964 30%, transparent 30%, transparent 100%));
+  background: var(--light, linear-gradient(to top, #00a1df 0%, #00a1df 30%, transparent 30%, transparent 100%)) var(--dark, linear-gradient(to top, #00a1df 0%, #00a1df 30%, transparent 30%, transparent 100%));
 }
 
 .bg-primary-gradient-bottom-30 {
-  background: var(--light, linear-gradient(to bottom, #1d84b0 0%, #1d84b0 30%, transparent 30%, transparent 100%)) var(--dark, linear-gradient(to bottom, #a45964 0%, #a45964 30%, transparent 30%, transparent 100%));
+  background: var(--light, linear-gradient(to bottom, #00a1df 0%, #00a1df 30%, transparent 30%, transparent 100%)) var(--dark, linear-gradient(to bottom, #00a1df 0%, #00a1df 30%, transparent 30%, transparent 100%));
 }
 
 .bg-primary-gradient-right-40 {
-  background: var(--light, linear-gradient(to right, #1d84b0 0%, #1d84b0 40%, transparent 40%, transparent 100%)) var(--dark, linear-gradient(to right, #a45964 0%, #a45964 40%, transparent 40%, transparent 100%));
+  background: var(--light, linear-gradient(to right, #00a1df 0%, #00a1df 40%, transparent 40%, transparent 100%)) var(--dark, linear-gradient(to right, #00a1df 0%, #00a1df 40%, transparent 40%, transparent 100%));
 }
 
 .bg-primary-gradient-left-40 {
-  background: var(--light, linear-gradient(to left, #1d84b0 0%, #1d84b0 40%, transparent 40%, transparent 100%)) var(--dark, linear-gradient(to left, #a45964 0%, #a45964 40%, transparent 40%, transparent 100%));
+  background: var(--light, linear-gradient(to left, #00a1df 0%, #00a1df 40%, transparent 40%, transparent 100%)) var(--dark, linear-gradient(to left, #00a1df 0%, #00a1df 40%, transparent 40%, transparent 100%));
 }
 
 .bg-primary-gradient-top-40 {
-  background: var(--light, linear-gradient(to top, #1d84b0 0%, #1d84b0 40%, transparent 40%, transparent 100%)) var(--dark, linear-gradient(to top, #a45964 0%, #a45964 40%, transparent 40%, transparent 100%));
+  background: var(--light, linear-gradient(to top, #00a1df 0%, #00a1df 40%, transparent 40%, transparent 100%)) var(--dark, linear-gradient(to top, #00a1df 0%, #00a1df 40%, transparent 40%, transparent 100%));
 }
 
 .bg-primary-gradient-bottom-40 {
-  background: var(--light, linear-gradient(to bottom, #1d84b0 0%, #1d84b0 40%, transparent 40%, transparent 100%)) var(--dark, linear-gradient(to bottom, #a45964 0%, #a45964 40%, transparent 40%, transparent 100%));
+  background: var(--light, linear-gradient(to bottom, #00a1df 0%, #00a1df 40%, transparent 40%, transparent 100%)) var(--dark, linear-gradient(to bottom, #00a1df 0%, #00a1df 40%, transparent 40%, transparent 100%));
 }
 
 .bg-primary-gradient-right-50 {
-  background: var(--light, linear-gradient(to right, #1d84b0 0%, #1d84b0 50%, transparent 50%, transparent 100%)) var(--dark, linear-gradient(to right, #a45964 0%, #a45964 50%, transparent 50%, transparent 100%));
+  background: var(--light, linear-gradient(to right, #00a1df 0%, #00a1df 50%, transparent 50%, transparent 100%)) var(--dark, linear-gradient(to right, #00a1df 0%, #00a1df 50%, transparent 50%, transparent 100%));
 }
 
 .bg-primary-gradient-left-50 {
-  background: var(--light, linear-gradient(to left, #1d84b0 0%, #1d84b0 50%, transparent 50%, transparent 100%)) var(--dark, linear-gradient(to left, #a45964 0%, #a45964 50%, transparent 50%, transparent 100%));
+  background: var(--light, linear-gradient(to left, #00a1df 0%, #00a1df 50%, transparent 50%, transparent 100%)) var(--dark, linear-gradient(to left, #00a1df 0%, #00a1df 50%, transparent 50%, transparent 100%));
 }
 
 .bg-primary-gradient-top-50 {
-  background: var(--light, linear-gradient(to top, #1d84b0 0%, #1d84b0 50%, transparent 50%, transparent 100%)) var(--dark, linear-gradient(to top, #a45964 0%, #a45964 50%, transparent 50%, transparent 100%));
+  background: var(--light, linear-gradient(to top, #00a1df 0%, #00a1df 50%, transparent 50%, transparent 100%)) var(--dark, linear-gradient(to top, #00a1df 0%, #00a1df 50%, transparent 50%, transparent 100%));
 }
 
 .bg-primary-gradient-bottom-50 {
-  background: var(--light, linear-gradient(to bottom, #1d84b0 0%, #1d84b0 50%, transparent 50%, transparent 100%)) var(--dark, linear-gradient(to bottom, #a45964 0%, #a45964 50%, transparent 50%, transparent 100%));
+  background: var(--light, linear-gradient(to bottom, #00a1df 0%, #00a1df 50%, transparent 50%, transparent 100%)) var(--dark, linear-gradient(to bottom, #00a1df 0%, #00a1df 50%, transparent 50%, transparent 100%));
 }
 
 .bg-primary-gradient-right-60 {
-  background: var(--light, linear-gradient(to right, #1d84b0 0%, #1d84b0 60%, transparent 60%, transparent 100%)) var(--dark, linear-gradient(to right, #a45964 0%, #a45964 60%, transparent 60%, transparent 100%));
+  background: var(--light, linear-gradient(to right, #00a1df 0%, #00a1df 60%, transparent 60%, transparent 100%)) var(--dark, linear-gradient(to right, #00a1df 0%, #00a1df 60%, transparent 60%, transparent 100%));
 }
 
 .bg-primary-gradient-left-60 {
-  background: var(--light, linear-gradient(to left, #1d84b0 0%, #1d84b0 60%, transparent 60%, transparent 100%)) var(--dark, linear-gradient(to left, #a45964 0%, #a45964 60%, transparent 60%, transparent 100%));
+  background: var(--light, linear-gradient(to left, #00a1df 0%, #00a1df 60%, transparent 60%, transparent 100%)) var(--dark, linear-gradient(to left, #00a1df 0%, #00a1df 60%, transparent 60%, transparent 100%));
 }
 
 .bg-primary-gradient-top-60 {
-  background: var(--light, linear-gradient(to top, #1d84b0 0%, #1d84b0 60%, transparent 60%, transparent 100%)) var(--dark, linear-gradient(to top, #a45964 0%, #a45964 60%, transparent 60%, transparent 100%));
+  background: var(--light, linear-gradient(to top, #00a1df 0%, #00a1df 60%, transparent 60%, transparent 100%)) var(--dark, linear-gradient(to top, #00a1df 0%, #00a1df 60%, transparent 60%, transparent 100%));
 }
 
 .bg-primary-gradient-bottom-60 {
-  background: var(--light, linear-gradient(to bottom, #1d84b0 0%, #1d84b0 60%, transparent 60%, transparent 100%)) var(--dark, linear-gradient(to bottom, #a45964 0%, #a45964 60%, transparent 60%, transparent 100%));
+  background: var(--light, linear-gradient(to bottom, #00a1df 0%, #00a1df 60%, transparent 60%, transparent 100%)) var(--dark, linear-gradient(to bottom, #00a1df 0%, #00a1df 60%, transparent 60%, transparent 100%));
 }
 
 .bg-primary-gradient-right-70 {
-  background: var(--light, linear-gradient(to right, #1d84b0 0%, #1d84b0 70%, transparent 70%, transparent 100%)) var(--dark, linear-gradient(to right, #a45964 0%, #a45964 70%, transparent 70%, transparent 100%));
+  background: var(--light, linear-gradient(to right, #00a1df 0%, #00a1df 70%, transparent 70%, transparent 100%)) var(--dark, linear-gradient(to right, #00a1df 0%, #00a1df 70%, transparent 70%, transparent 100%));
 }
 
 .bg-primary-gradient-left-70 {
-  background: var(--light, linear-gradient(to left, #1d84b0 0%, #1d84b0 70%, transparent 70%, transparent 100%)) var(--dark, linear-gradient(to left, #a45964 0%, #a45964 70%, transparent 70%, transparent 100%));
+  background: var(--light, linear-gradient(to left, #00a1df 0%, #00a1df 70%, transparent 70%, transparent 100%)) var(--dark, linear-gradient(to left, #00a1df 0%, #00a1df 70%, transparent 70%, transparent 100%));
 }
 
 .bg-primary-gradient-top-70 {
-  background: var(--light, linear-gradient(to top, #1d84b0 0%, #1d84b0 70%, transparent 70%, transparent 100%)) var(--dark, linear-gradient(to top, #a45964 0%, #a45964 70%, transparent 70%, transparent 100%));
+  background: var(--light, linear-gradient(to top, #00a1df 0%, #00a1df 70%, transparent 70%, transparent 100%)) var(--dark, linear-gradient(to top, #00a1df 0%, #00a1df 70%, transparent 70%, transparent 100%));
 }
 
 .bg-primary-gradient-bottom-70 {
-  background: var(--light, linear-gradient(to bottom, #1d84b0 0%, #1d84b0 70%, transparent 70%, transparent 100%)) var(--dark, linear-gradient(to bottom, #a45964 0%, #a45964 70%, transparent 70%, transparent 100%));
+  background: var(--light, linear-gradient(to bottom, #00a1df 0%, #00a1df 70%, transparent 70%, transparent 100%)) var(--dark, linear-gradient(to bottom, #00a1df 0%, #00a1df 70%, transparent 70%, transparent 100%));
 }
 
 .bg-primary-gradient-right-80 {
-  background: var(--light, linear-gradient(to right, #1d84b0 0%, #1d84b0 80%, transparent 80%, transparent 100%)) var(--dark, linear-gradient(to right, #a45964 0%, #a45964 80%, transparent 80%, transparent 100%));
+  background: var(--light, linear-gradient(to right, #00a1df 0%, #00a1df 80%, transparent 80%, transparent 100%)) var(--dark, linear-gradient(to right, #00a1df 0%, #00a1df 80%, transparent 80%, transparent 100%));
 }
 
 .bg-primary-gradient-left-80 {
-  background: var(--light, linear-gradient(to left, #1d84b0 0%, #1d84b0 80%, transparent 80%, transparent 100%)) var(--dark, linear-gradient(to left, #a45964 0%, #a45964 80%, transparent 80%, transparent 100%));
+  background: var(--light, linear-gradient(to left, #00a1df 0%, #00a1df 80%, transparent 80%, transparent 100%)) var(--dark, linear-gradient(to left, #00a1df 0%, #00a1df 80%, transparent 80%, transparent 100%));
 }
 
 .bg-primary-gradient-top-80 {
-  background: var(--light, linear-gradient(to top, #1d84b0 0%, #1d84b0 80%, transparent 80%, transparent 100%)) var(--dark, linear-gradient(to top, #a45964 0%, #a45964 80%, transparent 80%, transparent 100%));
+  background: var(--light, linear-gradient(to top, #00a1df 0%, #00a1df 80%, transparent 80%, transparent 100%)) var(--dark, linear-gradient(to top, #00a1df 0%, #00a1df 80%, transparent 80%, transparent 100%));
 }
 
 .bg-primary-gradient-bottom-80 {
-  background: var(--light, linear-gradient(to bottom, #1d84b0 0%, #1d84b0 80%, transparent 80%, transparent 100%)) var(--dark, linear-gradient(to bottom, #a45964 0%, #a45964 80%, transparent 80%, transparent 100%));
+  background: var(--light, linear-gradient(to bottom, #00a1df 0%, #00a1df 80%, transparent 80%, transparent 100%)) var(--dark, linear-gradient(to bottom, #00a1df 0%, #00a1df 80%, transparent 80%, transparent 100%));
 }
 
 .bg-primary-gradient-right-90 {
-  background: var(--light, linear-gradient(to right, #1d84b0 0%, #1d84b0 90%, transparent 90%, transparent 100%)) var(--dark, linear-gradient(to right, #a45964 0%, #a45964 90%, transparent 90%, transparent 100%));
+  background: var(--light, linear-gradient(to right, #00a1df 0%, #00a1df 90%, transparent 90%, transparent 100%)) var(--dark, linear-gradient(to right, #00a1df 0%, #00a1df 90%, transparent 90%, transparent 100%));
 }
 
 .bg-primary-gradient-left-90 {
-  background: var(--light, linear-gradient(to left, #1d84b0 0%, #1d84b0 90%, transparent 90%, transparent 100%)) var(--dark, linear-gradient(to left, #a45964 0%, #a45964 90%, transparent 90%, transparent 100%));
+  background: var(--light, linear-gradient(to left, #00a1df 0%, #00a1df 90%, transparent 90%, transparent 100%)) var(--dark, linear-gradient(to left, #00a1df 0%, #00a1df 90%, transparent 90%, transparent 100%));
 }
 
 .bg-primary-gradient-top-90 {
-  background: var(--light, linear-gradient(to top, #1d84b0 0%, #1d84b0 90%, transparent 90%, transparent 100%)) var(--dark, linear-gradient(to top, #a45964 0%, #a45964 90%, transparent 90%, transparent 100%));
+  background: var(--light, linear-gradient(to top, #00a1df 0%, #00a1df 90%, transparent 90%, transparent 100%)) var(--dark, linear-gradient(to top, #00a1df 0%, #00a1df 90%, transparent 90%, transparent 100%));
 }
 
 .bg-primary-gradient-bottom-90 {
-  background: var(--light, linear-gradient(to bottom, #1d84b0 0%, #1d84b0 90%, transparent 90%, transparent 100%)) var(--dark, linear-gradient(to bottom, #a45964 0%, #a45964 90%, transparent 90%, transparent 100%));
+  background: var(--light, linear-gradient(to bottom, #00a1df 0%, #00a1df 90%, transparent 90%, transparent 100%)) var(--dark, linear-gradient(to bottom, #00a1df 0%, #00a1df 90%, transparent 90%, transparent 100%));
 }
 
 .bg-primary-100 {
-  background: rgba(29, 132, 176, 0.1);
+  background: rgba(0, 161, 223, 0.1);
 }
 
 .bg-dark-100 {
@@ -1253,7 +1267,7 @@ ul {
 }
 
 .bg-primary-200 {
-  background: rgba(29, 132, 176, 0.2);
+  background: rgba(0, 161, 223, 0.2);
 }
 
 .bg-dark-200 {
@@ -1261,7 +1275,7 @@ ul {
 }
 
 .bg-primary-300 {
-  background: rgba(29, 132, 176, 0.3);
+  background: rgba(0, 161, 223, 0.3);
 }
 
 .bg-dark-300 {
@@ -1269,7 +1283,7 @@ ul {
 }
 
 .bg-primary-400 {
-  background: rgba(29, 132, 176, 0.4);
+  background: rgba(0, 161, 223, 0.4);
 }
 
 .bg-dark-400 {
@@ -1277,7 +1291,7 @@ ul {
 }
 
 .bg-primary-500 {
-  background: rgba(29, 132, 176, 0.5);
+  background: rgba(0, 161, 223, 0.5);
 }
 
 .bg-dark-500 {
@@ -1285,7 +1299,7 @@ ul {
 }
 
 .bg-primary-600 {
-  background: rgba(29, 132, 176, 0.6);
+  background: rgba(0, 161, 223, 0.6);
 }
 
 .bg-dark-600 {
@@ -1293,7 +1307,7 @@ ul {
 }
 
 .bg-primary-700 {
-  background: rgba(29, 132, 176, 0.7);
+  background: rgba(0, 161, 223, 0.7);
 }
 
 .bg-dark-700 {
@@ -1301,7 +1315,7 @@ ul {
 }
 
 .bg-primary-800 {
-  background: rgba(29, 132, 176, 0.8);
+  background: rgba(0, 161, 223, 0.8);
 }
 
 .bg-dark-800 {
@@ -1309,7 +1323,7 @@ ul {
 }
 
 .bg-primary-900 {
-  background: rgba(29, 132, 176, 0.9);
+  background: rgba(0, 161, 223, 0.9);
 }
 
 .bg-dark-900 {
@@ -1341,17 +1355,19 @@ ul {
 }
 
 .select {
-  background: var(--light, #ffffff) var(--dark, #f5f5f5);
+  background: #ffffff;
   box-shadow: none;
+  color: #767676;
   outline: none;
-  border-radius: 10px;
+  border-radius: 6px;
   width: 100%;
   margin: 0.2rem 0 0.1rem 0;
   height: 3.2rem;
   padding: 1rem;
-}
-.select p {
-  padding: 0.3rem 0 0 0;
+  border: 1px solid #d1d1d1;
+  background: url("/assets/svg/arrow-bottom.svg") no-repeat right;
+  -webkit-appearance: none;
+  background-position-x: 225px;
 }
 
 .divider-1 {
@@ -1380,29 +1396,163 @@ ul {
 }
 .table-default th,
 .table-default td {
-  padding: 0.6rem;
-  text-align: left;
+  padding: 0.8rem;
+  text-align: center;
 }
 .table-default th {
-  text-transform: uppercase;
-  font-weight: 400;
-  color: var(--light, #d1d1d1) var(--dark, #d1d1d1);
-  font-size: calc(0.5vw + 0.5vh);
+  background: rgba(0, 161, 223, 0.1);
+  font-weight: 600;
+  color: var(--light, #00a1df) var(--dark, #d1d1d1);
+  font-size: calc(0.6vw + 0.6vh);
 }
 @media (max-width: 992px) {
   .table-default th {
-    font-size: calc(0.9vw + 0.9vh);
+    font-size: calc(1vw + 1vh);
   }
 }
 .table-default td {
-  color: var(--light, #333333) var(--dark, #ffffff);
+  color: var(--light, #767676) var(--dark, #ffffff);
   border-bottom: 0.2px solid #f5f5f5;
-  font-size: calc(0.7vw + 0.7vh);
+  font-size: calc(0.6vw + 0.6vh);
 }
 @media (max-width: 992px) {
   .table-default td {
-    font-size: calc(1.1vw + 1.1vh);
+    font-size: calc(1vw + 1vh);
   }
+}
+.table-default tr:nth-child(even) {
+  background-color: rgba(209, 209, 209, 0.2);
+}
+
+.item-menu {
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+.item-menu__bar {
+  background: #00a1df;
+  width: 7px;
+}
+.item-menu__wrapper {
+  width: 100%;
+  height: 100%;
+  padding: 0.8rem;
+}
+.item-menu__svg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-menu__text {
+  font-size: calc(0.6vw + 0.6vh);
+  color: #767676;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .item-menu__text {
+    font-size: calc(1vw + 1vh);
+  }
+}
+.item-menu__options {
+  position: absolute;
+  left: 140px;
+  background: #ffffff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.37);
+  border-radius: 4px;
+}
+.item-menu__options :before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: -11px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 5px 12px 5px;
+  border-color: transparent transparent white transparent;
+  z-index: 2;
+  rotate: -90deg;
+}
+.item-menu__options ul {
+  width: 14rem;
+  padding: 0.5rem 0;
+}
+.item-menu__options ul li {
+  text-align: center;
+  padding: 0.3rem 0;
+  color: #767676;
+  margin-bottom: 0.2rem;
+  font-size: calc(0.6vw + 0.6vh);
+}
+@media (max-width: 992px) {
+  .item-menu__options ul li {
+    font-size: calc(1vw + 1vh);
+  }
+}
+.item-menu__options ul li:hover {
+  background: rgba(0, 161, 223, 0.1);
+}
+.item-menu--active {
+  background: rgba(0, 161, 223, 0.1);
+}
+
+#hour-register-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  grid-template-areas: "user user date date customer customer customer" "id id featured featured featured featured featured" "task task description description description description description" "type type type state state hour place" "info info info info info info info" "additional additional additional additional additional additional additional";
+}
+
+#user {
+  grid-area: user;
+}
+
+#date {
+  grid-area: date;
+}
+
+#customer {
+  grid-area: customer;
+}
+
+#id {
+  grid-area: id;
+}
+
+#featured {
+  grid-area: featured;
+}
+
+#task {
+  grid-area: task;
+}
+
+#description {
+  grid-area: description;
+}
+
+#type {
+  grid-area: type;
+}
+
+#state {
+  grid-area: state;
+}
+
+#hour {
+  grid-area: hour;
+}
+
+#place {
+  grid-area: place;
+}
+
+#info {
+  grid-area: info;
+}
+
+#additional {
+  grid-area: additional;
 }
 
 /* display */
@@ -3750,10 +3900,6 @@ ul {
   }
 }
 /* top, left, right, bottom */
-.top-15px {
-  top: 15px;
-}
-
 .right-0 {
   right: 0%;
 }
@@ -12540,7 +12686,7 @@ ul {
 }
 
 .form-control {
-  padding: 1.5rem 0 0 0;
+  padding: 0.2rem 0 0.5rem 0;
 }
 
 .transition-1 {
@@ -12620,14 +12766,14 @@ ul {
   }
 }
 .fill-primary {
-  fill: var(--light, #1d84b0) var(--dark, #a45964);
+  fill: var(--light, #00a1df) var(--dark, #00a1df);
 }
 .fill-gray-1 {
   fill: var(--light, #d1d1d1) var(--dark, #d1d1d1);
 }
 
 .path-stroke-primary path {
-  stroke: var(--light, #1d84b0) var(--dark, #a45964);
+  stroke: var(--light, #00a1df) var(--dark, #00a1df);
 }
 .path-stroke-gray-1 path {
   stroke: var(--light, #d1d1d1) var(--dark, #d1d1d1);
@@ -12646,7 +12792,7 @@ ul {
 }
 
 .path-fill-primary path {
-  fill: var(--light, #1d84b0) var(--dark, #a45964);
+  fill: var(--light, #00a1df) var(--dark, #00a1df);
 }
 .path-fill-gray-1 path {
   fill: var(--light, #d1d1d1) var(--dark, #d1d1d1);

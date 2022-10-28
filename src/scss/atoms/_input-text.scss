@@ -4,7 +4,6 @@
 
 .input-text {
   @include mixins.input-base();
-  border: 1px solid variables.$gray-color-1;
 }
 
 .input-text-2 {

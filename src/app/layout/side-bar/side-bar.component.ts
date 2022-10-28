@@ -9,7 +9,12 @@ export class SideBarComponent implements OnInit {
 
   constructor() { }
 
+  public itemMenuVisible: boolean = false;
+
   ngOnInit(): void {
   }
 
+  public toogleOptions(): void {
+    this.itemMenuVisible = !this.itemMenuVisible;
+  }
 }

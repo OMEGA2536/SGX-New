@@ -1,0 +1,10 @@
+.sub-menu {
+  left: 110%;
+  width: 11rem;
+}
+
+/* .sub-menu::after {
+  content: "";
+  background: red;
+  padding: 0.5rem;
+} */

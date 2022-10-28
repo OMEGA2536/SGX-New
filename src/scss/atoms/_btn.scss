@@ -13,6 +13,9 @@
   &-sm {
     @include mixins.calculate-font-size(0.7);
   }
+  &-lg {
+    min-width: 15rem;
+  }
   &-rounded {
     border-radius: 14px;
   }
@@ -26,6 +29,11 @@
   &-primary {
     color: variables.$white-color;
     background: #{functions.light-dark(variables.$primary-color, variables.$primary-inverted-color)};
+  }
+  &-outline-primary {
+    border: 1px solid variables.$primary-color;
+    color: variables.$primary-color;
+    background: #{functions.light-dark(variables.$white-color, variables.$primary-inverted-color)};
   }
   &-secondary {
     color: variables.$white-color;

@@ -39,6 +39,9 @@
   &-decoration-none {
     text-decoration: none;
   }
+  &-underline {
+    text-decoration: underline;
+  }
 }
 
 @media (max-width: variables.$max-width-lg) {
