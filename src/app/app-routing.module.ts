@@ -30,6 +30,14 @@ const routes: Routes = [
         (m) => m.AutenticacionModule
       ),    
   },
+  {
+    path:'usuarios',
+    component: LayoutComponent,
+    loadChildren:() =>
+    import('./system-user/system-user.module').then(
+      (m) => m.SystemUserModule
+    )
+  },
 ];
 
 @NgModule({

@@ -24,7 +24,6 @@ import { SvgInfoComponent } from './svg/svg-info/svg-info.component';
 import { SvgFilesComponent } from './svg/svg-files/svg-files.component';
 import { SvgArrowBottomComponent } from './svg/svg-arrow-bottom/svg-arrow-bottom.component';
 import { AuthLayouComponent } from './layout/auth-layou/auth-layou.component';
-import { SvgLogoComponent } from './svg/svg-logo/svg-logo.component';
 
 
 
@@ -53,7 +52,6 @@ import { SvgLogoComponent } from './svg/svg-logo/svg-logo.component';
     SvgFilesComponent,
     SvgArrowBottomComponent,
     AuthLayouComponent,
-    SvgLogoComponent
   ],
   imports: [
     BrowserModule,
