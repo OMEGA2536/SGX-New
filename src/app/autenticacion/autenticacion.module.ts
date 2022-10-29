@@ -7,7 +7,9 @@ import { ForgotPasswordComponent } from './forgot-password/forgot-password.compo
 import { SvgLogoComponent } from '../svg/svg-logo/svg-logo.component';
 import { SvgAccessComponent } from '../svg/svg-access/svg-access.component';
 import { Page404Component } from './page404/page404.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RECAPTCHA_SETTINGS, RecaptchaFormsModule, RecaptchaModule, RecaptchaSettings } from 'ng-recaptcha';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,19 @@ import { Page404Component } from './page404/page404.component';
   ],
   imports: [
     CommonModule,
-    AutenticacionRoutingModule
-  ]
+    AutenticacionRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RecaptchaFormsModule,
+    RecaptchaModule,
+  ],
+  providers: [
+    {
+      provide: RECAPTCHA_SETTINGS,
+      useValue: {
+        siteKey: environment.recaptcha.siteKey,
+      } as RecaptchaSettings,
+    },
+  ],
 })
 export class AutenticacionModule { }

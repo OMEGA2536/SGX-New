@@ -24,19 +24,35 @@
           <app-svg-logo className="scale-3"></app-svg-logo>
         </section>
   
-        <form action="">
-          <section class="form-control">
+        <form action="" [formGroup]="loginForm" (ngSubmit)="submit">
+          <section class="form-control" >
             <label for="" class="label">Usuario</label>
-            <input class="input-text-2" type="text">
+            <input class="input-text-2" type="text" formControlName="userName" required autocomplete="off">
+            <label *ngIf="loginForm.get('userName')?.hasError('required')" style="color: red;"> El usuario es requerido</label>
           </section>
   
           <section class="form-control">
             <label for="" class="label">Contraseña</label>
-            <input class="input-text-2" type="text">
+            <input class="input-text-2" type="password" formControlName="password" required autocomplete="off">
+            <label *ngIf="loginForm.get('password')?.hasError('required')" style="color: red;"> La contraseña es requerida</label>
           </section>
-          
+          <div class="container-fluid py-3" > 
+            <form #form="ngForm">
+              <div class="row mt-3">
+                <div class="col-sm-12 mb-2" >
+                  <re-captcha  id="recaptcha" name="recaptcha" #recaptcha="ngModel" [(ngModel)]="token" required 
+                  [class.is-invalid]="recaptcha.invalid && (recaptcha.dirty || recaptcha.touched)"></re-captcha>
+                  <div *ngIf="recaptcha.invalid && (recaptcha.dirty || recaptcha.touched)" class="invalid-feedback">
+                   
+                  </div>
+                </div>
+              </div>           
+            </form>
+            <label *ngIf="token == undefined || token == null" style="color: red;">Validación requerida</label>
+          </div>
           <section class="flex-center py-6">
-            <button type="submit" class="btn btn-rounded btn-secondary flex-center">
+            <button type="submit" class="btn btn-rounded btn-secondary flex-center"
+            [disabled]="!loginForm.valid" (click)="confirmLogin()">
               <span class="text-9 text-300">Ingresar</span>
               <app-svg-access className="scale-3 ml-14"></app-svg-access>
             </button>
