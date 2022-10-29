@@ -4,8 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login/login.component';
-import { SvgAccessComponent } from './svg/svg-access/svg-access.component';
-import { SvgLogoComponent } from './svg/svg-logo/svg-logo.component';
 import { LayoutComponent } from './layout/layout/layout.component';
 import { TopBarComponent } from './layout/top-bar/top-bar.component';
 import { SideBarComponent } from './layout/side-bar/side-bar.component';
@@ -25,14 +23,15 @@ import { SvgDeleteComponent } from './svg/svg-delete/svg-delete.component';
 import { SvgInfoComponent } from './svg/svg-info/svg-info.component';
 import { SvgFilesComponent } from './svg/svg-files/svg-files.component';
 import { SvgArrowBottomComponent } from './svg/svg-arrow-bottom/svg-arrow-bottom.component';
+import { AuthLayouComponent } from './layout/auth-layou/auth-layou.component';
+import { SvgLogoComponent } from './svg/svg-logo/svg-logo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    SvgAccessComponent,
-    SvgLogoComponent,
     LayoutComponent,
+    SvgLogoComponent,
     TopBarComponent,
     SideBarComponent,
     HourManagerComponent,
@@ -51,6 +50,7 @@ import { SvgArrowBottomComponent } from './svg/svg-arrow-bottom/svg-arrow-bottom
     SvgInfoComponent,
     SvgFilesComponent,
     SvgArrowBottomComponent,
+    AuthLayouComponent,
   ],
   imports: [
     BrowserModule,
