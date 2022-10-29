@@ -26,12 +26,14 @@ import { SvgArrowBottomComponent } from './svg/svg-arrow-bottom/svg-arrow-bottom
 import { AuthLayouComponent } from './layout/auth-layou/auth-layou.component';
 import { SvgLogoComponent } from './svg/svg-logo/svg-logo.component';
 
+
+
+
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,    
     LoginComponent,
     LayoutComponent,
-    SvgLogoComponent,
     TopBarComponent,
     SideBarComponent,
     HourManagerComponent,
@@ -51,6 +53,7 @@ import { SvgLogoComponent } from './svg/svg-logo/svg-logo.component';
     SvgFilesComponent,
     SvgArrowBottomComponent,
     AuthLayouComponent,
+    SvgLogoComponent
   ],
   imports: [
     BrowserModule,
