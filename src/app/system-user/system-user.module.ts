@@ -8,9 +8,8 @@ import { UsersComponent } from './users/users.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RoleComponent } from './role/role.component';
 import { AccessComponent } from './access/access.component';
-import { TopBarComponent } from './top-bar/top-bar.component';
-import { SvgUserComponent } from './svg-user/svg-user.component';
-
+import { LayoutModule } from '../layout/layout.module';
+import { SvgModule } from '../svg/svg.module';
 
 @NgModule({
   declarations: [
@@ -20,12 +19,12 @@ import { SvgUserComponent } from './svg-user/svg-user.component';
     ProfileComponent,
     RoleComponent,
     AccessComponent,
-    TopBarComponent,
-    SvgUserComponent
   ],
   imports: [
     CommonModule,
-    SystemUserRoutingModule
+    SystemUserRoutingModule,
+    LayoutModule,
+    SvgModule
   ]
 })
 export class SystemUserModule { }

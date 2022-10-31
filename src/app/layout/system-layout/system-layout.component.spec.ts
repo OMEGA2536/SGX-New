@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TopBarComponent } from './top-bar.component';
+import { SystemLayoutComponent } from './system-layout.component';
 
-describe('TopBarComponent', () => {
-  let component: TopBarComponent;
-  let fixture: ComponentFixture<TopBarComponent>;
+describe('SystemLayoutComponent', () => {
+  let component: SystemLayoutComponent;
+  let fixture: ComponentFixture<SystemLayoutComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TopBarComponent ]
+      declarations: [ SystemLayoutComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TopBarComponent);
+    fixture = TestBed.createComponent(SystemLayoutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
