@@ -1,0 +1,13 @@
+@use "../settings/variables";
+@use "../tools/functions";
+@use "../tools/mixins";
+
+.input-text {
+  @include mixins.input-base();
+}
+
+.input-text-2 {
+  @include mixins.input-base();
+  border: 2px solid variables.$gray-color-2;
+  height: 3.7rem;
+}

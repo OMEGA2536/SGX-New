@@ -1,0 +1,71 @@
+@use "../settings/variables";
+
+/* display */
+
+$types: none, flex, grid, block;
+
+@each $type in $types {
+  .d-#{$type} {
+    display: $type;
+  }
+}
+
+@media (max-width: variables.$max-width-lg) {
+  @each $type in $types {
+    .lg\:d-#{$type} {
+      display: $type;
+    }
+  }
+}
+
+/* justify-content */
+
+$types: center, flex-end, space-between;
+
+@each $type in $types {
+  .justify-#{$type} {
+    justify-content: $type;
+  }
+}
+
+@media (max-width: variables.$max-width-lg) {
+  @each $type in $types {
+    .lg\:justify-#{$type} {
+      justify-content: $type;
+    }
+  }
+}
+
+/* align-items */
+
+$types: center, flex-end;
+
+@each $type in $types {
+  .items-#{$type} {
+    align-items: $type;
+  }
+}
+
+@media (max-width: variables.$max-width-lg) {
+  @each $type in $types {
+    .lg\:items-#{$type} {
+      align-items: $type;
+    }
+  }
+}
+
+/* flex-center */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: variables.$max-width-lg) {
+  .lg\:flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

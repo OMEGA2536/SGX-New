@@ -1,0 +1,74 @@
+@use "../settings/variables";
+@use "../tools/functions";
+@use "../tools/mixins";
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  &__user {
+    grid-template-areas:
+      "activity activity themes"
+      "activity activity themes"
+      "activity activity themes"
+      "assistances assignments themes"
+      "assistances assignments themes"
+      "assistances assignments themes"
+      "friends birthday themes"
+      "friends birthday themes"
+      "friends birthday themes";
+  }
+  &__admin {
+    grid-template-areas:
+      "activity activity themes"
+      "activity activity themes"
+      "last-assistance last-assistance themes"
+      "last-assistance last-assistance themes"
+      "last-assistance last-assistance themes"
+      "messages birthday themes"
+      "messages birthday themes"
+      "messages birthday themes";
+  }
+  #activity {
+    grid-area: activity;
+  }
+  #themes {
+    grid-area: themes;
+  }
+  #friends {
+    grid-area: friends;
+  }
+  #assignments {
+    grid-area: assignments;
+  }
+  #assistances {
+    grid-area: assistances;
+  }
+  #messages {
+    grid-area: messages;
+  }
+  #birthday {
+    grid-area: birthday;
+  }
+  #last-assistance {
+    grid-area: last-assistance;
+  }
+  #contacts {
+    grid-area: contacts;
+  }
+}
+
+@media (max-width: variables.$max-width-xl) {
+  .dashboard {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "activity"
+      "assistances"
+      "themes"
+      "friends"
+      "messages"
+      "assignments"
+      "birthday";
+    gap: 1rem 0;
+  }
+}

@@ -1,0 +1,16 @@
+#person-filter-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0 1rem;
+  grid-template-areas:
+    "name dni type buttons"
+    "position area type buttons";
+}
+
+$fields: name, dni, type, id, date, buttons, position, area;
+
+@each $field in $fields {
+  #person-filter-form > ##{$field} {
+    grid-area: #{$field};
+  }
+}

@@ -1,0 +1,22 @@
+@use "../settings/variables";
+
+.login {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img form";
+
+  #img {
+    grid-area: img;
+  }
+
+  #form {
+    grid-area: form;
+  }
+}
+
+@media (max-width: variables.$max-width-lg) {
+  .login {
+    grid-template-columns: 1fr;
+    grid-template-areas: "img" "form";
+  }
+}

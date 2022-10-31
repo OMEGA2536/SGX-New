@@ -1,0 +1,41 @@
+@use "../settings/variables";
+
+.min-w-30 {
+  min-width: 30%;
+}
+
+.w-100vw {
+  width: 100vw;
+}
+
+/* percentage */
+
+@for $i from 0 through 100 {
+  .w-#{$i} {
+    width: $i * 1%;
+  }
+}
+
+@media (max-width: variables.$max-width-lg) {
+  @for $i from 0 through 100 {
+    .lg\:w-#{$i} {
+      width: $i * 1%;
+    }
+  }
+}
+
+/* ch */
+
+@for $i from 0 through 50 {
+  .w-#{$i}ch {
+    width: #{$i}ch;
+  }
+}
+
+@media (max-width: variables.$max-width-lg) {
+  @for $i from 0 through 50 {
+    .lg\:w-#{$i}ch {
+      width: #{$i}ch;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+<app-top-bar title="Personal"></app-top-bar>
+<section class="pt-30 pb-8 px-30">
+  <app-card>
+    <form action="">
+      <section id="person-filter-form">
+        <section class="form-control" id="name">
+          <label class="label" for="">Nombres</label>
+          <input type="text" class="input-text">
+        </section>
+
+        <section class="form-control" id="dni">
+          <label class="label" for="">DNI</label>
+          <input type="text" class="input-text">
+        </section>
+
+        <section class="form-control" id="type">
+          <label class="label" for="">Tipo</label>
+          <select class="select" name="" id="">
+            <option value="">Consultor</option>
+            <option value="">Consultor</option>
+            <option value="">Consultor</option>
+          </select>
+        </section>
+
+        <section class="form-control" id="position">
+          <label class="label" for="">Cargo</label>
+          <select class="select" name="" id="">
+            <option value="">Externo</option>
+            <option value="">Externo</option>
+            <option value="">Externo</option>
+          </select>
+        </section>
+
+        <section class="form-control" id="area">
+          <label class="label" for="">Area</label>
+          <input type="text" class="input-text">
+        </section>
+
+        <div id="buttons">
+          <section class="mt-7 d-flex">
+            <button type="button" class="btn btn-sm btn-secondary btn-rounded mr-2">
+              <app-svg-filter className="scale-3"></app-svg-filter>
+            </button>
+  
+            <button type="button" class="btn btn-sm btn-primary w-100 btn-rounded d-flex justify-space-between items-center">
+              Registrar <app-svg-add className="scale-3"></app-svg-add>
+            </button>
+          </section>
+        </div>
+      </section>
+    </form>
+  </app-card>
+</section>
+
+<section class="px-30">
+  <app-card>
+    <section class="d-flex justify-space-between">
+      <section class="flex-center">
+        <p class="text-8 text-primary text-600">Detalle de Personal</p>
+      </section>
+
+      <section class="flex-center">
+        <section class="d-flex">
+          <app-svg-file></app-svg-file> <p class="text-7 text-primary mr-4 ml-1 text-underline cursor-pointer">Reporte horas</p>
+        </section>
+        <app-svg-update></app-svg-update>
+      </section>
+    </section>
+
+    <section class="mt-4">
+      <table class="table-default">
+        <thead>
+          <tr>
+            <th>Nombres</th>
+            <th>Cargo</th>
+            <th>Tipo</th>
+            <th>Jefe Superior</th>
+            <th>Estado</th>
+            <th class="action-cell"></th>
+            <th class="action-cell"></th>
+            <th class="action-cell"></th>
+            <th class="action-cell"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Juan Jose</td>
+            <td>Consultor Web</td>
+            <td>Externo</td>
+            <td>Jefe Superior</td>
+            <td>Activo</td>
+            <td>
+              <app-svg-edit></app-svg-edit>
+            </td>
+            <td>
+              <app-svg-delete></app-svg-delete>
+            </td>
+            <td>
+              <app-svg-info></app-svg-info>
+            </td>
+            <td>
+              <app-svg-files></app-svg-files>
+            </td>
+          </tr>
+          <tr>
+            <td>Juan Jose</td>
+            <td>Consultor Web</td>
+            <td>Externo</td>
+            <td>Jefe Superior</td>
+            <td>Activo</td>
+            <td>
+              <app-svg-edit></app-svg-edit>
+            </td>
+            <td>
+              <app-svg-delete></app-svg-delete>
+            </td>
+            <td>
+              <app-svg-info></app-svg-info>
+            </td>
+            <td>
+              <app-svg-files></app-svg-files>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </app-card>
+</section>

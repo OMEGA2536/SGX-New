@@ -1,0 +1,53 @@
+@use "../settings/variables";
+
+.h-100 {
+  height: 100%;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.max-h-100vh {
+  max-height: 100vh;
+}
+
+.min-h-100vh {
+  min-height: 100vh;
+}
+
+.max-h-90vh {
+  max-height: 90vh;
+}
+
+@media (max-width: variables.$max-width-lg) {
+  .lg\:h-100 {
+    height: 100%;
+  }
+
+  .lg\:h-60vh {
+    height: 60vh;
+  }
+
+  .lg\:h-100vh {
+    height: 100vh;
+  }
+
+  .lg\:min-h-100vh {
+    min-height: 100vh;
+  }
+}
+
+@for $i from 1 through 60 {
+  .h-#{$i} {
+    height: #{$i}rem;
+  }
+}
+
+@media (max-width: variables.$max-width-lg) {
+  @for $i from 1 through 60 {
+    .lg\:h-#{$i} {
+      height: #{$i}rem;
+    }
+  }
+}

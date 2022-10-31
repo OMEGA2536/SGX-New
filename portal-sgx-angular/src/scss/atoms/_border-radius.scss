@@ -1,0 +1,16 @@
+$accumulator: 0;
+
+@for $i from 1 through 10 {
+  $accumulator: $accumulator + 0.2rem;
+  .border-radius-#{$i} {
+    border-radius: $accumulator;
+  }
+}
+
+.border-top-right-2 {
+  border-top-right-radius: 0.4rem;
+}
+
+.border-bottom-right-2 {
+  border-bottom-right-radius: 0.4rem;
+}

@@ -1,0 +1,93 @@
+@use "../settings/variables";
+
+$accumulator: 0;
+
+@for $i from 0 through 40 {
+  $accumulator: $accumulator + 0.25rem;
+
+  .px-#{$i} {
+    padding-right: $accumulator;
+    padding-left: $accumulator;
+  }
+
+  .py-#{$i} {
+    padding-top: $accumulator;
+    padding-bottom: $accumulator;
+  }
+
+  .pr-#{$i} {
+    padding-right: $accumulator;
+  }
+
+  .pl-#{$i} {
+    padding-left: $accumulator;
+  }
+
+  .pt-#{$i} {
+    padding-top: $accumulator;
+  }
+
+  .pb-#{$i} {
+    padding-bottom: $accumulator;
+  }
+}
+
+@media (max-width: variables.$max-width-xl) {
+  $accumulator: 0;
+
+  @for $i from 0 through 40 {
+    $accumulator: $accumulator + 0.25rem;
+
+    .xl\:px-#{$i} {
+      padding-right: $accumulator;
+      padding-left: $accumulator;
+    }
+  }
+}
+
+@media (max-width: variables.$max-width-lg) {
+  $accumulator: 0;
+
+  @for $i from 0 through 40 {
+    $accumulator: $accumulator + 0.25rem;
+
+    .lg\:px-#{$i} {
+      padding-right: $accumulator;
+      padding-left: $accumulator;
+    }
+
+    .lg\:py-#{$i} {
+      padding-top: $accumulator;
+      padding-bottom: $accumulator;
+    }
+
+    .lg\:pr-#{$i} {
+      padding-right: $accumulator;
+    }
+
+    .lg\:pl-#{$i} {
+      padding-left: $accumulator;
+    }
+
+    .lg\:pt-#{$i} {
+      padding-top: $accumulator;
+    }
+
+    .lg\:pb-#{$i} {
+      padding-bottom: $accumulator;
+    }
+  }
+}
+
+@media (max-width: variables.$max-width-sm) {
+  $accumulator: 0;
+
+  @for $i from 0 through 40 {
+    $accumulator: $accumulator + 0.25rem;
+
+    .sm\:px-#{$i} {
+      padding-right: $accumulator;
+      padding-left: $accumulator;
+    }
+  }
+}

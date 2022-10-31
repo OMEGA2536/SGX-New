@@ -1,0 +1,30 @@
+@use "../settings/variables";
+@use "../tools/functions";
+@use "../tools/mixins";
+
+.table-default {
+  width: 100%;
+  border-collapse: collapse;
+  th,
+  td {
+    padding: 0.8rem;
+    text-align: center;
+  }
+  th {
+    background: rgba(variables.$primary-color, 0.1);
+    font-weight: 600;
+    color: #{functions.light-dark(variables.$primary-color, variables.$gray-color-1)};
+    @include mixins.calculate-font-size(0.6);
+  }
+  td {
+    color: #{functions.light-dark(variables.$gray-color-2, variables.$white-color)};
+    border-bottom: 0.2px solid variables.$accent-color;
+    @include mixins.calculate-font-size(0.6);
+  }
+  tr:nth-child(even) {
+    background-color: rgba(variables.$gray-color-1, 0.2);
+  }
+  .action-cell {
+    width: 20px;
+  }
+}

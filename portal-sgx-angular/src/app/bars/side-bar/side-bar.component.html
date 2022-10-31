@@ -1,0 +1,25 @@
+<section>
+  <section class="flex-center h-6">
+    <app-svg-logo className="scale-1"></app-svg-logo>
+  </section>
+  
+  <section>
+    <section class="item-menu item-menu--active" (click)="toogleOptions()">
+      <div class="item-menu__bar"></div>
+
+      <section class="item-menu__wrapper">
+        <section class="item-menu__svg"  >
+          <app-svg-operations className="scale-3"></app-svg-operations>
+        </section>
+        <p class="item-menu__text">Operaciones</p>
+      </section>
+
+      <section class="item-menu__options" (blur)="toogleOptions()" *ngIf="itemMenuVisible" tabindex="-1" (mousedown)="$event.preventDefault()">
+        <ul>
+          <li>Requerimientos</li>
+          <li>Registro de horas</li>
+        </ul>
+      </section>
+    </section>
+  </section>
+</section>
