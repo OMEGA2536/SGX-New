@@ -1,7 +1,4 @@
 import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
-import { PersonRegisterFormInsertionDirective } from 'src/app/directives/person-register-form-insertion.directive';
-import { OrganizationalDataRegisterFormComponent } from '../organizational-data-register-form/organizational-data-register-form.component';
-import { PersonDataRegisterFormComponent } from '../person-data-register-form/person-data-register-form.component';
 
 @Component({
   selector: 'app-person-register',
@@ -10,19 +7,9 @@ import { PersonDataRegisterFormComponent } from '../person-data-register-form/pe
 })
 export class PersonRegisterComponent implements OnInit {
 
-  @ViewChild(PersonRegisterFormInsertionDirective, { static: true })
-  personRegisterFormInsertionDirective!: PersonRegisterFormInsertionDirective;
+  showIndexForm: number = 0;
 
-  constructor(private viewContainerRef: ViewContainerRef) { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
-
-  showForm(indexTab: number): void {
-    if (indexTab == 0) {
-      this.personRegisterFormInsertionDirective.container1.createComponent(PersonDataRegisterFormComponent);
-    } else {
-      this.personRegisterFormInsertionDirective.container1.createComponent(OrganizationalDataRegisterFormComponent);
-    }
-  }
+  ngOnInit(): void {}
 }

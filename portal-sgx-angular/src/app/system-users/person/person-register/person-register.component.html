@@ -5,9 +5,14 @@
 
     <app-tabs 
       [arrayTabs]="['Datos del Personal', 'Datos Organizacionales']"
-      (clickTab)="showForm($event)"
+      (clickTab)="showIndexForm = $event"
     ></app-tabs>
 
-    <ng-template appPersonRegisterFormInsertion></ng-template>
+    <ng-container *ngIf="showIndexForm == 0">
+      <app-person-data-register-form></app-person-data-register-form>
+    </ng-container>
+    <ng-container *ngIf="showIndexForm == 1">
+      <app-organizational-data-register-form></app-organizational-data-register-form>
+    </ng-container>
   </app-card>
 </section>

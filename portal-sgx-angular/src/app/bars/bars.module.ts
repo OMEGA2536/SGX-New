@@ -6,7 +6,6 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { SvgModule } from '../svg/svg.module';
 import { MenuItemComponent } from './menu-item/menu-item.component';
-import { DirectiveModule } from '../directives/directive.module';
 
 @NgModule({
   declarations: [
@@ -17,8 +16,7 @@ import { DirectiveModule } from '../directives/directive.module';
   imports: [
     CommonModule,
     BarsRoutingModule,
-    SvgModule,
-    DirectiveModule
+    SvgModule
   ],
   exports: [
     TopBarComponent,

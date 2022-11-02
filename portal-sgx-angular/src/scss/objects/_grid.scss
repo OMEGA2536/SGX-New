@@ -1,7 +1,15 @@
 @use "../settings/variables";
 
+.grid-template-auto-3 {
+  grid-template-columns: auto auto auto;
+}
+
 .grid-template-auto-4 {
   grid-template-columns: auto auto auto auto;
+}
+
+.grid-template-auto-5 {
+  grid-template-columns: auto auto auto auto auto;
 }
 
 .grid-template-columns-4 {

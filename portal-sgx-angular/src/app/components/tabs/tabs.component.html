@@ -1,8 +1,12 @@
 <section class="d-flex my-4">
   <section *ngFor="let tab of arrayTabs; index as i">
-    <section class="py-1 px-4 mr-3 border-bottom-primary-2 cursor-pointer"
-    (click)="clickTab.emit(i)">
-      <p class="text-7 text-primary text-600">{{ tab }}</p>
+    <section class="py-1 px-4 mr-3 cursor-pointer"
+    [class.border-bottom-solid-2-primary]="isCurrentIndexTab(i)"
+    [class.border-bottom-solid-2-gray-2]="!isCurrentIndexTab(i)"
+    (click)="onClickTab(i)">
+      <p class="text-7 text-primary text-600" 
+      [class.text-primary]="isCurrentIndexTab(i)"
+      [class.text-gray-2]="!isCurrentIndexTab(i)">{{ tab }}</p>
     </section>
   </section>
 </section>

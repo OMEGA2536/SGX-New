@@ -13,7 +13,6 @@ import { BarsModule } from '../bars/bars.module';
 import { PersonRegisterComponent } from './person/person-register/person-register.component';
 import { PersonDataRegisterFormComponent } from './person/person-data-register-form/person-data-register-form.component';
 import { OrganizationalDataRegisterFormComponent } from './person/organizational-data-register-form/organizational-data-register-form.component';
-import { DirectiveModule } from '../directives/directive.module';
 
 @NgModule({
   declarations: [
@@ -31,8 +30,7 @@ import { DirectiveModule } from '../directives/directive.module';
     SystemUsersRoutingModule,
     ComponentsModule,
     SvgModule,
-    BarsModule,
-    DirectiveModule
+    BarsModule
   ]
 })
 export class SystemUsersModule { }
