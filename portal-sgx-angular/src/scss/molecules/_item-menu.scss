@@ -5,7 +5,6 @@
   display: flex;
   position: relative;
   cursor: pointer;
-  // z-index: 99;
   &__bar {
     background: variables.$primary-color;
     width: 7px;
@@ -31,18 +30,18 @@
     background: variables.$white-color;
     box-shadow: variables.$shadow-light;
     border-radius: 4px;
-    // z-index: 99;
+    z-index: 99;
     :before {
       content: "";
       position: absolute;
-      top: 15px;
+      top: 0px;
       left: -11px;
       width: 0;
       height: 0;
       border-style: solid;
       border-width: 0 5px 12px 5px;
       border-color: transparent transparent white transparent;
-      z-index: 2;
+      // z-index: 2;
       rotate: -90deg;
     }
     ul {

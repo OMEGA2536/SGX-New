@@ -1,0 +1,21 @@
+#details-person {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0 1rem;
+  grid-template-areas:
+    "firstName firstName lastName lastName firstSurname firstSurname lastSurname lastSurname image image"
+    "position position position afp afp area area area image image"
+    "bank bank account account account account money money image image"
+    "type type records records records records records records firm firm"
+    "cuspp cuspp admissionDate admissionDate _ _ _ _ firm firm"
+    "dniReverse1 dniReverse1 dniReverse2 dniReverse2 photo photo photo photo photo photo";
+}
+
+$fields: firstName, lastName, firstSurname, lastSurname, image, position, afp, area, bank, account, money, type, records,
+  firm, cuspp, admissionDate, dniReverse1, dniReverse2, photo;
+
+@each $field in $fields {
+  #details-person > ##{$field} {
+    grid-area: #{$field};
+  }
+}

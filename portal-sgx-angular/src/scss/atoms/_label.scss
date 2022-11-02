@@ -8,5 +8,5 @@
   color: $color;
   margin-bottom: 0.5rem;
   display: block;
-  @include mixins.calculate-font-size(0.7);
+  @include mixins.calculate-font-size(0.6);
 }

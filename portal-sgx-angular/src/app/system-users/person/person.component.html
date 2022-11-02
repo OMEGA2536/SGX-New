@@ -42,7 +42,7 @@
               <app-svg-filter className="scale-3"></app-svg-filter>
             </button>
   
-            <button type="button" class="btn btn-sm btn-primary w-100 btn-rounded d-flex justify-space-between items-center">
+            <button type="button" (click)="toPersonRegister()" class="btn btn-sm btn-primary w-100 btn-rounded d-flex justify-space-between items-center">
               Registrar <app-svg-add className="scale-3"></app-svg-add>
             </button>
           </section>
@@ -96,26 +96,7 @@
               <app-svg-delete></app-svg-delete>
             </td>
             <td>
-              <app-svg-info></app-svg-info>
-            </td>
-            <td>
-              <app-svg-files></app-svg-files>
-            </td>
-          </tr>
-          <tr>
-            <td>Juan Jose</td>
-            <td>Consultor Web</td>
-            <td>Externo</td>
-            <td>Jefe Superior</td>
-            <td>Activo</td>
-            <td>
-              <app-svg-edit></app-svg-edit>
-            </td>
-            <td>
-              <app-svg-delete></app-svg-delete>
-            </td>
-            <td>
-              <app-svg-info></app-svg-info>
+              <app-svg-info class="cursor-pointer" (click)="showDetailsPerson()"></app-svg-info>
             </td>
             <td>
               <app-svg-files></app-svg-files>
@@ -125,4 +106,98 @@
       </table>
     </section>
   </app-card>
+
+  <app-modal [visible]="modalDetailsPersonVisible" (clickCloseIcon)="hideDetailsPerson()">
+    <section>
+      <p class="text-primary text-7 mb-3">Ver detalles</p>
+
+      <section id="details-person">
+        <section class="form-control" id="firstName">
+          <label class="label" for="">Primer Nombre</label>
+          <input type="text" class="input-text" value="First name">
+        </section>
+        <section class="form-control" id="lastName">
+          <label class="label" for="">Segundo Nombre</label>
+          <input type="text" class="input-text" value="Last name">
+        </section>
+        <section class="form-control" id="firstSurname">
+          <label class="label" for="">Primer Apellido</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="lastSurname">
+          <label class="label" for="">Segundo Apellido</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="image">
+          <img src="assets/images/photo-default.png" alt="">
+        </section>
+
+        <section class="form-control" id="position">
+          <label class="label" for="">Cargo</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="afp">
+          <label class="label" for="">AFP u ONP</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="area">
+          <label class="label" for="">Area</label>
+          <input type="text" class="input-text">
+        </section>
+
+        <section class="form-control" id="bank">
+          <label class="label" for="">Banco</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="account">
+          <label class="label" for="">N° Cuenta</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="money">
+          <label class="label" for="">Moneda</label>
+          <input type="text" class="input-text">
+        </section>
+
+        <section class="form-control" id="type">
+          <label class="label" for="">Tipo</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="records">
+          <label class="label" for="">Antecedentes penales</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="firm">
+          <img src="assets/images/firm.png" class="mt-6" alt="">
+        </section>
+
+        <section class="form-control" id="cuspp">
+          <label class="label" for="">CUSPP</label>
+          <input type="text" class="input-text">
+        </section>
+        <section class="form-control" id="admissionDate">
+          <label class="label" for="">Fecha Ingreso</label>
+          <input type="text" class="input-text">
+        </section>
+
+        <section class="form-control" id="dniReverse1">
+          <label class="label" for="">DNI reverso</label>
+          <p class="text-7 text-primary text-underline cursor-pointer">Visualizar DNI</p>
+        </section>
+        <section class="form-control" id="dniReverse2">
+          <label class="label" for="">DNI reverso</label>
+          <p class="text-7 text-primary text-underline cursor-pointer">Visualizar DNI</p>
+        </section>
+        <section class="form-control" id="photo">
+          <label class="label" for="">Foto</label>
+          <p class="text-7 text-primary text-underline cursor-pointer">Visualizar foto</p>
+        </section>
+      </section>
+
+      <section class="d-flex justify-flex-end">
+        <button type="button" class="btn btn-outline-primary btn-rounded btn-sm" (click)="hideDetailsPerson()">
+          Cerrar
+        </button>
+      </section>
+    </section>
+  </app-modal>
 </section>

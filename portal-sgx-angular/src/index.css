@@ -458,7 +458,7 @@ ul {
   border-radius: 6px;
   width: 100%;
   margin: 0.2rem 0 0.1rem 0;
-  height: 3.2rem;
+  height: 3rem;
   padding: 1rem;
   border: 1px solid #d1d1d1;
 }
@@ -471,7 +471,7 @@ ul {
   border-radius: 6px;
   width: 100%;
   margin: 0.2rem 0 0.1rem 0;
-  height: 3.2rem;
+  height: 3rem;
   padding: 1rem;
   border: 1px solid #d1d1d1;
   border: 2px solid #767676;
@@ -1010,11 +1010,11 @@ ul {
   color: var(--light, #767676) var(--dark, #ffffff);
   margin-bottom: 0.5rem;
   display: block;
-  font-size: calc(0.7vw + 0.7vh);
+  font-size: calc(0.6vw + 0.6vh);
 }
 @media (max-width: 992px) {
   .label {
-    font-size: calc(1.1vw + 1.1vh);
+    font-size: calc(1vw + 1vh);
   }
 }
 
@@ -1362,7 +1362,7 @@ ul {
   border-radius: 6px;
   width: 100%;
   margin: 0.2rem 0 0.1rem 0;
-  height: 3.2rem;
+  height: 3rem;
   padding: 1rem;
   border: 1px solid #d1d1d1;
   background: url("/assets/svg/arrow-bottom.svg") no-repeat right;
@@ -1462,18 +1462,18 @@ ul {
   background: #ffffff;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.37);
   border-radius: 4px;
+  z-index: 99;
 }
 .item-menu__options :before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 0px;
   left: -11px;
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0 5px 12px 5px;
   border-color: transparent transparent white transparent;
-  z-index: 2;
   rotate: -90deg;
 }
 .item-menu__options ul {
@@ -1595,6 +1595,89 @@ ul {
 
 #person-filter-form > #area {
   grid-area: area;
+}
+
+#details-person {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0 1rem;
+  grid-template-areas: "firstName firstName lastName lastName firstSurname firstSurname lastSurname lastSurname image image" "position position position afp afp area area area image image" "bank bank account account account account money money image image" "type type records records records records records records firm firm" "cuspp cuspp admissionDate admissionDate _ _ _ _ firm firm" "dniReverse1 dniReverse1 dniReverse2 dniReverse2 photo photo photo photo photo photo";
+}
+
+#details-person > #firstName {
+  grid-area: firstName;
+}
+
+#details-person > #lastName {
+  grid-area: lastName;
+}
+
+#details-person > #firstSurname {
+  grid-area: firstSurname;
+}
+
+#details-person > #lastSurname {
+  grid-area: lastSurname;
+}
+
+#details-person > #image {
+  grid-area: image;
+}
+
+#details-person > #position {
+  grid-area: position;
+}
+
+#details-person > #afp {
+  grid-area: afp;
+}
+
+#details-person > #area {
+  grid-area: area;
+}
+
+#details-person > #bank {
+  grid-area: bank;
+}
+
+#details-person > #account {
+  grid-area: account;
+}
+
+#details-person > #money {
+  grid-area: money;
+}
+
+#details-person > #type {
+  grid-area: type;
+}
+
+#details-person > #records {
+  grid-area: records;
+}
+
+#details-person > #firm {
+  grid-area: firm;
+}
+
+#details-person > #cuspp {
+  grid-area: cuspp;
+}
+
+#details-person > #admissionDate {
+  grid-area: admissionDate;
+}
+
+#details-person > #dniReverse1 {
+  grid-area: dniReverse1;
+}
+
+#details-person > #dniReverse2 {
+  grid-area: dniReverse2;
+}
+
+#details-person > #photo {
+  grid-area: photo;
 }
 
 /* display */
@@ -12224,6 +12307,10 @@ ul {
     margin-bottom: 10.25rem;
   }
 }
+.grid-template-auto-4 {
+  grid-template-columns: auto auto auto auto;
+}
+
 .grid-template-columns-4 {
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 }
@@ -12728,7 +12815,7 @@ ul {
 }
 
 .form-control {
-  padding: 0.2rem 0 0.5rem 0;
+  padding: 0.2rem 0 0.7rem 0;
 }
 
 .transition-1 {

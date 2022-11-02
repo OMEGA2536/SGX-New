@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-person',
@@ -7,7 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PersonComponent implements OnInit {
 
-  constructor() { }
+  public modalDetailsPersonVisible: boolean = false;
+  
+  constructor(private router: Router) { }
+
+  showDetailsPerson(): void {
+    this.modalDetailsPersonVisible = true;
+  }
+
+  hideDetailsPerson(): void {
+    this.modalDetailsPersonVisible = false;
+  }
+
+  toPersonRegister(): void {
+    this.router.navigate(['/system-users/person/register']);
+  }
 
   ngOnInit(): void {
   }

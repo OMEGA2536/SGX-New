@@ -10,6 +10,7 @@ import { AccessComponent } from './access/access.component';
 import { ComponentsModule } from '../components/components.module';
 import { SvgModule } from '../svg/svg.module';
 import { BarsModule } from '../bars/bars.module';
+import { PersonRegisterComponent } from './person/person-register/person-register.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BarsModule } from '../bars/bars.module';
     UserComponent,
     ProfileComponent,
     RoleComponent,
-    AccessComponent
+    AccessComponent,
+    PersonRegisterComponent
   ],
   imports: [
     CommonModule,

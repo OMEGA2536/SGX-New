@@ -1,5 +1,9 @@
 @use "../settings/variables";
 
+.grid-template-auto-4 {
+  grid-template-columns: auto auto auto auto;
+}
+
 .grid-template-columns-4 {
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 }

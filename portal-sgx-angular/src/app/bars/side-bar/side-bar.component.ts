@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { SvgAddComponent } from 'src/app/svg/svg-add/svg-add.component';
+import { SvgAdministratorComponent } from 'src/app/svg/svg-administrator/svg-administrator.component';
+import { SvgOperationsComponent } from 'src/app/svg/svg-operations/svg-operations.component';
+import { SvgInsertionDirective } from '../svg-insertion.directive';
 import * as ItemsMenu from './items-menu';
 
 @Component({
@@ -6,17 +10,18 @@ import * as ItemsMenu from './items-menu';
   templateUrl: './side-bar.component.html',
   styleUrls: ['./side-bar.component.css']
 })
-// @Directive({
-//   selector: '[adHost]',
-// })
 export class SideBarComponent implements OnInit {
 
-  // constructor(private cfr: ComponentFactoryResolver) { }
+  constructor(private viewContainerRef: ViewContainerRef) { }
 
   public itemMenuVisible: boolean = false;
-  // @ViewChild('dynamic', {read: ViewContainerRef}) private viewRef: ViewContainerRef;
+
+  @ViewChild(SvgInsertionDirective, { static: true })
+  svgInsertionDirective!: SvgInsertionDirective;
 
   ngOnInit(): void {
+
+    this.loadDynamicComponent();
 
     const itemsMenu: any[] = [];
     itemsMenu.push(ItemsMenu.ItemAdministrator);
@@ -25,6 +30,10 @@ export class SideBarComponent implements OnInit {
     for (const itemMenu of itemsMenu) {
       console.log(itemMenu);
     }
+  }
+
+  public loadDynamicComponent() {
+    this.svgInsertionDirective.viewContainerRef.createComponent(SvgAddComponent);
   }
 
   public toogleOptions(): void {

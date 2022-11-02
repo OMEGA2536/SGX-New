@@ -4,17 +4,18 @@
   </section>
   
   <section>
-    <section class="item-menu item-menu--active" (click)="toogleOptions()">
+    <section class="item-menu item-menu--active" (click)="toogleOptions()" (blur)="toogleOptions()">
       <div class="item-menu__bar"></div>
 
       <section class="item-menu__wrapper">
         <section class="item-menu__svg"  >
-          <app-svg-operations className="scale-3"></app-svg-operations>
+          <!-- <app-svg-operations className="scale-3"></app-svg-operations> -->
+          <ng-template appSvgInsertion> </ng-template>
         </section>
         <p class="item-menu__text">Operaciones</p>
       </section>
 
-      <section class="item-menu__options" (blur)="toogleOptions()" *ngIf="itemMenuVisible" tabindex="-1" (mousedown)="$event.preventDefault()">
+      <section class="item-menu__options" *ngIf="itemMenuVisible" (mousedown)="$event.preventDefault()">
         <ul>
           <li>Requerimientos</li>
           <li>Registro de horas</li>
