@@ -5,6 +5,7 @@
   display: flex;
   position: relative;
   cursor: pointer;
+  // z-index: 999;
   &__bar {
     background: variables.$primary-color;
     width: 7px;
@@ -13,16 +14,21 @@
     width: 100%;
     height: 100%;
     padding: 0.8rem;
+    // z-index: 999;
   }
   &__svg {
     display: flex;
     justify-content: center;
     align-items: center;
+    svg {
+      scale: 0.8;
+    }
   }
   &__text {
     @include mixins.calculate-font-size(0.6);
     color: variables.$gray-color-2;
     text-align: center;
+    padding: 0.2rem 0 0 0;
   }
   &__options {
     position: absolute;
@@ -30,29 +36,28 @@
     background: variables.$white-color;
     box-shadow: variables.$shadow-light;
     border-radius: 4px;
-    z-index: 99;
+    // z-index: 999;
     :before {
       content: "";
       position: absolute;
-      top: 0px;
+      top: 10px;
       left: -11px;
       width: 0;
       height: 0;
       border-style: solid;
       border-width: 0 5px 12px 5px;
       border-color: transparent transparent white transparent;
-      // z-index: 2;
       rotate: -90deg;
     }
     ul {
       width: 14rem;
-      padding: 0.5rem 0;
+      // z-index: 999;
       li {
         text-align: center;
-        padding: 0.3rem 0;
+        padding: 0.6rem 0;
         color: variables.$gray-color-2;
-        margin-bottom: 0.2rem;
         @include mixins.calculate-font-size(0.6);
+        // z-index: 999;
         &:hover {
           background: rgba(variables.$primary-color, 0.1);
         }

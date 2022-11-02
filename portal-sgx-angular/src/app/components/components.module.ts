@@ -4,12 +4,14 @@ import { CommonModule } from '@angular/common';
 import { ComponentsRoutingModule } from './components-routing.module';
 import { CardComponent } from './card/card.component';
 import { ModalComponent } from './modal/modal.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 
 @NgModule({
   declarations: [
     CardComponent,
-    ModalComponent
+    ModalComponent,
+    TabsComponent
   ],
   imports: [
     CommonModule,
@@ -17,7 +19,8 @@ import { ModalComponent } from './modal/modal.component';
   ],
   exports: [
     CardComponent,
-    ModalComponent
+    ModalComponent,
+    TabsComponent
   ]
 })
 export class ComponentsModule { }

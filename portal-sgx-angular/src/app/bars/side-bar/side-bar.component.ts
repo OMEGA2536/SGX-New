@@ -1,9 +1,6 @@
-import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
-import { SvgAddComponent } from 'src/app/svg/svg-add/svg-add.component';
-import { SvgAdministratorComponent } from 'src/app/svg/svg-administrator/svg-administrator.component';
-import { SvgOperationsComponent } from 'src/app/svg/svg-operations/svg-operations.component';
-import { SvgInsertionDirective } from '../svg-insertion.directive';
-import * as ItemsMenu from './items-menu';
+import { Component, OnInit, ViewContainerRef } from '@angular/core';
+import * as menuItems from '../menu/items-menu';
+import { MenuItem } from '../menu/items-menu';
 
 @Component({
   selector: 'app-side-bar',
@@ -12,28 +9,14 @@ import * as ItemsMenu from './items-menu';
 })
 export class SideBarComponent implements OnInit {
 
-  constructor(private viewContainerRef: ViewContainerRef) { }
+  constructor() { }
 
   public itemMenuVisible: boolean = false;
-
-  @ViewChild(SvgInsertionDirective, { static: true })
-  svgInsertionDirective!: SvgInsertionDirective;
+  public menuItems: MenuItem[] = [];
 
   ngOnInit(): void {
-
-    this.loadDynamicComponent();
-
-    const itemsMenu: any[] = [];
-    itemsMenu.push(ItemsMenu.ItemAdministrator);
-    itemsMenu.push(ItemsMenu.ItemCommercial);
-
-    for (const itemMenu of itemsMenu) {
-      console.log(itemMenu);
-    }
-  }
-
-  public loadDynamicComponent() {
-    this.svgInsertionDirective.viewContainerRef.createComponent(SvgAddComponent);
+    this.menuItems.push(menuItems.menuItemAdministrator);
+    this.menuItems.push(menuItems.menuItemCommercial);
   }
 
   public toogleOptions(): void {

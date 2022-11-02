@@ -11,6 +11,9 @@ import { ComponentsModule } from '../components/components.module';
 import { SvgModule } from '../svg/svg.module';
 import { BarsModule } from '../bars/bars.module';
 import { PersonRegisterComponent } from './person/person-register/person-register.component';
+import { PersonDataRegisterFormComponent } from './person/person-data-register-form/person-data-register-form.component';
+import { OrganizationalDataRegisterFormComponent } from './person/organizational-data-register-form/organizational-data-register-form.component';
+import { DirectiveModule } from '../directives/directive.module';
 
 @NgModule({
   declarations: [
@@ -19,14 +22,17 @@ import { PersonRegisterComponent } from './person/person-register/person-registe
     ProfileComponent,
     RoleComponent,
     AccessComponent,
-    PersonRegisterComponent
+    PersonRegisterComponent,
+    PersonDataRegisterFormComponent,
+    OrganizationalDataRegisterFormComponent,
   ],
   imports: [
     CommonModule,
     SystemUsersRoutingModule,
     ComponentsModule,
     SvgModule,
-    BarsModule
+    BarsModule,
+    DirectiveModule
   ]
 })
 export class SystemUsersModule { }

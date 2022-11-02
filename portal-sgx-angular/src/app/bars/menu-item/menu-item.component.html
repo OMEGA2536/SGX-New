@@ -1,0 +1,20 @@
+<section class="item-menu"
+  [class.item-menu--active]="menuItem.active"
+  (click)="subMenuToggle()">
+  <div class="item-menu__bar"></div>
+
+  <section class="item-menu__wrapper">
+    <section class="item-menu__svg">
+      <ng-container *ngComponentOutlet="menuItem.svgComponent"></ng-container>
+    </section>
+    <p class="item-menu__text">{{ menuItem.text }}</p>
+  </section>
+
+  <section class="item-menu__options" *ngIf="isSubMenuOpen">
+    <ul>
+      <li *ngFor="let subMenuItem of menuItem.subMenuItems; index as i" (click)="toPage(subMenuItem.path)">
+        {{ subMenuItem.text }}
+      </li>
+    </ul>
+  </section>
+</section>

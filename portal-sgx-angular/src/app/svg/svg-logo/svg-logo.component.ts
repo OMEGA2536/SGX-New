@@ -9,8 +9,6 @@ export class SvgLogoComponent implements OnInit {
 
   constructor() { }
 
-  @Input() className: string = '';
-
   ngOnInit(): void {
   }
 

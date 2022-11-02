@@ -1,0 +1,8 @@
+<section class="d-flex my-4">
+  <section *ngFor="let tab of arrayTabs; index as i">
+    <section class="py-1 px-4 mr-3 border-bottom-primary-2 cursor-pointer"
+    (click)="clickTab.emit(i)">
+      <p class="text-7 text-primary text-600">{{ tab }}</p>
+    </section>
+  </section>
+</section>
