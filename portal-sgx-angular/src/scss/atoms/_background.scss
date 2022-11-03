@@ -46,6 +46,10 @@
   background: #{functions.light-dark(variables.$yellow-color, variables.$yellow-color)};
 }
 
+.bg-danger {
+  background: #{functions.light-dark(variables.$danger-color, variables.$yellow-color)};
+}
+
 $directions: right, left, top, bottom;
 
 @for $i from 1 through 9 {

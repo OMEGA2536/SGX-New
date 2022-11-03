@@ -1,0 +1,8 @@
+<section class="fixed left-0 top-0 h-100vh w-100 z-90 pt-8" *ngIf="visible">
+  <section class="flex-center">
+    <section class="flex-center w-35 px-4 py-2 shadow-1 border-radius-1 border-solid-5-red bg-danger">
+      <app-svg-close (click)="close.emit()" className="mr-4 scale-3"></app-svg-close>
+      <p class="text-center text-white text-8 text-300">{{ text }}</p> 
+    </section>
+  </section>
+</section>

@@ -18,6 +18,10 @@ import { SvgUpdateComponent } from './svg-update/svg-update.component';
 import { SvgUserComponent } from './svg-user/svg-user.component';
 import { SvgAdministratorComponent } from './svg-administrator/svg-administrator.component';
 import { SvgCommercialComponent } from './svg-commercial/svg-commercial.component';
+import { SvgSecurityComponent } from './svg-security/svg-security.component';
+import { SvgCircleSuccessComponent } from './svg-circle-success/svg-circle-success.component';
+import { SvgCircleErrorComponent } from './svg-circle-error/svg-circle-error.component';
+import { SvgCloseComponent } from './svg-close/svg-close.component';
 
 
 @NgModule({
@@ -37,7 +41,11 @@ import { SvgCommercialComponent } from './svg-commercial/svg-commercial.componen
     SvgUpdateComponent,
     SvgUserComponent,
     SvgAdministratorComponent,
-    SvgCommercialComponent
+    SvgCommercialComponent,
+    SvgSecurityComponent,
+    SvgCircleSuccessComponent,
+    SvgCircleErrorComponent,
+    SvgCloseComponent
   ],
   imports: [
     CommonModule,
@@ -57,7 +65,13 @@ import { SvgCommercialComponent } from './svg-commercial/svg-commercial.componen
     SvgMenuComponent,
     SvgOperationsComponent,
     SvgUpdateComponent,
-    SvgUserComponent
+    SvgUserComponent,
+    SvgAdministratorComponent,
+    SvgCommercialComponent,
+    SvgSecurityComponent,
+    SvgCircleSuccessComponent,
+    SvgCircleErrorComponent,
+    SvgCloseComponent
   ]
 })
 export class SvgModule { }

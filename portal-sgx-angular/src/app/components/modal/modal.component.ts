@@ -10,9 +10,21 @@ export class ModalComponent implements OnInit {
   constructor() { }
 
   @Input() visible: boolean = false;
-  @Output() clickCloseIcon = new EventEmitter();
+  @Input() closeIconVisible: boolean = true;
+  @Input() size: string = '';
+  @Output() close = new EventEmitter();
 
   ngOnInit(): void {
   }
 
+  getWidth(): string {
+
+    if (this.size === 'sm') return 'w-25'
+
+    if (this.size === 'md') return 'w-70'
+
+    if (this.size === 'lg') return 'w-90'
+
+    return ''
+  }
 }

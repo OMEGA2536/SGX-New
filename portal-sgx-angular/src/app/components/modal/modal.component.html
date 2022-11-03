@@ -1,8 +1,9 @@
 <section class="fixed left-0 top-0 h-100vh w-100 flex-center z-90 bg-dark-700" *ngIf="visible">
-  <section class="relative overflow-y-auto max-h-90vh border-radius-3 py-7 px-8 shadow-1 bg-white min-w-30 scrollbar-default">
+  <section [class]="getWidth()" class="relative overflow-y-auto max-h-90vh border-radius-3 py-7 px-8 shadow-1 bg-white scrollbar-default">
     <div
+      *ngIf="closeIconVisible"
       class="absolute top-15px right-4 text-gray-2 cursor-pointer text-8"
-      (click)="clickCloseIcon.emit()"
+      (click)="close.emit()"
     >
       x
     </div>

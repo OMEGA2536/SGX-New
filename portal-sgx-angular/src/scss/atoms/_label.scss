@@ -6,7 +6,7 @@
   $color: #{functions.light-dark(variables.$gray-color-2, variables.$white-color)};
 
   color: $color;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   display: block;
   @include mixins.calculate-font-size(0.6);
 }

@@ -7,9 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SvgMenuComponent implements OnInit {
 
-  constructor() { }
-
   @Input() className: string = '';
+
+  constructor() { }
 
   ngOnInit(): void {
   }

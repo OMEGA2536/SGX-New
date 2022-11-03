@@ -7,9 +7,9 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SvgDeleteComponent implements OnInit {
 
-  constructor() { }
-
   @Input() className: string = '';
+
+  constructor() { }
 
   ngOnInit(): void {
   }

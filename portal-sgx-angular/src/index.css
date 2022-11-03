@@ -392,26 +392,23 @@ ul {
   height: 3em;
   padding: 0 1em;
   cursor: pointer;
-  font-size: calc(0.8vw + 0.8vh);
-}
-@media (max-width: 992px) {
-  .btn {
-    font-size: calc(1vw + 1vh);
-  }
-}
-.btn-sm {
   font-size: calc(0.7vw + 0.7vh);
 }
 @media (max-width: 992px) {
-  .btn-sm {
+  .btn {
     font-size: calc(1.1vw + 1.1vh);
   }
 }
-.btn-lg {
-  min-width: 15rem;
+.btn-sm {
+  font-size: calc(0.6vw + 0.6vh);
+}
+@media (max-width: 992px) {
+  .btn-sm {
+    font-size: calc(1vw + 1vh);
+  }
 }
 .btn-rounded {
-  border-radius: 14px;
+  border-radius: 8px;
 }
 .btn-block {
   width: 100%;
@@ -457,9 +454,8 @@ ul {
   outline: none;
   border-radius: 6px;
   width: 100%;
-  margin: 0.2rem 0 0.1rem 0;
   height: 3rem;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 1rem;
   border: 1px solid #d1d1d1;
 }
 
@@ -470,12 +466,26 @@ ul {
   outline: none;
   border-radius: 6px;
   width: 100%;
-  margin: 0.2rem 0 0.1rem 0;
   height: 3rem;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 1rem;
   border: 1px solid #d1d1d1;
   border: 2px solid #767676;
-  height: 3.7rem;
+  height: 3.5rem;
+}
+
+.input-password {
+  background: #ffffff;
+  box-shadow: none;
+  color: #767676;
+  outline: none;
+  border-radius: 6px;
+  width: 100%;
+  height: 3rem;
+  padding: 0.2rem 1rem;
+  border: 1px solid #d1d1d1;
+  border: 2px solid #767676;
+  height: 3.5rem;
+  font-size: 1.5rem;
 }
 
 .input-text-custom input:focus ~ label,
@@ -1008,7 +1018,7 @@ ul {
 
 .label {
   color: var(--light, #767676) var(--dark, #ffffff);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
   display: block;
   font-size: calc(0.6vw + 0.6vh);
 }
@@ -1028,6 +1038,10 @@ ul {
 
 .border-bottom-solid-2-gray-2 {
   border-bottom: 2px solid var(--light, #767676) var(--dark, #00a1df);
+}
+
+.border-solid-5-red {
+  border: 5px solid var(--light, #990000) var(--dark, #00a1df);
 }
 
 .border-radius-1 {
@@ -1120,6 +1134,10 @@ ul {
 
 .bg-yellow {
   background: var(--light, #f2c94c) var(--dark, #f2c94c);
+}
+
+.bg-danger {
+  background: var(--light, #420202) var(--dark, #f2c94c);
 }
 
 .bg-primary-gradient-right-10 {
@@ -1369,9 +1387,8 @@ ul {
   outline: none;
   border-radius: 6px;
   width: 100%;
-  margin: 0.2rem 0 0.1rem 0;
   height: 3rem;
-  padding: 0.5rem 1rem;
+  padding: 0.2rem 1rem;
   border: 1px solid #d1d1d1;
   background: url("/assets/svg/arrow-bottom.svg") no-repeat right;
   -webkit-appearance: none;
@@ -1435,47 +1452,48 @@ ul {
   width: 20px;
 }
 
-.item-menu {
+.menu-item {
   display: flex;
   position: relative;
   cursor: pointer;
 }
-.item-menu__bar {
+.menu-item__bar {
   background: #00a1df;
   width: 7px;
 }
-.item-menu__wrapper {
+.menu-item__wrapper {
   width: 100%;
   height: 100%;
   padding: 0.8rem;
 }
-.item-menu__svg {
+.menu-item__svg {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.item-menu__svg svg {
+.menu-item__svg svg {
   scale: 0.8;
 }
-.item-menu__text {
+.menu-item__text {
   font-size: calc(0.6vw + 0.6vh);
   color: #767676;
   text-align: center;
   padding: 0.2rem 0 0 0;
 }
 @media (max-width: 992px) {
-  .item-menu__text {
+  .menu-item__text {
     font-size: calc(1vw + 1vh);
   }
 }
-.item-menu__options {
+.menu-item__options {
   position: absolute;
+  top: 20px;
   left: 140px;
   background: #ffffff;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.37);
   border-radius: 4px;
 }
-.item-menu__options :before {
+.menu-item__options :before {
   content: "";
   position: absolute;
   top: 10px;
@@ -1487,25 +1505,28 @@ ul {
   border-color: transparent transparent white transparent;
   rotate: -90deg;
 }
-.item-menu__options ul {
+.menu-item__options ul {
   width: 14rem;
 }
-.item-menu__options ul li {
+.menu-item__options ul li {
   text-align: center;
   padding: 0.6rem 0;
   color: #767676;
   font-size: calc(0.6vw + 0.6vh);
 }
 @media (max-width: 992px) {
-  .item-menu__options ul li {
+  .menu-item__options ul li {
     font-size: calc(1vw + 1vh);
   }
 }
-.item-menu__options ul li:hover {
+.menu-item__options ul li:hover {
   background: rgba(0, 161, 223, 0.1);
 }
-.item-menu--active {
+.menu-item--active {
   background: rgba(0, 161, 223, 0.1);
+}
+.menu-item--active .menu-item__text {
+  color: #00a1df;
 }
 
 #hour-register-form {
@@ -12316,8 +12337,12 @@ ul {
     margin-bottom: 10.25rem;
   }
 }
+.grid-template-auto-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .grid-template-auto-3 {
-  grid-template-columns: auto auto auto;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-template-auto-4 {
@@ -12325,7 +12350,7 @@ ul {
 }
 
 .grid-template-auto-5 {
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid-template-columns-4 {

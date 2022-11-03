@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AccessComponent } from './access/access.component';
 import { PersonRegisterComponent } from './person/person-register/person-register.component';
 import { PersonComponent } from './person/person.component';
+import { PersonalRecordComponent } from './person/personal-record/personal-record.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RoleComponent } from './role/role.component';
 import { UserComponent } from './user/user.component';
@@ -18,6 +19,10 @@ const routes: Routes = [
       {
         path:'person/register',
         component: PersonRegisterComponent
+      },
+      {
+        path:'person/record',
+        component: PersonalRecordComponent
       },
       {
         path:'user',

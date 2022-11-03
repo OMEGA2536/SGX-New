@@ -13,6 +13,7 @@ import { BarsModule } from '../bars/bars.module';
 import { PersonRegisterComponent } from './person/person-register/person-register.component';
 import { PersonDataRegisterFormComponent } from './person/person-data-register-form/person-data-register-form.component';
 import { OrganizationalDataRegisterFormComponent } from './person/organizational-data-register-form/organizational-data-register-form.component';
+import { PersonalRecordComponent } from './person/personal-record/personal-record.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { OrganizationalDataRegisterFormComponent } from './person/organizational
     PersonRegisterComponent,
     PersonDataRegisterFormComponent,
     OrganizationalDataRegisterFormComponent,
+    PersonalRecordComponent,
   ],
   imports: [
     CommonModule,

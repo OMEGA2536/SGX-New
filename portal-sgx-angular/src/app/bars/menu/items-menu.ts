@@ -1,3 +1,4 @@
+import { SvgSecurityComponent } from './../../svg/svg-security/svg-security.component';
 import { SvgOperationsComponent } from "src/app/svg/svg-operations/svg-operations.component"
 
 interface SubMenuItem {
@@ -13,6 +14,19 @@ export interface MenuItem {
   subMenuItems: SubMenuItem[]
 }
 
+export const menuItemMyMenu: MenuItem = {
+  path: '',
+  svgComponent: SvgOperationsComponent,
+  text: 'Mi Menú',
+  active: false,
+  subMenuItems: [
+    {
+      path: '',
+      text: 'Sub menu',
+    }
+  ]
+}
+
 export const menuItemAdministrator: MenuItem = {
   path: '',
   svgComponent: SvgOperationsComponent,
@@ -20,16 +34,21 @@ export const menuItemAdministrator: MenuItem = {
   active: true,
   subMenuItems: [
     {
-      path: '/system-users/person/register',
-      text: 'Requerimientos',
-    },
-    {
       path: '/system-users/person',
-      text: 'Registro de horas',
-    },
+      text: 'Personal',
+    }
+  ]
+}
+
+export const menuItemOperations: MenuItem = {
+  path: '',
+  svgComponent: SvgOperationsComponent,
+  text: 'Operaciones',
+  active: false,
+  subMenuItems: [
     {
-      path: '/system-users/person',
-      text: 'Registro de horas',
+      path: '',
+      text: 'Sub menu',
     }
   ]
 }
@@ -41,8 +60,21 @@ export const menuItemCommercial: MenuItem = {
   active: false,
   subMenuItems: [
     {
-      path: '/system-users/person',
-      text: 'Requerimientos',
+      path: '',
+      text: 'Sub menu',
+    }
+  ]
+}
+
+export const menuItemSecurity: MenuItem = {
+  path: '',
+  svgComponent: SvgSecurityComponent,
+  text: 'Seguridad',
+  active: false,
+  subMenuItems: [
+    {
+      path: '',
+      text: 'Sub menu',
     }
   ]
 }

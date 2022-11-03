@@ -12,3 +12,7 @@
 .border-bottom-solid-2-gray-2 {
   border-bottom: 2px solid #{functions.light-dark(variables.$gray-color-2, variables.$primary-inverted-color)};
 }
+
+.border-solid-5-red {
+  border: 5px solid #{functions.light-dark(variables.$red-color, variables.$primary-inverted-color)};
+}

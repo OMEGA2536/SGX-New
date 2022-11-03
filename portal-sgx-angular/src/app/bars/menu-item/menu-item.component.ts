@@ -8,19 +8,20 @@ import { MenuItem } from '../menu/items-menu';
   styleUrls: ['./menu-item.component.css'],
   host: {
     '(document:click)': 'onClick($event)',
-  },
+    class: 'bg-primary'
+  }
 })
 export class MenuItemComponent implements OnInit {
   
   @Input() menuItem!: MenuItem;
 
-  public isSubMenuOpen: boolean = false;
+  public subMenuVisible: boolean = false;
 
   constructor(private router: Router, private elementRef: ElementRef) {};
 
   onClick(event: any) {
     if (!this.elementRef.nativeElement.contains(event.target)) {
-      this.isSubMenuOpen = false
+      this.subMenuVisible = false
     }
   }
 
@@ -28,7 +29,7 @@ export class MenuItemComponent implements OnInit {
   }
 
   subMenuToggle(): void {
-    this.isSubMenuOpen = !this.isSubMenuOpen
+    this.subMenuVisible = !this.subMenuVisible
   }
 
   toPage(path: string): void {

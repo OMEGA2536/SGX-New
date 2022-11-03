@@ -8,16 +8,16 @@ import { Router } from '@angular/router';
 })
 export class PersonComponent implements OnInit {
 
-  public modalDetailsPersonVisible: boolean = false;
+  public modalPersonDetailsVisible: boolean = false;
   
   constructor(private router: Router) { }
 
-  showDetailsPerson(): void {
-    this.modalDetailsPersonVisible = true;
+  openModalPersonDetails(): void {
+    this.modalPersonDetailsVisible = true;
   }
 
-  hideDetailsPerson(): void {
-    this.modalDetailsPersonVisible = false;
+  closeModalPersonDetails(): void {
+    this.modalPersonDetailsVisible = false;
   }
 
   toPersonRegister(): void {

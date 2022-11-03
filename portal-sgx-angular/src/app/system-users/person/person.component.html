@@ -37,12 +37,12 @@
         </section>
 
         <div id="buttons">
-          <section class="mt-7 d-flex">
-            <button type="button" class="btn btn-sm btn-secondary btn-rounded mr-2">
+          <section class="mt-5 d-flex">
+            <button type="button" class="btn btn-secondary btn-rounded mr-2">
               <app-svg-filter className="scale-3"></app-svg-filter>
             </button>
   
-            <button type="button" (click)="toPersonRegister()" class="btn btn-sm btn-primary w-100 btn-rounded d-flex justify-space-between items-center">
+            <button type="button" (click)="toPersonRegister()" class="btn btn-primary w-100 btn-rounded d-flex justify-space-between items-center">
               Registrar <app-svg-add className="scale-3"></app-svg-add>
             </button>
           </section>
@@ -63,7 +63,7 @@
         <section class="d-flex">
           <app-svg-file></app-svg-file> <p class="text-7 text-primary mr-4 ml-1 text-underline cursor-pointer">Reporte horas</p>
         </section>
-        <app-svg-update></app-svg-update>
+        <app-svg-update className="cursor-pointer"></app-svg-update>
       </section>
     </section>
 
@@ -90,16 +90,16 @@
             <td>Jefe Superior</td>
             <td>Activo</td>
             <td>
-              <app-svg-edit></app-svg-edit>
+              <app-svg-edit className="cursor-pointer"></app-svg-edit>
             </td>
             <td>
-              <app-svg-delete></app-svg-delete>
+              <app-svg-delete className="cursor-pointer"></app-svg-delete>
             </td>
             <td>
-              <app-svg-info class="cursor-pointer" (click)="showDetailsPerson()"></app-svg-info>
+              <app-svg-info className="cursor-pointer" (click)="openModalPersonDetails()"></app-svg-info>
             </td>
             <td>
-              <app-svg-files></app-svg-files>
+              <app-svg-files className="cursor-pointer"></app-svg-files>
             </td>
           </tr>
         </tbody>
@@ -107,7 +107,7 @@
     </section>
   </app-card>
 
-  <app-modal [visible]="modalDetailsPersonVisible" (clickCloseIcon)="hideDetailsPerson()">
+  <app-modal [visible]="modalPersonDetailsVisible" (close)="closeModalPersonDetails()" size="lg">
     <section>
       <p class="text-primary text-7 mb-3">Ver detalles</p>
 
@@ -194,7 +194,7 @@
       </section>
 
       <section class="d-flex justify-flex-end">
-        <button type="button" class="btn btn-outline-primary btn-rounded btn-sm" (click)="hideDetailsPerson()">
+        <button type="button" class="btn btn-outline-primary btn-rounded btn-sm" (click)="closeModalPersonDetails()">
           Cerrar
         </button>
       </section>

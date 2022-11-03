@@ -1,9 +1,9 @@
 <section>
   <section class="flex-center h-6">
-    <app-svg-logo class="scale-1"></app-svg-logo>
+    <app-svg-logo className="scale-1"></app-svg-logo>
   </section>
   
-  <section class="z-50" *ngFor="let menuItem of menuItems; index as i">
+  <section *ngFor="let menuItem of menuItems; index as i">
     <app-menu-item 
       [menuItem]="menuItem"
     ></app-menu-item>

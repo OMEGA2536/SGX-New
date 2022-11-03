@@ -15,8 +15,11 @@ export class SideBarComponent implements OnInit {
   public menuItems: MenuItem[] = [];
 
   ngOnInit(): void {
+    this.menuItems.push(menuItems.menuItemMyMenu);
     this.menuItems.push(menuItems.menuItemAdministrator);
+    this.menuItems.push(menuItems.menuItemOperations);
     this.menuItems.push(menuItems.menuItemCommercial);
+    this.menuItems.push(menuItems.menuItemSecurity);
   }
 
   public toogleOptions(): void {
