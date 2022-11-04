@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-top-bar',
@@ -7,11 +8,19 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
 
-  constructor() { }
+  routeText: any = 'Título no definido'
 
-  @Input() public title: string = '';
+  constructor(router :Router) {
+
+    router.events.subscribe((event) => {
+      if (event instanceof ActivationEnd) {
+          if (event.snapshot.data['title']) {
+            this.routeText = event.snapshot.data['title'];
+          }
+      }  
+    })
+  }
 
   ngOnInit(): void {
   }
-
 }

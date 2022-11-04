@@ -1,0 +1,69 @@
+<app-modal [visible]="visible" [closeIconVisible]="false" size="md">
+  <section>
+    <p class="text-primary text-7 mb-3">Buscar Persona</p>
+
+    <section class="d-grid grid-template-auto-3 gap-x-1 mb-8">
+      <section class="form-control d-flex">
+        <input type="text" class="input-text">
+      </section>
+
+      <section class="form-control">
+        <button class="btn btn-rounded btn-secondary">
+          <app-svg-filter></app-svg-filter>
+        </button>
+      </section>
+    </section>
+
+    <section class="d-grid grid-template-auto-3 gap-x-1">
+      <section class="form-control">
+        <label class="label" for="">Nombres</label>
+        <input type="text" class="input-text">
+      </section>
+      <section class="form-control">
+        <label class="label" for="">Apellidos</label>
+        <input type="text" class="input-text">
+      </section>
+      <section class="form-control">
+        <label class="label" for="">Tipo</label>
+        <input type="text" class="input-text">
+      </section>
+      <section class="form-control">
+        <label class="label" for="">Celular</label>
+        <input type="text" class="input-text">
+      </section>
+      <section class="form-control">
+        <label class="label" for="">Correo electrónico empresa</label>
+        <input type="text" class="input-text">
+      </section>
+      <section class="form-control">
+        <label class="label" for="">Correo electrónico personal</label>
+        <input type="text" class="input-text">
+      </section>
+      <section class="form-control">
+        <label class="label" for="">Tipo de documento</label>
+        <input type="text" class="input-text">
+      </section>
+      <section class="form-control">
+        <label class="label" for="">N° Documento</label>
+        <input type="text" class="input-text">
+      </section>
+    </section>
+
+    <section class="d-grid grid-template-auto-3 gap-x-1 mt-8">
+      <section></section>
+
+      <button 
+        class="btn btn-outline-primary btn-rounded btn-block d-flex justify-flex-end items-center"
+        (click)="close.emit()"  
+      >
+        Cancelar
+      </button>
+      <button 
+        class="btn btn-primary btn-rounded btn-block d-flex justify-start items-center"
+        (click)="addPerson()"
+      >
+        Añadir
+      </button>
+    </section>
+  </section>
+</app-modal>

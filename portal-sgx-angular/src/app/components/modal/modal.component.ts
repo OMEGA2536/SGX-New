@@ -21,9 +21,11 @@ export class ModalComponent implements OnInit {
 
     if (this.size === 'sm') return 'w-25'
 
-    if (this.size === 'md') return 'w-70'
+    if (this.size === 'md') return 'w-45'
 
-    if (this.size === 'lg') return 'w-90'
+    if (this.size === 'lg') return 'w-75'
+
+    if (this.size === 'xl') return 'w-90'
 
     return ''
   }

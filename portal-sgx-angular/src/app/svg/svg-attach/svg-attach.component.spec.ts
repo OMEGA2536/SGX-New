@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PersonalRecordComponent } from './personal-record.component';
+import { SvgAttachComponent } from './svg-attach.component';
 
-describe('PersonalRecordComponent', () => {
-  let component: PersonalRecordComponent;
-  let fixture: ComponentFixture<PersonalRecordComponent>;
+describe('SvgAttachComponent', () => {
+  let component: SvgAttachComponent;
+  let fixture: ComponentFixture<SvgAttachComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PersonalRecordComponent ]
+      declarations: [ SvgAttachComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(PersonalRecordComponent);
+    fixture = TestBed.createComponent(SvgAttachComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

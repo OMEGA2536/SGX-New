@@ -1,0 +1,109 @@
+<app-modal [visible]="visible" [closeIconVisible]="false" size="xl">
+  <p class="text-primary text-7 mb-3">Ver detalles</p>
+
+  <section id="details-person">
+    <section class="form-control" id="firstName">
+      <section class="d-flex items-center">
+        <label class="label" for="">
+          Primer Nombre
+        </label>
+        <app-svg-question className="ml-1"></app-svg-question>
+      </section>
+      <input type="text" class="input-text" value="First name">
+    </section>
+
+    <section class="form-control" id="lastName">
+      <label class="label" for="">Segundo Nombre</label>
+      <input type="text" class="input-text" value="Last name">
+    </section>
+
+    <section class="form-control" id="firstSurname">
+      <label class="label" for="">Primer Apellido</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="form-control" id="lastSurname">
+      <label class="label" for="">Segundo Apellido</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="form-control" id="image">
+      <img src="assets/images/photo-default.png" alt="">
+    </section>
+
+    <section class="form-control" id="position">
+      <label class="label" for="">Cargo</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="form-control" id="afp">
+      <label class="label" for="">AFP u ONP</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="form-control" id="area">
+      <label class="label" for="">Area</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="form-control" id="bank">
+      <label class="label" for="">Banco</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="form-control" id="account">
+      <label class="label" for="">N° Cuenta</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="form-control" id="money">
+      <label class="label" for="">Moneda</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="form-control" id="type">
+      <label class="label" for="">Tipo</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="form-control" id="records">
+      <label class="label" for="">Antecedentes penales</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="form-control" id="firm">
+      <img src="assets/images/firm.png" class="mt-6" alt="">
+    </section>
+
+    <section class="form-control" id="cuspp">
+      <label class="label" for="">CUSPP</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="form-control" id="admissionDate">
+      <label class="label" for="">Fecha Ingreso</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="form-control" id="dniReverse1">
+      <label class="label" for="">DNI reverso</label>
+      <p class="text-7 text-primary text-underline cursor-pointer">Visualizar DNI</p>
+    </section>
+
+    <section class="form-control" id="dniReverse2">
+      <label class="label" for="">DNI reverso</label>
+      <p class="text-7 text-primary text-underline cursor-pointer">Visualizar DNI</p>
+    </section>
+
+    <section class="form-control" id="photo">
+      <label class="label" for="">Foto</label>
+      <p class="text-7 text-primary text-underline cursor-pointer">Visualizar foto</p>
+    </section>
+
+    <section class="form-control" id="button">
+      <button type="button" class="btn btn-outline-primary btn-block btn-rounded mt-20 d-flex justify-flex-end items-center" (click)="close.emit()">
+        Cerrar
+      </button>
+    </section>
+  </section>
+</app-modal>

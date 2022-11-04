@@ -10,7 +10,7 @@ export class TabsComponent implements OnInit {
   @Input() arrayTabs: string[] = ['tab 1','tab 2'];
   @Output() clickTab = new EventEmitter();
   
-  indexActive: number = 0;
+  tabIndexActive: number = 0;
 
   constructor() { }
 
@@ -19,10 +19,10 @@ export class TabsComponent implements OnInit {
 
   onClickTab(indexTab: number): void {
     this.clickTab.emit(indexTab);
-    this.indexActive = indexTab;
+    this.tabIndexActive = indexTab;
   }
 
   isCurrentIndexTab(indexTab: number): boolean {
-    return  indexTab === this.indexActive;
+    return  indexTab === this.tabIndexActive;
   }
 }

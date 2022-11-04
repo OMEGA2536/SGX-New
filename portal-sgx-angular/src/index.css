@@ -1018,7 +1018,7 @@ ul {
 
 .label {
   color: var(--light, #767676) var(--dark, #ffffff);
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.5rem;
   display: block;
   font-size: calc(0.6vw + 0.6vh);
 }
@@ -1390,9 +1390,6 @@ ul {
   height: 3rem;
   padding: 0.2rem 1rem;
   border: 1px solid #d1d1d1;
-  background: url("/assets/svg/arrow-bottom.svg") no-repeat right;
-  -webkit-appearance: none;
-  background-position-x: 225px;
 }
 
 .divider-1 {
@@ -1631,7 +1628,7 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 0 1rem;
-  grid-template-areas: "firstName firstName lastName lastName firstSurname firstSurname lastSurname lastSurname image image" "position position position afp afp area area area image image" "bank bank account account account account money money image image" "type type records records records records records records firm firm" "cuspp cuspp admissionDate admissionDate _ _ _ _ firm firm" "dniReverse1 dniReverse1 dniReverse2 dniReverse2 photo photo photo photo photo photo";
+  grid-template-areas: "firstName firstName lastName lastName firstSurname firstSurname lastSurname lastSurname image image" "position position position afp afp area area area image image" "bank bank account account account account money money image image" "type type records records records records records records firm firm" "cuspp cuspp admissionDate admissionDate _ _ _ _ firm firm" "dniReverse1 dniReverse1 dniReverse2 dniReverse2 photo photo photo photo button button";
 }
 
 #details-person > #firstName {
@@ -1708,6 +1705,10 @@ ul {
 
 #details-person > #photo {
   grid-area: photo;
+}
+
+#details-person > #button {
+  grid-area: button;
 }
 
 /* display */
@@ -12357,6 +12358,45 @@ ul {
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 }
 
+.grid-template-1-2 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "first second second";
+}
+
+.grid-template-1-2 > #first {
+  grid-area: first;
+}
+
+.grid-template-1-2 > #second {
+  grid-area: second;
+}
+
+.grid-template-3-2 {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "first first first second second";
+}
+
+.grid-template-3-2 > #first {
+  grid-area: first;
+}
+
+.grid-template-3-2 > #second {
+  grid-area: second;
+}
+
+.grid-template-2-3 {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "first first second second second";
+}
+
+.grid-template-2-3 > #first {
+  grid-area: first;
+}
+
+.grid-template-2-3 > #second {
+  grid-area: second;
+}
+
 .grid-columns-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -12857,7 +12897,7 @@ ul {
 }
 
 .form-control {
-  padding: 0.2rem 0 0.7rem 0;
+  padding: 0.2rem 0 1.2rem 0;
 }
 
 .transition-1 {

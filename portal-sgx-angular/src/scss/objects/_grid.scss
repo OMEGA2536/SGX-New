@@ -20,6 +20,45 @@
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
 }
 
+.grid-template-1-2 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "first second second";
+}
+
+$fields: first, second;
+
+@each $field in $fields {
+  .grid-template-1-2 > ##{$field} {
+    grid-area: #{$field};
+  }
+}
+
+.grid-template-3-2 {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "first first first second second";
+}
+
+$fields: first, second;
+
+@each $field in $fields {
+  .grid-template-3-2 > ##{$field} {
+    grid-area: #{$field};
+  }
+}
+
+.grid-template-2-3 {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "first first second second second";
+}
+
+$fields: first, second;
+
+@each $field in $fields {
+  .grid-template-2-3 > ##{$field} {
+    grid-area: #{$field};
+  }
+}
+
 @for $i from 1 through 6 {
   .grid-columns-#{$i} {
     grid-template-columns: repeat(#{$i}, minmax(0, 1fr));

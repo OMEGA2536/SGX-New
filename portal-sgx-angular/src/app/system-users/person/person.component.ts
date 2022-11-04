@@ -8,19 +8,28 @@ import { Router } from '@angular/router';
 })
 export class PersonComponent implements OnInit {
 
-  public modalPersonDetailsVisible: boolean = false;
+  public personDetailsVisible: boolean = false;
+  public personSearchVisible: boolean = false;
   
   constructor(private router: Router) { }
 
-  openModalPersonDetails(): void {
-    this.modalPersonDetailsVisible = true;
+  openPersonDetailsModal(): void {
+    this.personDetailsVisible = true;
   }
 
-  closeModalPersonDetails(): void {
-    this.modalPersonDetailsVisible = false;
+  closePersonDetailsModal(): void {
+    this.personDetailsVisible = false;
   }
 
-  toPersonRegister(): void {
+  openPersonSearchModal(): void {
+    this.personSearchVisible = true
+  }
+
+  closePersonSearchModal(): void {
+    this.personSearchVisible = false
+  }
+
+  toPersonRegisterView(): void {
     this.router.navigate(['/system-users/person/register']);
   }
 

@@ -1,9 +1,9 @@
+import { PersonRecordComponent } from './person/person-record/person-record.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccessComponent } from './access/access.component';
 import { PersonRegisterComponent } from './person/person-register/person-register.component';
 import { PersonComponent } from './person/person.component';
-import { PersonalRecordComponent } from './person/personal-record/personal-record.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RoleComponent } from './role/role.component';
 import { UserComponent } from './user/user.component';
@@ -14,15 +14,21 @@ const routes: Routes = [
     children: [
       {
         path:'person',
-        component:PersonComponent
+        component:PersonComponent,
+        data: {
+          title: 'Personal'
+        }
       },
       {
         path:'person/register',
-        component: PersonRegisterComponent
+        component: PersonRegisterComponent,
+        data: {
+          title: 'Personal'
+        }
       },
       {
         path:'person/record',
-        component: PersonalRecordComponent
+        component: PersonRecordComponent
       },
       {
         path:'user',

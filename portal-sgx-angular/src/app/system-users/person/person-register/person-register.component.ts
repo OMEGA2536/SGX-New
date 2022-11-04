@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-person-register',
@@ -7,7 +7,7 @@ import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
 })
 export class PersonRegisterComponent implements OnInit {
 
-  showIndexForm: number = 0;
+  tabIndex: number = 0;
 
   constructor() {}
 

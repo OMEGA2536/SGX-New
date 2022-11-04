@@ -1,18 +1,16 @@
-<app-top-bar title="Personal"></app-top-bar>
-<section class="pt-30 pb-8 px-30">
-  <app-card>
-    <p class="text-primary text-7 mb-3">Ficha Personal</p>
+<app-card>
+  <p class="text-primary text-7 mb-3">Ficha Personal</p>
 
-    <app-tabs 
-      [arrayTabs]="['Datos del Personal', 'Datos Organizacionales']"
-      (clickTab)="showIndexForm = $event"
-    ></app-tabs>
+  <app-tabs 
+    [arrayTabs]="['Datos del Personal', 'Datos Organizacionales']"
+    (clickTab)="tabIndex = $event"
+  ></app-tabs>
 
-    <ng-container *ngIf="showIndexForm == 0">
-      <app-person-data-register-form></app-person-data-register-form>
-    </ng-container>
-    <ng-container *ngIf="showIndexForm == 1">
-      <app-organizational-data-register-form></app-organizational-data-register-form>
-    </ng-container>
-  </app-card>
-</section>
+  <ng-container *ngIf="tabIndex == 0">
+    <app-person-data-register-form></app-person-data-register-form>
+  </ng-container>
+
+  <ng-container *ngIf="tabIndex == 1">
+    <app-organizational-data-register-form></app-organizational-data-register-form>
+  </ng-container>
+</app-card>

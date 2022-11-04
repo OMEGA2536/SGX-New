@@ -13,7 +13,9 @@ import { BarsModule } from '../bars/bars.module';
 import { PersonRegisterComponent } from './person/person-register/person-register.component';
 import { PersonDataRegisterFormComponent } from './person/person-data-register-form/person-data-register-form.component';
 import { OrganizationalDataRegisterFormComponent } from './person/organizational-data-register-form/organizational-data-register-form.component';
-import { PersonalRecordComponent } from './person/personal-record/personal-record.component';
+import { PersonRecordComponent } from './person/person-record/person-record.component';
+import { PersonSearchModalComponent } from './person/person-search-modal/person-search-modal.component';
+import { PersonDetailsModalComponent } from './person/person-details-modal/person-details-modal.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { PersonalRecordComponent } from './person/personal-record/personal-recor
     PersonRegisterComponent,
     PersonDataRegisterFormComponent,
     OrganizationalDataRegisterFormComponent,
-    PersonalRecordComponent,
+    PersonRecordComponent,
+    PersonSearchModalComponent,
+    PersonDetailsModalComponent,
   ],
   imports: [
     CommonModule,

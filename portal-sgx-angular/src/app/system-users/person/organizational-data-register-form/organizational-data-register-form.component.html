@@ -4,22 +4,27 @@
       <label class="label" for="">Usuario</label>
       <input type="text" class="input-text">
     </section>
+
     <section class="form-control">
       <label class="label" for="">Cargo</label>
       <input type="text" class="input-text">
     </section>
+
     <section class="form-control">
       <label class="label" for="">Area</label>
       <input type="text" class="input-text">
     </section>
+
     <section class="form-control">
       <label class="label" for="">Banco</label>
       <input type="text" class="input-text">
     </section>
+
     <section class="form-control">
       <label class="label" for="">N° Cuenta</label>
       <input type="text" class="input-text">
     </section>
+
     <section class="form-control">
       <label class="label" for="">CCI</label>
       <input type="text" class="input-text">
@@ -31,21 +36,76 @@
       <label class="label" for="">Moneda</label>
       <input type="text" class="input-text">
     </section>
+
     <section class="form-control">
       <label class="label" for="">Tipo</label>
       <input type="text" class="input-text">
     </section>
+
     <section class="form-control">
       <label class="label" for="">AFP u ONP</label>
       <input type="text" class="input-text">
     </section>
+
     <section class="form-control">
       <label class="label" for="">CUSPP</label>
       <input type="text" class="input-text">
     </section>
+
     <section class="form-control">
       <label class="label" for="">Fecha Ingreso</label>
       <input type="text" class="input-text">
+    </section>
+  </section>
+
+  <section class="d-grid grid-template-3-2 gap-x-1">
+    <section class="form-control" id="first">
+      <label class="label" for="">Enlace Token</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="form-control" id="second">
+      <label class="label" for="">Fecha Vencimiento Token</label>
+      <input type="date" class="input-text">
+    </section>
+  </section>
+
+  <section class="d-grid grid-template-2-3 gap-x-1">
+    <section class="form-control" id="first">
+      <label class="label" for="">Categoría</label>
+      <select class="select" name="" id="">
+        <option value="">Recibo por honorarios</option>
+        <option value="">Plantilla General</option>
+        <option value="">Plantilla Mype</option>
+      </select>
+    </section>
+
+    <section class="mt-6" id="second">
+      <section class="form-control d-flex items-center">
+        <input type="radio" class="">
+        <p class="text-6 text-gray-2 ml-1">Cuento con Suspensión de Renta</p>
+        <app-svg-attach className="ml-5 mr-1"></app-svg-attach>
+        <p class="text-primary text-underline text-7 cursor-pointer">Adjuntar archivo</p>
+      </section>
+
+      <section class="form-control d-flex items-center">
+        <input type="radio" class="">
+        <p class="text-6 text-gray-2 ml-1">Se me han realizado descuentos en planilla anteriormente</p>
+        <app-svg-attach className="ml-5 mr-1"></app-svg-attach>
+        <p class="text-primary text-underline text-7 cursor-pointer">Adjuntar archivo</p>
+      </section>
+
+      <section class="d-grid grid-template-auto-2 gap-x-1 mt-12">
+        <button class="btn btn-outline-primary btn-rounded btn-block flex-center">
+          Documentos Adjuntos
+          <app-svg-attached-files class="ml-2 scale-3"></app-svg-attached-files>
+        </button>
+
+        <button class="btn btn-primary btn-rounded btn-block flex-center">
+          Registrar Personal
+          <app-svg-add class="ml-2 scale-3"></app-svg-add>
+        </button>
+      </section>
     </section>
   </section>
 </section>

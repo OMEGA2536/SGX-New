@@ -84,24 +84,12 @@
     </section>
   </app-modal>
 
-  <app-modal [visible]="modalSuccessSendPasswordVisible" size="sm" [closeIconVisible]="false">
-    <section>
-      <section class="flex-center h-7">
-        <app-svg-circle-success className="scale-2"></app-svg-circle-success>
-      </section>
-      <p class="text-8 text-gray-2 text-center mb-7 line-height-2">
-        Se ha enviado la contraseña correctamente, favor revisar su bandeja de correo.
-      </p>
-      <section class="flex-center">
-        <button 
-          class="btn btn-primary btn-rounded btn-sm w-25"
-          (click)="closeModalSuccessSendPassword()"  
-        >
-          OK
-        </button>
-      </section>
-    </section>
-  </app-modal>
+  <app-success-modal
+    text="Se ha enviado la contraseña correctamente, favor revisar su bandeja de correo."
+    [visible]="modalSuccessSendPasswordVisible"
+    (close)="closeModalSuccessSendPassword()"
+  >
+  </app-success-modal>
 
   <app-modal [visible]="modalErrorEmailVisible" size="sm" [closeIconVisible]="false">
     <section>
