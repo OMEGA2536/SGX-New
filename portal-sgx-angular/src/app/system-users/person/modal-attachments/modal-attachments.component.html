@@ -1,0 +1,42 @@
+<app-modal [visible]="visible" size="sm" (close)="close.emit()">
+  <p class="text-primary text-6 text-600 mb-4">Documentos Adjuntos</p>
+
+  <table class="table-default">
+    <thead>
+      <tr>
+        <th><span class="text-400">Tipo de documento</span></th>
+        <th><span class="text-400">Archivo</span></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-center">DNI Anverso</td>
+        <td>
+          <section class="d-flex items-center justify-start">
+            <app-svg-attach className="scale-3 mr-1"></app-svg-attach>
+            <p class="text-primary text-underline cursor-pointer">Adjuntar documento</p>
+          </section>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-center">DNI reverso</td>
+        <td>
+          <section class="d-flex items-center justify-space-between">
+            <section class="d-flex items-center justify-start">
+              <app-svg-pdf className="scale-3 mr-1"></app-svg-pdf> 
+              <p>DNI_reverso.jpg</p>
+            </section>
+            <app-svg-close className="scale-2"></app-svg-close>
+          </section>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <section class="d-grid grid-template-auto-2 gap-x-1 mt-6">
+    <section></section>
+    <button class="btn btn-primary btn-rounded btn-block d-flex justify-space-between items-center">
+      Guardar
+      <app-svg-save class="ml-2 scale-3"></app-svg-save>
+    </button>
+  </section>
+</app-modal>

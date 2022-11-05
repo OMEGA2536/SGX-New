@@ -16,6 +16,7 @@ import { OrganizationalDataRegisterFormComponent } from './person/organizational
 import { PersonRecordComponent } from './person/person-record/person-record.component';
 import { PersonSearchModalComponent } from './person/person-search-modal/person-search-modal.component';
 import { PersonDetailsModalComponent } from './person/person-details-modal/person-details-modal.component';
+import { ModalAttachmentsComponent } from './person/modal-attachments/modal-attachments.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { PersonDetailsModalComponent } from './person/person-details-modal/perso
     PersonRecordComponent,
     PersonSearchModalComponent,
     PersonDetailsModalComponent,
+    ModalAttachmentsComponent,
   ],
   imports: [
     CommonModule,

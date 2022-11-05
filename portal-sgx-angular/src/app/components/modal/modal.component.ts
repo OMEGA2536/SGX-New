@@ -19,11 +19,13 @@ export class ModalComponent implements OnInit {
 
   getWidth(): string {
 
-    if (this.size === 'sm') return 'w-25'
+    if (this.size === 'xs') return 'w-25'
+
+    if (this.size === 'sm') return 'w-35'
 
     if (this.size === 'md') return 'w-45'
 
-    if (this.size === 'lg') return 'w-75'
+    if (this.size === 'lg') return 'w-70'
 
     if (this.size === 'xl') return 'w-90'
 

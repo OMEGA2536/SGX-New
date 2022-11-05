@@ -35,7 +35,7 @@
     background: variables.$white-color;
     box-shadow: variables.$shadow-light;
     border-radius: 4px;
-    :before {
+    &:before {
       content: "";
       position: absolute;
       top: 10px;

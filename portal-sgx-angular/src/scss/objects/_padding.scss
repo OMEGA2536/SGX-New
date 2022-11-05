@@ -2,7 +2,7 @@
 
 $accumulator: 0;
 
-@for $i from 0 through 40 {
+@for $i from 0 through 50 {
   $accumulator: $accumulator + 0.25rem;
 
   .px-#{$i} {

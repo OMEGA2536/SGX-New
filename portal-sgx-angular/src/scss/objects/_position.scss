@@ -23,6 +23,10 @@ $positions: relative, absolute, fixed, initial, inherit;
 //   top: 15px;
 // }
 
+// .left-20-negative {
+//   left: -90%;
+// }
+
 $directions: right, left, top, bottom;
 
 @each $direction in $directions {

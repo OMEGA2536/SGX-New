@@ -36,7 +36,7 @@
         </section>
         
         <section class="flex-center py-6">
-          <button type="button" class="btn btn-rounded btn-secondary flex-center">
+          <button type="button" class="btn btn-rounded btn-secondary flex-center" (click)="signIn()">
             <span class="text-9 text-300">Ingresar</span>
             <app-svg-access className="scale-3 ml-14"></app-svg-access>
           </button>
@@ -58,7 +58,7 @@
     text="El usuario se encuentra inactivo por intentos fallidos."
   ></app-alert>
 
-  <app-modal [visible]="modalRestoredPasswordVisible" size="sm" [closeIconVisible]="false">
+  <app-modal [visible]="modalRestoredPasswordVisible" size="xs" [closeIconVisible]="false">
     <section>
       <p class="text-7 text-gray-2 text-center mb-3 line-height-2">
         Introduzca la dirección de su correo electrónico para
@@ -91,7 +91,7 @@
   >
   </app-success-modal>
 
-  <app-modal [visible]="modalErrorEmailVisible" size="sm" [closeIconVisible]="false">
+  <app-modal [visible]="modalErrorEmailVisible" size="xs" [closeIconVisible]="false">
     <section>
       <section class="flex-center h-7">
         <app-svg-circle-error className="scale-2"></app-svg-circle-error>

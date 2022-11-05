@@ -15,7 +15,7 @@ export class MenuItemComponent implements OnInit {
   
   @Input() menuItem!: MenuItem;
 
-  public subMenuVisible: boolean = false;
+  subMenuVisible: boolean = false;
 
   constructor(private router: Router, private elementRef: ElementRef) {};
 

@@ -7,9 +7,27 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrganizationalDataRegisterFormComponent implements OnInit {
 
+  firstModalAttachmentsVisible: boolean = false;
+  secondModalAttachmentsVisible: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  openFirstModalAttachments(): void {
+    this.firstModalAttachmentsVisible = true;
+  }
+
+  closeFirstModalAttachments(): void {
+    this.firstModalAttachmentsVisible = false;
+  }
+
+  openSecondModalAttachments(): void {
+    this.secondModalAttachmentsVisible = true;
+  }
+
+  closeSecondModalAttachments(): void {
+    this.secondModalAttachmentsVisible = false;
+  }
 }

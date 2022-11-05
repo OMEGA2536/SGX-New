@@ -25,6 +25,10 @@ import { SvgCloseComponent } from './svg-close/svg-close.component';
 import { SvgQuestionComponent } from './svg-question/svg-question.component';
 import { SvgAttachComponent } from './svg-attach/svg-attach.component';
 import { SvgAttachedFilesComponent } from './svg-attached-files/svg-attached-files.component';
+import { SvgPdfComponent } from './svg-pdf/svg-pdf.component';
+import { SvgSaveComponent } from './svg-save/svg-save.component';
+import { SvgDependencyComponent } from './svg-dependency/svg-dependency.component';
+import { SvgPlusComponent } from './svg-plus/svg-plus.component';
 
 
 @NgModule({
@@ -51,7 +55,11 @@ import { SvgAttachedFilesComponent } from './svg-attached-files/svg-attached-fil
     SvgCloseComponent,
     SvgQuestionComponent,
     SvgAttachComponent,
-    SvgAttachedFilesComponent
+    SvgAttachedFilesComponent,
+    SvgPdfComponent,
+    SvgSaveComponent,
+    SvgDependencyComponent,
+    SvgPlusComponent
   ],
   imports: [
     CommonModule,
@@ -80,7 +88,11 @@ import { SvgAttachedFilesComponent } from './svg-attached-files/svg-attached-fil
     SvgCloseComponent,
     SvgQuestionComponent,
     SvgAttachComponent,
-    SvgAttachedFilesComponent
+    SvgAttachedFilesComponent,
+    SvgPdfComponent,
+    SvgSaveComponent,
+    SvgDependencyComponent,
+    SvgPlusComponent
   ]
 })
 export class SvgModule { }

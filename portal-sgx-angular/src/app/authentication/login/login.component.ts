@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   modalRestoredPasswordVisible: boolean = false;
   modalSuccessSendPasswordVisible: boolean = false;
@@ -15,6 +16,10 @@ export class LoginComponent implements OnInit {
   alertVisible: boolean = false;
 
   ngOnInit(): void {
+  }
+
+  signIn(): void {
+    this.router.navigate(['/system-users/person'])
   }
 
   openModalRestoredPassword(): void {

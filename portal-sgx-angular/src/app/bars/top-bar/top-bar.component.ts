@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivationEnd, Router } from '@angular/router';
 
 @Component({
@@ -7,6 +7,8 @@ import { ActivationEnd, Router } from '@angular/router';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent implements OnInit {
+
+  @Input() className: string = 'w-92'
 
   routeText: any = 'Título no definido'
 

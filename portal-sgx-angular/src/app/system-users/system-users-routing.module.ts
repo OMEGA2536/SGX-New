@@ -1,4 +1,4 @@
-import { PersonRecordComponent } from './person/person-record/person-record.component';
+// import { PersonRecordComponent } from './person/person-record/person-record.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AccessComponent } from './access/access.component';
@@ -25,10 +25,6 @@ const routes: Routes = [
         data: {
           title: 'Personal'
         }
-      },
-      {
-        path:'person/record',
-        component: PersonRecordComponent
       },
       {
         path:'user',

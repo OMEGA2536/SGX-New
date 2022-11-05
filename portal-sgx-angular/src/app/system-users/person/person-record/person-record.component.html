@@ -1,10 +1,223 @@
-<app-top-bar title="Personal"></app-top-bar>
-<section class="pt-30 pb-8 px-30">
+<app-top-bar className="w-100"></app-top-bar>
+<section class="pt-30 pb-8 px-50">
   <app-card>
     <p class="text-primary text-7 mb-3">Ficha Personal</p>
 
     <app-tabs 
       [arrayTabs]="['Datos del Personal']"
     ></app-tabs>
+
+    <section class="d-grid grid-template-auto-5 gap-x-1">
+      <section class="form-control">
+        <section class="relative">
+          <section id="about-first-name" *ngIf="visibleModalInfo">
+            Es el nombre que se utilizará para generar su usuario y correo electrónico y será el nombre con el que se le llamará
+          </section>
+        </section>
+        <section class="d-flex items-center">
+          <label class="label" for="">
+            Primer Nombre
+          </label>
+          <app-svg-question className="ml-1 cursor-pointer" (click)="toggleModalInfo()"></app-svg-question>
+        </section>
+        <input type="text" class="input-text" value="First name">
+      </section>
+  
+      <section class="form-control">
+        <label class="label" for="">Segundo Nombre</label>
+        <input type="text" class="input-text">
+      </section>
+  
+      <section class="form-control">
+        <label class="label" for="">Primer Apellido</label>
+        <input type="text" class="input-text">
+      </section>
+  
+      <section class="form-control">
+        <label class="label" for="">Segundo Apellido</label>
+        <input type="text" class="input-text">
+      </section>
+
+      <section class="form-control">
+        <label class="label" for="">Tipo de documento</label>
+        <input type="text" class="input-text">
+      </section>
+
+      <section class="form-control">
+        <label class="label" for="">N° DNI</label>
+        <input type="text" class="input-text">
+      </section>
+
+      <section class="form-control">
+        <label class="label" for="">Sexo</label>
+        <input type="text" class="input-text">
+      </section>
+
+      <section class="form-control">
+        <label class="label" for="">Lugar de nacimiento</label>
+        <input type="text" class="input-text">
+      </section>
+
+      <section class="form-control">
+        <label class="label" for="">Fecha de nacimiento</label>
+        <input type="date" class="input-text">
+      </section>
+
+      <section class="form-control">
+        <label class="label" for="">Nacionalidad</label>
+        <input type="text" class="input-text">
+      </section>
+
+      <section class="form-control">
+        <label class="label" for="">Estado Civil</label>
+        <input type="text" class="input-text">
+      </section>
+
+      <section class="form-control">
+        <label class="label" for="">Distrito</label>
+        <input type="text" class="input-text">
+      </section>
+
+      <section class="form-control">
+        <label class="label" for="">Teléfono fijo</label>
+        <input type="text" class="input-text">
+      </section>
+
+      <section class="form-control">
+        <label class="label" for="">Teléfono Celular</label>
+        <input type="text" class="input-text">
+      </section>
+
+      <section class="form-control">
+        <label class="label" for="">Correo electrónico personal</label>
+        <input type="text" class="input-text">
+      </section>
+
+      <section class="form-control">
+        <label class="label" for="">Número de emergencia</label>
+        <input type="text" class="input-text">
+      </section>
+    </section>
+
+    <section class="form-control">
+      <label class="label" for="">Domicilio</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="form-control">
+      <label class="label" for="">Referencia domicilio</label>
+      <input type="text" class="input-text">
+    </section>
+
+    <section class="d-flex mt-6">
+      <section class="pr-4">
+        <input type="checkbox">
+      </section>
+      <p class="text-7 text-dark line-height-3 w-60 text-300">
+        Declaro bajo juramento que los datos proporcionados son exactos, 
+        autorizando a Xternal Technological Solutions SAC a efectuar las 
+        verificaciones que juzgue necesarias; así mismo me comprometo a 
+        presentar los documentos que me soliciten.
+      </p>
+    </section>
+
+    <section class="d-grid grid-template-auto-4 gap-x-2 mt-6">
+      <button class="btn btn-outline-primary btn-rounded btn-block flex-center">
+        Documentos Adjuntos
+        <app-svg-attached-files class="ml-2 scale-3 path-fill-primary"></app-svg-attached-files>
+      </button>
+
+      <section></section>
+
+      <button class="btn btn-outline-primary btn-rounded btn-block flex-center" (click)="openDependenciesListModal()">
+        Lista de dependencias
+        <app-svg-dependency class="ml-2 scale-3 path-fill-primary"></app-svg-dependency>
+      </button>
+
+      <button class="btn btn-primary btn-rounded btn-block flex-center">
+        Registrar Personal
+        <app-svg-add class="ml-2 scale-3"></app-svg-add>
+      </button>
+    </section>
   </app-card>
 </section>
+
+<app-success-modal
+  text="Se registró su información personal satisfactoriamente"
+  [visible]="visibleSuccessfulRegistrationModal"
+  (close)="closeSuccessfulRegistrationModal()"
+>
+</app-success-modal>
+
+<app-modal [visible]="visibleDependenciesListModal" size="lg" [closeIconVisible]="false">
+  <p class="text-7 text-primary text-600 mb-4">Listado de dependencias</p>
+
+  <section class="d-grid grid-template-auto-5 gap-x-1">
+    <section class="form-control">
+      <label class="label" for="">Nombres</label>
+      <input type="text" class="input-text">
+    </section>
+    <section class="form-control">
+      <label class="label" for="">Apellidos</label>
+      <input type="text" class="input-text">
+    </section>
+    <section class="form-control">
+      <label class="label" for="">Parentesco</label>
+      <input type="text" class="input-text">
+    </section>
+    <section class="form-control">
+      <label class="label" for="">Edad</label>
+      <input type="text" class="input-text">
+    </section>
+    <section class="form-control">
+      <label class="label" for="">DNI</label>
+      <input type="text" class="input-text">
+
+      <section class="d-flex justify-flex-end items-center mt-3">
+        <app-svg-plus className="mr-1"></app-svg-plus>
+        <p class="text-7 text-primary cursor-pointer text-underline">Agregar</p>
+      </section>
+    </section>
+  </section>
+
+  <table class="table-default">
+    <thead>
+      <tr>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Parentesco</th>
+        <th>Edad</th>
+        <th>DNI</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+          <app-svg-delete></app-svg-delete>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section class="d-grid grid-template-auto-4 gap-x-1 mt-6">
+    <section></section>
+    <section></section>
+
+    <button class="btn btn-outline-primary btn-rounded btn-block d-flex justify-flex-end items-center" 
+      (click)="closeDependenciesListModal()"
+    >
+      Cancelar
+    </button>
+
+    <button class="btn btn-primary btn-rounded btn-block d-flex items-center justify-space-between">
+      Guardar
+      <app-svg-save class="ml-2 scale-3"></app-svg-save>
+    </button>
+  </section>
+</app-modal>

@@ -1,3 +1,4 @@
+import { PersonRecordComponent } from './system-users/person/person-record/person-record.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
@@ -26,7 +27,14 @@ const appRoutes: Routes=[
     import('./system-users/system-users.module').then(
       (m) => m.SystemUsersModule
     ),
-  }
+  },
+  {
+    path:'person/record',
+    component: PersonRecordComponent,
+    data: {
+      title: 'Ficha Personal'
+    }
+  },
 ]
 @NgModule({
   declarations: [],

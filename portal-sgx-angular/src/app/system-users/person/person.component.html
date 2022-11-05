@@ -106,12 +106,17 @@
   </app-card>
 
   <app-person-search-modal 
-    [visible]="personSearchVisible"
+    [visible]="visiblePersonSearchModal"
     (close)="closePersonSearchModal()"
   ></app-person-search-modal>
 
   <app-person-details-modal
-    [visible]="personDetailsVisible"
+    [visible]="visiblePersonDetailsModal"
     (close)="closePersonDetailsModal()"
   ></app-person-details-modal>
+
+  <app-modal [visible]="visibleGenerateLinkModal" size="lg" [closeIconVisible]="true" (close)="closeGenerateLinkModal()">
+    <p class="text-7 text-primary text-600 mb-2">Enlace generado</p>
+    <p class="text-7 text-gray-2">www.xternal.ides.com/&$SAsdASXMKMDAXDQsswwedwedwedwdwwedwwdwdwdwdwdwdwewed=?token</p>
+  </app-modal>
 </section>

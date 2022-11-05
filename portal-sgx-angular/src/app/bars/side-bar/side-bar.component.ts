@@ -11,8 +11,8 @@ export class SideBarComponent implements OnInit {
 
   constructor() { }
 
-  public itemMenuVisible: boolean = false;
-  public menuItems: MenuItem[] = [];
+  itemMenuVisible: boolean = false;
+  menuItems: MenuItem[] = [];
 
   ngOnInit(): void {
     this.menuItems.push(menuItems.menuItemMyMenu);
@@ -22,7 +22,7 @@ export class SideBarComponent implements OnInit {
     this.menuItems.push(menuItems.menuItemSecurity);
   }
 
-  public toogleOptions(): void {
+  toogleOptions(): void {
     this.itemMenuVisible = !this.itemMenuVisible;
   }
 }
