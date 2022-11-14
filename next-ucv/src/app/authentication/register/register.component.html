@@ -1,0 +1,39 @@
+<p class="text-white text-center text-8 text-600 mb-5">Seleccione el tipo de usuario</p>
+
+<form action="">
+
+  <section class="form-control">
+    <app-select
+      placeholder="Tipo de usuario"
+      [options]="userTypes"
+      optionText="text"
+      optionValue="id"
+      (selected)="userType = $event"
+    ></app-select>
+  </section>
+  
+  <ng-container *ngIf="userType === 1">
+    <app-register-candidate></app-register-candidate>
+  </ng-container>
+  
+  <ng-container *ngIf="userType === 2">
+    <app-register-company></app-register-company>
+  </ng-container>
+
+  <ng-container *ngIf="userType !== 0">
+    <p class="text-5 text-center text-white my-4">*Se recomienda una cuenta de gmail para agilizar el proceso</p>
+  
+    <section class="flex-center">
+      <input type="checkbox" class="input-checkbox">
+      <p class="text-5 text-white">He leído y acepto las políticas de privacidad</p>
+    </section>
+
+    <button
+      type="button"
+      class="btn bg-secondary w-full mt-7 mb-4 text-white"
+    >
+      Registrarse
+    </button>
+  </ng-container>
+</form>
+

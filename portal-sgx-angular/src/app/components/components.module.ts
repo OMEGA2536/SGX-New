@@ -8,6 +8,7 @@ import { ModalComponent } from './modal/modal.component';
 import { TabsComponent } from './tabs/tabs.component';
 import { AlertComponent } from './alert/alert.component';
 import { SuccessModalComponent } from './success-modal/success-modal.component';
+import { SelectComponent } from './select/select.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { SuccessModalComponent } from './success-modal/success-modal.component';
     ModalComponent,
     TabsComponent,
     AlertComponent,
-    SuccessModalComponent
+    SuccessModalComponent,
+    SelectComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +30,8 @@ import { SuccessModalComponent } from './success-modal/success-modal.component';
     ModalComponent,
     TabsComponent,
     AlertComponent,
-    SuccessModalComponent
+    SuccessModalComponent,
+    SelectComponent
   ]
 })
 export class ComponentsModule { }

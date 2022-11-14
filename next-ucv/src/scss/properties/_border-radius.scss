@@ -1,0 +1,8 @@
+$accumulator: 0;
+
+@for $i from 1 through 10 {
+  $accumulator: $accumulator + 0.25rem;
+  .rounded-#{$i} {
+    border-radius: $accumulator;
+  }
+}
