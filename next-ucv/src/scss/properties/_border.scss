@@ -16,3 +16,11 @@
 .border-5-danger-2 {
   border: 5px solid #{functions.light-dark(variables.$danger-color-2, variables.$primary-inverted-color)};
 }
+
+.border-2-secondary {
+  border: 2px solid #{functions.light-dark(variables.$secondary-color, variables.$primary-inverted-color)};
+}
+
+.border-3-secondary {
+  border: 3px solid #{functions.light-dark(variables.$secondary-color, variables.$primary-inverted-color)};
+}

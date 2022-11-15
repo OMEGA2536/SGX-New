@@ -71,8 +71,12 @@ $opacities: 100, 200, 300, 400, 500, 600, 700, 800, 900;
     background: rgba(variables.$primary-color, calc($opacity / 1000));
   }
 
-  .bg-dark-#{$opacity} {
-    background: rgba(variables.$dark-color, calc($opacity / 1000));
+  .bg-secondary-#{$opacity} {
+    background: rgba(variables.$secondary-color, calc($opacity / 1000));
+  }
+
+  .bg-gray-2-#{$opacity} {
+    background: rgba(variables.$gray-color-2, calc($opacity / 1000));
   }
 
   .hover\:bg-primary-#{$opacity}:hover {

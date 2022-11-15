@@ -4,11 +4,19 @@ import { CommonModule } from '@angular/common';
 
 import { ComponentsRoutingModule } from './components-routing.module';
 import { SelectComponent } from './select/select.component';
+import { CardComponent } from './card/card.component';
+import { SelectRoundedComponent } from './select-rounded/select-rounded.component';
+import { BtnPrimaryComponent } from './btn-primary/btn-primary.component';
+import { BtnSecondaryComponent } from './btn-secondary/btn-secondary.component';
 
 
 @NgModule({
   declarations: [
-    SelectComponent
+    SelectComponent,
+    CardComponent,
+    SelectRoundedComponent,
+    BtnPrimaryComponent,
+    BtnSecondaryComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +24,11 @@ import { SelectComponent } from './select/select.component';
     SvgModule
   ],
   exports: [
-    SelectComponent
+    SelectComponent,
+    CardComponent,
+    SelectRoundedComponent,
+    BtnPrimaryComponent,
+    BtnSecondaryComponent
   ]
 })
 export class ComponentsModule { }

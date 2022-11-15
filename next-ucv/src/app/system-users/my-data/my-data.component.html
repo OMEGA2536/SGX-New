@@ -1,0 +1,163 @@
+<app-card>
+  <p class="text-600 text-white text-9 mb-6">Datos de la empresa</p>
+
+  <section class="grid grid-cols-2 gap-x-2">
+    <section class="form-control">
+      <label for="" class="label">RUC</label>
+      <input type="text" class="input-text-rounded" value="99887766554">
+    </section>
+
+    <section class="form-control">
+      <label for="" class="label">Razón Social</label>
+      <input type="text" class="input-text-rounded" value="Razón Test">
+    </section>
+
+    <section class="form-control">
+      <label for="" class="label">Nombre comercial</label>
+      <input type="text" class="input-text-rounded" value="Test">
+    </section>
+
+    <section class="form-control">
+      <label for="" class="label">Ubicación</label>
+      <input type="text" class="input-text-rounded" value="Ubicación">
+    </section>
+
+    <section class="form-control">
+      <label for="" class="label">Rubro</label>
+      <app-select-rounded></app-select-rounded>
+    </section>
+
+    <section class="form-control">
+      <label for="" class="label">Filial</label>
+      <app-select-rounded></app-select-rounded>
+    </section>
+
+    <section class="col-span-2">
+      <section class="grid grid-cols-2 gap-x-2">
+        <section>
+          <section class="form-control">
+            <label for="" class="label">Vinculación</label>
+            <app-select-rounded></app-select-rounded>
+          </section>
+
+          <section class="form-control">
+            <label for="" class="label">Inicio de actividades</label>
+            <input type="date" class="input-text-rounded" value="Ubicación">
+          </section>
+
+          <section class="form-control">
+            <label for="" class="label">N° de colaboradores</label>
+            <input type="text" class="input-text-rounded" value="10">
+          </section>
+
+          <section class="form-control">
+            <label for="" class="label">Condición</label>
+            <app-select-rounded></app-select-rounded>
+          </section>
+
+          <section class="form-control">
+            <label for="" class="label">Contraseña</label>
+            <input type="password" class="input-password-rounded" value="*******">
+          </section>
+
+          <section class="form-control">
+            <label for="" class="label">Repetir contraseña</label>
+            <input type="password" class="input-password-rounded" value="*******">
+          </section>
+        </section>
+
+        <section class="form-control">
+          <label for="" class="label">Imagen</label>
+          <textarea class="text-area-rounded" name="" id="" cols="30" rows="21"></textarea>
+
+          <section class="mt-4 flex-center">
+            <button 
+              class="bg-primary cursor-pointer rounded-2 py-1 px-10 text-white border-2-secondary text-6"
+              type="button"  
+            >
+              Seleccionar imagen
+            </button>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <section class="form-control">
+      <input type="checkbox">
+      <label class="text-white text-5" for="">
+        Estaría interesado(a) en participar en ferias laborales
+      </label>
+    </section>
+
+    <section class="form-control">
+      <input type="checkbox">
+      <label class="text-white text-5" for="">
+        Estaría de acuerdo en contratar practicantes pre profesionales
+      </label>
+    </section>
+
+    <section class="form-control">
+      <input type="checkbox">
+      <label class="text-white text-5" for="">
+        Estaría interesado(a) en firmar un convenio de cooperación interinstitucional con la institución
+      </label>
+    </section>
+
+    <section class="form-control">
+      <input type="checkbox">
+      <label class="text-white text-5" for="">
+        Desea que sus oportunidades laborales se publiquen en redes sociales oficiales
+      </label>
+    </section>
+  </section>
+</app-card>
+
+<app-card>
+  <p class="text-600 text-white text-9 mb-6">Datos de contacto</p>
+
+  <section class="grid grid-cols-2 gap-x-2">
+    <section class="form-control">
+      <label for="" class="label">Nombres</label>
+      <input type="text" class="input-text-rounded" value="Nombres">
+    </section>
+
+    <section class="form-control">
+      <label for="" class="label">Razón Social</label>
+      <input type="text" class="input-text-rounded" value="Razón Test">
+    </section>
+
+    <section class="form-control">
+      <label for="" class="label">Apellido paterno</label>
+      <input type="text" class="input-text-rounded" value="Apellidos paterno">
+    </section>
+
+    <section class="form-control">
+      <label for="" class="label">Correo</label>
+      <input type="text" class="input-text-rounded" value="correo@correo.com">
+    </section>
+
+    <section class="form-control">
+      <label for="" class="label">Celular</label>
+      <app-select-rounded></app-select-rounded>
+    </section>
+
+    <section class="form-control">
+      <label for="" class="label">Cargo</label>
+      <app-select-rounded></app-select-rounded>
+    </section>
+  </section>
+</app-card>
+
+<section class="grid grid-cols-6 gap-x-1">
+  <section class="col-start-4">
+    <app-btn-primary text="Modificar"></app-btn-primary>
+  </section>
+
+  <section class="col-start-5">
+    <app-btn-secondary text="Guardar"></app-btn-secondary>
+  </section>
+
+  <section class="col-start-6">
+    <app-btn-secondary text="Cancelar"></app-btn-secondary>
+  </section>
+</section>

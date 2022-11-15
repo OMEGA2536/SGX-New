@@ -1,47 +1,52 @@
-<p class="text-white text-center text-8 text-600 mb-6">Iniciar sesión</p>
-
-<form action="">
-  <section class="form-control">
-    <app-select
-      placeholder="Tipo de usuario"
-    ></app-select>
-  </section>
-
-  <section class="form-control">
-    <app-select
-      placeholder="Tipo de documento"
-    ></app-select>
-  </section>
-
-  <section class="form-control">
-    <input type="text" class="input-text" placeholder="Usuario">
-  </section>
-
-  <section class="form-control">
-    <input type="password" class="input-password" placeholder="Contraseña">
-  </section>
-  
-  <section class="flex justify-space-between items-center">
-    <section>
-      <p class="text-white text-6">
-        <input type="checkbox">
-        Recordar contraseña
-      </p>
-    </section>
-    <section>
-      <p class="text-white text-6 text-600 cursor-pointer">¿Olvidaste tu contraseña?</p>
-    </section>
-  </section>
-
-  <button
-    type="button"
-    class="btn bg-secondary w-full mt-7 mb-4 text-white"
-  >
-    Ingresar
-  </button>
-</form>
-
 <section class="flex-center">
-  <p class="text-white">¿No tienes cuenta?</p>
-  <p class="text-white text-600 ml-2 cursor-pointer" (click)="toRegisterView()">Crear</p>
+  <section class="w-100">
+    <p class="text-white text-center text-8 text-600 mb-6">Iniciar sesión</p>
+  
+    <form action="">
+      <section class="form-control">
+        <app-select
+          placeholder="Tipo de usuario"
+        ></app-select>
+      </section>
+  
+      <section class="form-control">
+        <app-select
+          placeholder="Tipo de documento"
+        ></app-select>
+      </section>
+  
+      <section class="form-control">
+        <input type="text" class="input-text" placeholder="Usuario">
+      </section>
+  
+      <section class="form-control">
+        <input type="password" class="input-password" placeholder="Contraseña">
+      </section>
+      
+      <section class="flex justify-space-between items-center">
+        <section>
+          <p class="text-white text-6">
+            <input type="checkbox">
+            Recordar contraseña
+          </p>
+        </section>
+        <section>
+          <p class="text-white text-6 text-600 cursor-pointer">¿Olvidaste tu contraseña?</p>
+        </section>
+      </section>
+  
+      <button
+        type="button"
+        class="btn bg-secondary w-full mt-7 mb-4 text-white"
+        (click)="toMyDataView()"
+      >
+        Ingresar
+      </button>
+    </form>
+  
+    <section class="flex-center">
+      <p class="text-white">¿No tienes cuenta?</p>
+      <p class="text-white text-600 ml-2 cursor-pointer" (click)="toRegisterView()">Crear</p>
+    </section>
+  </section>
 </section>

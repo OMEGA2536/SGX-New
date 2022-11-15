@@ -14,4 +14,6 @@ export class LoginComponent implements OnInit {
   }
 
   toRegisterView = () => this.router.navigate(['/authentication/register'])
+
+  toMyDataView = () => this.router.navigate(['/system-users/my-data'])
 }

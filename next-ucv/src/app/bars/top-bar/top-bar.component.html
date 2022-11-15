@@ -1,0 +1,20 @@
+<section class="fixed bg-primary-800 top-0 left-0 h-30 w-full z-20">
+  <section class="flex justify-space-between items-center px-25">
+    <section class="">
+      <app-svg-logo className="scale-3 h-30 w-60"></app-svg-logo>
+    </section>
+    <section class="flex items-center">
+      <section class="flex-center">
+        <app-svg-user className="scale-3 h-20"></app-svg-user>
+        <p class="text-white text-8 w-22">
+          Razon Test
+        </p>
+      </section>
+
+      <section class="ml-">
+        <app-svg-setting className="scale-3 h-12 cursor-pointer"></app-svg-setting>
+        <app-svg-power className="scale-3 h-12 cursor-pointer" (click)="toLoginView()"></app-svg-power>
+      </section>
+    </section>
+  </section>
+</section>
