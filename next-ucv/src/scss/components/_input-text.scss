@@ -4,29 +4,32 @@
 
 .input-text {
   @include mixins.input-base();
-}
-
-.input-text-rounded {
-  @include mixins.input-base();
-  border-radius: 8px;
-  padding: 0.5rem 1.5rem;
-  background: rgba(168, 168, 168, 0.3);
+  &-rounded {
+    @include mixins.input-base();
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    background: rgba(168, 168, 168, 0.3);
+  }
 }
 
 .input-password {
   @include mixins.input-base();
+  &-rounded {
+    @include mixins.input-base();
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    background: rgba(168, 168, 168, 0.3);
+  }
 }
 
-.input-password-rounded {
+.input-date {
   @include mixins.input-base();
-  border-radius: 8px;
-  padding: 0.5rem 1.5rem;
-  background: rgba(168, 168, 168, 0.3);
-}
-
-.input-checkbox {
-  border: 2px solid variables.$white-color;
-  background: transparent;
+  &-rounded {
+    @include mixins.input-base();
+    border-radius: 8px;
+    padding: 0.5rem 1.5rem;
+    background: rgba(168, 168, 168, 0.3);
+  }
 }
 
 .text-area {
@@ -39,18 +42,7 @@
   }
 }
 
-.text-area-rounded {
-  border-radius: 8px;
-  padding: 0.5rem 1.5rem;
-  background: rgba(168, 168, 168, 0.3);
-}
-
-// .input-text-readonly {
-//   @include mixins.input-base(rgba(variables.$black-color, 0.5));
-// }
-
-// .input-text-2 {
-//   @include mixins.input-base();
-//   border: 2px solid variables.$gray-color-2;
-//   height: 3.5rem;
+// .input-checkbox {
+//   border: 2px solid variables.$white-color;
+//   background: transparent;
 // }

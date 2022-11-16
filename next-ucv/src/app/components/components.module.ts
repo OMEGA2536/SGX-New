@@ -8,6 +8,8 @@ import { CardComponent } from './card/card.component';
 import { SelectRoundedComponent } from './select-rounded/select-rounded.component';
 import { BtnPrimaryComponent } from './btn-primary/btn-primary.component';
 import { BtnSecondaryComponent } from './btn-secondary/btn-secondary.component';
+import { InputCheckboxComponent } from './input-checkbox/input-checkbox.component';
+import { InputDateComponent } from './input-date/input-date.component';
 
 
 @NgModule({
@@ -16,7 +18,9 @@ import { BtnSecondaryComponent } from './btn-secondary/btn-secondary.component';
     CardComponent,
     SelectRoundedComponent,
     BtnPrimaryComponent,
-    BtnSecondaryComponent
+    BtnSecondaryComponent,
+    InputCheckboxComponent,
+    InputDateComponent
   ],
   imports: [
     CommonModule,
@@ -28,7 +32,9 @@ import { BtnSecondaryComponent } from './btn-secondary/btn-secondary.component';
     CardComponent,
     SelectRoundedComponent,
     BtnPrimaryComponent,
-    BtnSecondaryComponent
+    BtnSecondaryComponent,
+    InputCheckboxComponent,
+    InputDateComponent
   ]
 })
 export class ComponentsModule { }

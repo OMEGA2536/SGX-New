@@ -4,7 +4,7 @@
   <section class="grid grid-cols-2 gap-x-2">
     <section class="form-control">
       <label for="" class="label">RUC</label>
-      <input type="text" class="input-text-rounded" value="99887766554">
+      <input type="text" class="input-text-rounded" value="99887766554" readonly>
     </section>
 
     <section class="form-control">
@@ -68,7 +68,7 @@
 
         <section class="form-control">
           <label for="" class="label">Imagen</label>
-          <textarea class="text-area-rounded" name="" id="" cols="30" rows="21"></textarea>
+          <textarea class="text-area-rounded" name="" id="" cols="30" rows="20"></textarea>
 
           <section class="mt-4 flex-center">
             <button 
@@ -83,31 +83,27 @@
     </section>
 
     <section class="form-control">
-      <input type="checkbox">
-      <label class="text-white text-5" for="">
-        Estaría interesado(a) en participar en ferias laborales
-      </label>
+      <app-input-checkbox>
+        <p class="text-5 text-white">Estaría interesado(a) en participar en ferias laborales</p>
+      </app-input-checkbox>
     </section>
 
     <section class="form-control">
-      <input type="checkbox">
-      <label class="text-white text-5" for="">
-        Estaría de acuerdo en contratar practicantes pre profesionales
-      </label>
+      <app-input-checkbox>
+        <p class="text-5 text-white">Estaría de acuerdo en contratar practicantes pre profesionales</p>
+      </app-input-checkbox>
     </section>
 
     <section class="form-control">
-      <input type="checkbox">
-      <label class="text-white text-5" for="">
-        Estaría interesado(a) en firmar un convenio de cooperación interinstitucional con la institución
-      </label>
+      <app-input-checkbox>
+        <p class="text-5 text-white">Estaría interesado(a) en firmar un convenio de cooperación interinstitucional con la institución</p>
+      </app-input-checkbox>
     </section>
 
     <section class="form-control">
-      <input type="checkbox">
-      <label class="text-white text-5" for="">
-        Desea que sus oportunidades laborales se publiquen en redes sociales oficiales
-      </label>
+      <app-input-checkbox>
+        <p class="text-5 text-white">Desea que sus oportunidades laborales se publiquen en redes sociales oficiales</p>
+      </app-input-checkbox>
     </section>
   </section>
 </app-card>

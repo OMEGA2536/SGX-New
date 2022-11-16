@@ -6,3 +6,13 @@ $accumulator: 0;
     border-radius: $accumulator;
   }
 }
+
+.rounded-t-3 {
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+
+.rounded-b-3 {
+  border-bottom-left-radius: 0.75rem;
+  border-bottom-right-radius: 0.75rem;
+}

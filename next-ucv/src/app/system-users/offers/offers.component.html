@@ -1,1 +1,121 @@
-<p class="text-white">offers works!</p>
+<p class="text-600 text-white text-9 mb-6">Ver ofertas</p>
+
+<section class="form-control mb-2">
+  <section class="flex">
+    <app-svg-searcher className="scale-2"></app-svg-searcher>
+    <input 
+      type="text" 
+      class="input-text-rounded" 
+      placeholder="Buscar ofertas" 
+      style="padding-left: 45px; margin-left: -45px;">
+  </section>
+</section>
+
+<section class="grid grid-cols-4 gap-x-1">
+  <section class="col-span-1">
+    <section class="flex-center rounded-t-3 py-4 bg-secondary">
+      <p class="text-white text-8">Filtros</p>
+    </section>
+    <section class="border-2-secondary rounded-b-3 px-4 pt-4 bg-secondary-300">
+      <section class="form-control">
+        <label for="" class="label">Carrera</label>
+        <app-select-rounded></app-select-rounded>
+      </section>
+
+      <section class="form-control">
+        <label for="" class="label">País</label>
+        <app-select-rounded></app-select-rounded>
+      </section>
+
+      <section class="form-control">
+        <label for="" class="label">Departamento</label>
+        <app-select-rounded></app-select-rounded>
+      </section>
+
+      <section class="form-control">
+        <label for="" class="label">Provincia</label>
+        <app-select-rounded></app-select-rounded>
+      </section>
+
+      <section class="form-control">
+        <label for="" class="label">Distrito</label>
+        <app-select-rounded></app-select-rounded>
+      </section>
+
+      <section class="form-control">
+        <label for="" class="label">Área</label>
+        <app-select-rounded></app-select-rounded>
+      </section>
+
+      <section class="form-control">
+        <label for="" class="label">Fecha de inicio</label>
+        <app-input-date></app-input-date>
+      </section>
+
+      <section class="form-control">
+        <label for="" class="label">Fecha de fin</label>
+        <app-input-date></app-input-date>
+      </section>
+
+      <section class="form-control">
+        <app-btn-primary text="Buscar oferta"></app-btn-primary>
+      </section>
+    </section>
+  </section>
+  <section class="col-span-3">
+    <app-card>
+      <p class="text-white text-7 mb-6">Razon Test</p>
+
+      <section class="grid grid-cols-5 gap-x-1">
+        <section class="col-span-1">
+          <div class="circle-2 bg-secondary"></div>
+        </section>
+
+        <section class="col-span-2">
+          <p class="text-8 text-600 text-white mb-4">Analista</p>
+
+          <ul class="text-6 text-white list">
+            <li>Publicado el 18/10/2023</li>
+            <li>
+              <span class="text-600">Área:</span> Abastecimiento y logística
+            </li>
+            <li>
+              <span class="text-600">Subárea:</span> Almacén / Depósito / Expedición
+            </li>
+            <li>
+              <span class="text-600">Vacantes:</span> 1
+            </li>
+          </ul>
+        </section>
+
+        <section class="col-span-2">
+          <ul class="list text-white text-6">
+            <li>
+              <span class="text-600">Modalidad:</span> Mixto
+            </li>
+            <li>
+              <span class="text-600">Jerarquía:</span> Analista
+            </li>
+            <li>
+              <span class="text-600">Ubicación:</span> Perú / Lima / Lima
+            </li>
+            <li>
+              <span class="text-600">Tipo de empleo:</span> Full time
+            </li>
+          </ul>
+
+          <section class="mt-4">
+            <app-input-checkbox>
+              <p class="text-4 text-white">Este trabajo es apto para personas con discapacidad</p>
+            </app-input-checkbox>
+          </section>
+
+          <section class="mt-4">
+            <app-svg-circle-success className="w-8 mr-2"></app-svg-circle-success>
+            <app-svg-circle-delete className="w-8"></app-svg-circle-delete>
+          </section>
+        </section>
+      </section>
+    </app-card>
+  </section>
+</section>

@@ -12,6 +12,8 @@ import { SvgMegaphoneComponent } from './svg-megaphone/svg-megaphone.component';
 import { SvgBagComponent } from './svg-bag/svg-bag.component';
 import { SvgSearcherComponent } from './svg-searcher/svg-searcher.component';
 import { SvgCalendarComponent } from './svg-calendar/svg-calendar.component';
+import { SvgCircleSuccessComponent } from './svg-circle-success/svg-circle-success.component';
+import { SvgCircleDeleteComponent } from './svg-circle-delete/svg-circle-delete.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { SvgCalendarComponent } from './svg-calendar/svg-calendar.component';
     SvgMegaphoneComponent,
     SvgBagComponent,
     SvgSearcherComponent,
-    SvgCalendarComponent
+    SvgCalendarComponent,
+    SvgCircleSuccessComponent,
+    SvgCircleDeleteComponent
   ],
   imports: [
     CommonModule,
@@ -41,7 +45,9 @@ import { SvgCalendarComponent } from './svg-calendar/svg-calendar.component';
     SvgMegaphoneComponent,
     SvgBagComponent,
     SvgSearcherComponent,
-    SvgCalendarComponent
+    SvgCalendarComponent,
+    SvgCircleSuccessComponent,
+    SvgCircleDeleteComponent
   ]
 })
 export class SvgModule { }

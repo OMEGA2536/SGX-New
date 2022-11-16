@@ -1,3 +1,4 @@
+import { SvgModule } from './../svg/svg.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -17,7 +18,8 @@ import { PostOfferComponent } from './offers/post-offer/post-offer.component';
   imports: [
     CommonModule,
     SystemUsersRoutingModule,
-    ComponentsModule
+    ComponentsModule,
+    SvgModule
   ]
 })
 export class SystemUsersModule { }
