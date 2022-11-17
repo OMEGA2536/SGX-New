@@ -14,6 +14,7 @@ export class MenuComponent implements OnInit {
 
   menuItems: MenuItem[] = [];
   currentSection: string = '';
+  menuGrid: string = '';
 
   constructor(private router :Router) {
 
@@ -28,10 +29,23 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.menuItems.push(MenuItems.menuItemMyData);
-    this.menuItems.push(MenuItems.menuItemPostOffer);
-    this.menuItems.push(MenuItems.menuItemSeeMyOffers);
-    this.menuItems.push(MenuItems.menuItemSearchResumes);
+    let userType: number = parseInt(localStorage.getItem('userType') || '0');
+
+    if (userType === 1) {
+      this.menuItems.push(MenuItems.candidateMyData);
+      this.menuItems.push(MenuItems.candidateMyCv);
+      this.menuItems.push(MenuItems.candidateRecomended);
+      this.menuItems.push(MenuItems.candidateMyApplications);
+      this.menuItems.push(MenuItems.candidateMyInterviews);
+
+    } else {
+      this.menuItems.push(MenuItems.companyMyData);
+      this.menuItems.push(MenuItems.companyPostOffer);
+      this.menuItems.push(MenuItems.companyMyOffers);
+      this.menuItems.push(MenuItems.companySearchResumes);
+    }
+
+    this.menuGrid = `grid grid-cols-${this.menuItems.length} gap-x-1 mb-16`;
   }
 
   toPageView(path: string): void {

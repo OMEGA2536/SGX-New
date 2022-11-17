@@ -8,6 +8,7 @@ import { ComponentsModule } from '../components/components.module';
 import { RegisterComponent } from './register/register.component';
 import { RegisterCandidateComponent } from './register-candidate/register-candidate.component';
 import { RegisterCompanyComponent } from './register-company/register-company.component';
+import { RecoverPasswordComponent } from './recover-password/recover-password.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { RegisterCompanyComponent } from './register-company/register-company.co
     LoginComponent,
     RegisterComponent,
     RegisterCandidateComponent,
-    RegisterCompanyComponent
+    RegisterCompanyComponent,
+    RecoverPasswordComponent
   ],
   imports: [
     CommonModule,

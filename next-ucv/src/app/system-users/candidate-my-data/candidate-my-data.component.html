@@ -1,0 +1,113 @@
+<app-card title="Mis datos">
+
+  <section class="grid grid-cols-4 gap-x-2">
+    <section class="form-control col-span-2">
+      <label for="" class="label">DNI</label>
+      <input type="text" class="input-text-rounded" value="44556677" readonly>
+    </section>
+
+    <section class="form-control col-span-2">
+      <label for="" class="label">Nombres</label>
+      <input type="text" class="input-text-rounded" value="Oscar Eduardo">
+    </section>
+
+    <section class="form-control col-span-2">
+      <label for="" class="label">Apellido paterno</label>
+      <input type="text" class="input-text-rounded" value="Mendoza">
+    </section>
+
+    <section class="form-control col-span-2">
+      <label for="" class="label">Apellido materno</label>
+      <input type="text" class="input-text-rounded" value="Ramos">
+    </section>
+
+    <section class="form-control col-span-2">
+      <label for="" class="label">Domicilio</label>
+      <input type="text" class="input-text-rounded" value="Av. Perú">
+    </section>
+
+    <section class="form-control col-span-2">
+      <label for="" class="label">Correo</label>
+      <input type="text" class="input-text-rounded" value="oramos@gamil.com">
+    </section>
+
+    <section class="col-span-4">
+      <section class="grid grid-cols-2 gap-x-2">
+        <section class="grid grid-cols-2 gap-x-2">
+          <section class="form-control">
+            <label for="" class="label">País</label>
+            <app-select-rounded></app-select-rounded>
+          </section>
+
+          <section class="form-control">
+            <label for="" class="label">Departamento</label>
+            <app-select-rounded></app-select-rounded>
+          </section>
+
+          <section class="form-control">
+            <label for="" class="label">Provincia</label>
+            <app-select-rounded></app-select-rounded>
+          </section>
+
+          <section class="form-control">
+            <label for="" class="label">Distrito</label>
+            <app-select-rounded></app-select-rounded>
+          </section>
+
+          <section class="form-control col-span-2">
+            <label for="" class="label">Carrera</label>
+            <input type="text" class="input-text-rounded" value="Administración">
+          </section>
+
+          <section class="form-control">
+            <label for="" class="label">Teléfono</label>
+            <input type="text" class="input-text-rounded" value="015819119">
+          </section>
+
+          <section class="form-control">
+            <label for="" class="label">Celular</label>
+            <input type="text" class="input-text-rounded" value="963852741">
+          </section>
+
+          <section class="form-control">
+            <label for="" class="label">Contraseña</label>
+            <input type="password" class="input-password-rounded" value="*******">
+          </section>
+
+          <section class="form-control">
+            <label for="" class="label">Repetir contraseña</label>
+            <input type="password" class="input-password-rounded" value="*******">
+          </section>
+        </section>
+
+        <section class="form-control">
+          <label for="" class="label">Imagen</label>
+          <textarea class="text-area-rounded" name="" id="" cols="30" rows="15"></textarea>
+
+          <section class="mt-4 flex-center">
+            <button 
+              class="bg-primary cursor-pointer rounded-2 py-1 px-10 text-white border-2-secondary text-6"
+              type="button"  
+            >
+              Seleccionar imagen
+            </button>
+          </section>
+        </section>
+      </section>
+    </section>
+  </section>
+</app-card>
+
+<section class="grid grid-cols-6 gap-x-1">
+  <section class="col-start-4">
+    <app-btn-primary text="Modificar"></app-btn-primary>
+  </section>
+
+  <section class="col-start-5">
+    <app-btn-secondary text="Guardar"></app-btn-secondary>
+  </section>
+
+  <section class="col-start-6">
+    <app-btn-secondary text="Cancelar"></app-btn-secondary>
+  </section>
+</section>

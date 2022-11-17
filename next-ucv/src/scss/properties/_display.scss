@@ -56,6 +56,14 @@ $types: center, flex-end, space-between;
   }
 }
 
+@media (max-width: variables.$max-width-md) {
+  @each $type in $types {
+    .md\:justify-#{$type} {
+      justify-content: $type;
+    }
+  }
+}
+
 $types: center, flex-end;
 
 @each $type in $types {

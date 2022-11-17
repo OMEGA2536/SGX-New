@@ -1,11 +1,15 @@
 <section class="flex-center">
-  <section class="w-100">
+  <section class="w-100 lg:w-full">
     <p class="text-white text-center text-8 text-600 mb-6">Iniciar sesión</p>
   
     <form action="">
       <section class="form-control">
         <app-select
           placeholder="Tipo de usuario"
+          [options]="userTypes"
+          optionText="type"
+          optionValue="value"
+          (selected)="userType = $event"
         ></app-select>
       </section>
   
@@ -31,7 +35,7 @@
         </section>
         
         <section>
-          <p class="text-white text-6 text-600 cursor-pointer">¿Olvidaste tu contraseña?</p>
+          <p class="text-white text-6 text-600 cursor-pointer" (click)="toRecoverPasswordView()">¿Olvidaste tu contraseña?</p>
         </section>
       </section>
   

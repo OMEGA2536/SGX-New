@@ -4,33 +4,26 @@
 
 .table-default {
   width: 100%;
-  border-collapse: collapse;
-  th:first-child {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-  }
-  th:last-child {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-  }
+  border-spacing: 6px;
   th,
   td {
-    padding: 0.8rem;
+    padding: 0.6rem;
     text-align: center;
+    color: variables.$white-color;
+    @include mixins.calculate-font-size(0.6);
   }
   th {
-    background: rgba(variables.$primary-color, 0.1);
-    font-weight: 600;
-    color: #{functions.light-dark(variables.$primary-color, variables.$gray-color-1)};
-    @include mixins.calculate-font-size(0.6);
+    border-radius: 10px;
+    border: 2px solid variables.$secondary-color;
+    background: variables.$primary-color;
   }
   td {
-    color: #{functions.light-dark(variables.$gray-color-2, variables.$white-color)};
-    border-bottom: 0.2px solid variables.$accent-color;
-    @include mixins.calculate-font-size(0.6);
+    border-radius: 10px;
+    // border: 2px solid variables.$secondary-color;
+    background: rgba(168, 168, 168, 0.3);
   }
-  tr:nth-child(even) {
-    background-color: rgba(variables.$gray-color-1, 0.2);
+  thead th:last-child {
+    width: 50px;
   }
 }
 
