@@ -10,6 +10,8 @@ import { BtnPrimaryComponent } from './btn-primary/btn-primary.component';
 import { BtnSecondaryComponent } from './btn-secondary/btn-secondary.component';
 import { InputCheckboxComponent } from './input-checkbox/input-checkbox.component';
 import { InputDateComponent } from './input-date/input-date.component';
+import { SwitchComponent } from './switch/switch.component';
+import { BtnAddComponent } from './btn-add/btn-add.component';
 
 
 @NgModule({
@@ -20,7 +22,9 @@ import { InputDateComponent } from './input-date/input-date.component';
     BtnPrimaryComponent,
     BtnSecondaryComponent,
     InputCheckboxComponent,
-    InputDateComponent
+    InputDateComponent,
+    SwitchComponent,
+    BtnAddComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +38,9 @@ import { InputDateComponent } from './input-date/input-date.component';
     BtnPrimaryComponent,
     BtnSecondaryComponent,
     InputCheckboxComponent,
-    InputDateComponent
+    InputDateComponent,
+    SwitchComponent,
+    BtnAddComponent
   ]
 })
 export class ComponentsModule { }

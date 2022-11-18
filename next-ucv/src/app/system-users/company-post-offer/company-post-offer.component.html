@@ -1,92 +1,93 @@
 <app-card title="Datos empleo">
 
-  <section class="grid grid-cols-4 gap-x-2">
-    <section class="form-control col-span-2">
+  <section class="grid grid-cols-4 gap-x-2 md:grid-cols-1">
+
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Empresa</label>
       <input type="text" class="input-text-rounded" value="Razón Test">
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Cargo ofrecido</label>
       <input type="text" class="input-text-rounded" value="Cargo ofrecido" readonly>
     </section>
 
-    <section class="form-control">
+    <section class="form-control lg:col-span-2 md:col-span-1">
       <label for="" class="label">Inicio de oferta</label>
       <app-input-date></app-input-date>
     </section>
 
-    <section class="form-control">
+    <section class="form-control lg:col-span-2 md:col-span-1">
       <label for="" class="label">Fin de oferta</label>
       <app-input-date></app-input-date>
     </section>
 
-    <section class="form-control">
+    <section class="form-control lg:col-span-2 md:col-span-1">
       <label for="" class="label">Vacantes</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control">
+    <section class="form-control lg:col-span-2 md:col-span-1">
       <label for="" class="label">Sueldo</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Area</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Subárea</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Jerarquía</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">País</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Tipo de empleo</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Departamento</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Modalidad</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Provincia</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Carreras</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Distrito</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Competencias blandas</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Competencias técnicas</label>
       <app-select-rounded></app-select-rounded>
     </section>
@@ -101,28 +102,28 @@
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Idiomas</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Nivel de experiencia</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Condición</label>
       <app-select-rounded></app-select-rounded>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <app-input-checkbox>
         <p class="text-5 text-white">Este trabajo es apto para personas con discapacidad</p>
       </app-input-checkbox>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <app-input-checkbox>
         <p class="text-5 text-white">Recibir copia por mail</p>
       </app-input-checkbox>
@@ -132,9 +133,7 @@
 
 <app-card title="Perfil (detallar especificaciones)">
   <section class="flex justify-flex-end">
-    <button class="rounded-3 bg-secondary-300 border-2-secondary text-white text-6 py-2 px-8 cursor-pointer mb-2 mr-2">
-      Agregar
-    </button>
+    <app-btn-add></app-btn-add>
   </section>
 
   <table class="table-default">
@@ -150,9 +149,7 @@
 
 <app-card title="Funciones">
   <section class="flex justify-flex-end">
-    <button class="rounded-3 bg-secondary-300 border-2-secondary text-white text-6 py-2 px-8 cursor-pointer mb-2 mr-2">
-      Agregar
-    </button>
+    <app-btn-add></app-btn-add>
   </section>
 
   <table class="table-default">
@@ -168,9 +165,7 @@
 
 <app-card title="Beneficios">
   <section class="flex justify-flex-end">
-    <button class="rounded-3 bg-secondary-300 border-2-secondary text-white text-6 py-2 px-8 cursor-pointer mb-2 mr-2">
-      Agregar
-    </button>
+    <app-btn-add></app-btn-add>
   </section>
 
   <table class="table-default">
@@ -186,9 +181,7 @@
 
 <app-card title="Palabras clave">
   <section class="flex justify-flex-end">
-    <button class="rounded-3 bg-secondary-300 border-2-secondary text-white text-6 py-2 px-8 cursor-pointer mb-2 mr-2">
-      Agregar
-    </button>
+    <app-btn-add></app-btn-add>
   </section>
 
   <table class="table-default">
@@ -202,16 +195,16 @@
   </table>
 </app-card>
 
-<section class="grid grid-cols-6 gap-x-1">
-  <section class="col-start-4">
+<section class="grid grid-cols-6 gap-x-1 lg:grid-cols-3 sm:block">
+  <section class="mb-2 col-start-4 lg:col-start-1">
     <app-btn-primary text="Nuevo"></app-btn-primary>
   </section>
 
-  <section class="col-start-5">
+  <section class="mb-2 col-start-5 lg:col-start-2">
     <app-btn-secondary text="Guardar"></app-btn-secondary>
   </section>
 
-  <section class="col-start-6">
+  <section class="mb-2 col-start-6 lg:col-start-3">
     <app-btn-secondary text="Cancelar"></app-btn-secondary>
   </section>
 </section>

@@ -1,39 +1,39 @@
 <app-card title="Mis datos">
 
-  <section class="grid grid-cols-4 gap-x-2">
-    <section class="form-control col-span-2">
+  <section class="grid grid-cols-4 gap-x-2 md:grid-cols-1">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">DNI</label>
       <input type="text" class="input-text-rounded" value="44556677" readonly>
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Nombres</label>
       <input type="text" class="input-text-rounded" value="Oscar Eduardo">
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Apellido paterno</label>
       <input type="text" class="input-text-rounded" value="Mendoza">
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Apellido materno</label>
       <input type="text" class="input-text-rounded" value="Ramos">
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Domicilio</label>
       <input type="text" class="input-text-rounded" value="Av. Perú">
     </section>
 
-    <section class="form-control col-span-2">
+    <section class="form-control col-span-2 md:col-span-1">
       <label for="" class="label">Correo</label>
       <input type="text" class="input-text-rounded" value="oramos@gamil.com">
     </section>
 
-    <section class="col-span-4">
-      <section class="grid grid-cols-2 gap-x-2">
-        <section class="grid grid-cols-2 gap-x-2">
+    <section class="col-span-4 md:col-span-1">
+      <section class="grid grid-cols-2 gap-x-2 lg:grid-cols-1">
+        <section class="grid grid-cols-2 gap-x-2 md:grid-cols-1">
           <section class="form-control">
             <label for="" class="label">País</label>
             <app-select-rounded></app-select-rounded>
@@ -54,7 +54,7 @@
             <app-select-rounded></app-select-rounded>
           </section>
 
-          <section class="form-control col-span-2">
+          <section class="form-control col-span-2 md:col-span-1">
             <label for="" class="label">Carrera</label>
             <input type="text" class="input-text-rounded" value="Administración">
           </section>
@@ -98,16 +98,16 @@
   </section>
 </app-card>
 
-<section class="grid grid-cols-6 gap-x-1">
-  <section class="col-start-4">
+<section class="grid grid-cols-6 gap-x-1 lg:grid-cols-3 sm:block">
+  <section class="mb-2 col-start-4 lg:col-start-1">
     <app-btn-primary text="Modificar"></app-btn-primary>
   </section>
 
-  <section class="col-start-5">
+  <section class="mb-2 col-start-5 lg:col-start-2">
     <app-btn-secondary text="Guardar"></app-btn-secondary>
   </section>
 
-  <section class="col-start-6">
+  <section class="mb-2 col-start-6 lg:col-start-3">
     <app-btn-secondary text="Cancelar"></app-btn-secondary>
   </section>
 </section>

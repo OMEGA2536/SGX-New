@@ -45,6 +45,19 @@ $accumulator: 0;
   }
 }
 
+@media (max-width: variables.$max-width-md) {
+  $accumulator: 0;
+
+  @for $i from 0 through 40 {
+    .md\:px-#{$i} {
+      padding-right: $accumulator;
+      padding-left: $accumulator;
+    }
+
+    $accumulator: $accumulator + 0.25rem;
+  }
+}
+
 @media (max-width: variables.$max-width-lg) {
   $accumulator: 0;
 

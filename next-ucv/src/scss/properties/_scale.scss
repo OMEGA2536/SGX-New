@@ -21,3 +21,23 @@ $accumulator: 0;
     }
   }
 }
+
+@media (max-width: variables.$max-width-md) {
+  @for $i from 1 through 20 {
+    $accumulator: $accumulator + 0.25;
+
+    .md\:scale-#{$i} {
+      scale: $accumulator;
+    }
+  }
+}
+
+@media (max-width: variables.$max-width-sm) {
+  @for $i from 1 through 20 {
+    $accumulator: $accumulator + 0.25;
+
+    .sm\:scale-#{$i} {
+      scale: $accumulator;
+    }
+  }
+}

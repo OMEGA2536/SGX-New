@@ -1,13 +1,13 @@
 <app-card title="Introducción">
   
-  <section class="grid grid-cols-4 gap-x-2">
-    <section class="form-control col-span-4">
+  <section class="grid grid-cols-4 gap-x-2 md:grid-cols-1">
+    <section class="form-control col-span-4 md:col-span-1">
       <label for="" class="label">Descripción</label>
       <textarea class="text-area-rounded"></textarea>
     </section>
 
-    <section class="form-control col-span-3">
-      <section class="grid grid-cols-3 gap-x-2">
+    <section class="form-control col-span-3 md:col-span-1">
+      <section class="grid grid-cols-3 gap-x-2 lg:grid-cols-1">
         <section class="form-control">
           <label for="" class="label">Nombres</label>
           <input type="text" class="input-text-rounded" value="Oscar Eduardo">
@@ -23,7 +23,7 @@
           <input type="text" class="input-text-rounded" value="Ramos">
         </section>
 
-        <section class="form-control col-span-3">
+        <section class="form-control col-span-3 lg:col-span-1">
           <label for="" class="label">Linkedin</label>
           <input type="text" class="input-text-rounded" value="https://link">
         </section>
@@ -43,7 +43,7 @@
           <app-select-rounded></app-select-rounded>
         </section>
 
-        <section class="form-control col-span-2">
+        <section class="form-control col-span-2 lg:col-span-1">
           <label for="" class="label">Domicilio</label>
           <input type="text" class="input-text-rounded" value="Av. Perú">
         </section>
@@ -73,9 +73,8 @@
 
 <app-card title="Formación académica">
   <section class="flex justify-flex-end">
-    <button class="rounded-3 bg-secondary-300 border-2-secondary text-white text-6 py-2 px-8 cursor-pointer mb-2 mr-2">
-      Agregar
-    </button>
+    <app-btn-add></app-btn-add>
+    <app-switch label="Publicar"></app-switch>
   </section>
   
   <table class="table-default">
@@ -94,32 +93,26 @@
     </thead>
     <tbody>
       <tr>
-        <td>1</td>
-        <td>Telesup</td>
-        <td>Ingeniería de Sistemas</td>
-        <td>Técnico</td>
-        <td>Titulado</td>
-        <td>09/06/2022</td>
-        <td>23/06/2023</td>
-        <td>Lima</td>
-        <td></td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Telesup</td>
-        <td>Ingeniería de Sistemas</td>
-        <td>Técnico</td>
-        <td>Titulado</td>
-        <td>09/06/2022</td>
-        <td>23/06/2023</td>
-        <td>Lima</td>
-        <td></td>
+        <td label="Item">1</td>
+        <td label="Institución">Telesup</td>
+        <td label="Carrera">Ingeniería de Sistemas</td>
+        <td label="Tipo Estudio">Técnico</td>
+        <td label="Estado Estudio">Titulado</td>
+        <td label="Fecha Inicio">09/06/2022</td>
+        <td label="Fecha Fin">23/06/2023</td>
+        <td label="Ubicación">Lima</td>
+        <td label="Acciones"></td>
       </tr>
     </tbody>
   </table>
 </app-card>
 
 <app-card title="Experiencia Laboral / Pre profesional">
+  <section class="flex justify-flex-end">
+    <app-btn-add></app-btn-add>
+    <app-switch label="Publicar"></app-switch>
+  </section>
+  
   <table class="table-default">
     <thead>
       <tr>
@@ -141,6 +134,11 @@
 </app-card>
 
 <app-card title="Actualización profesional">
+  <section class="flex justify-flex-end">
+    <app-btn-add></app-btn-add>
+    <app-switch label="Publicar"></app-switch>
+  </section>
+  
   <table class="table-default">
     <thead>
       <tr>
@@ -160,6 +158,11 @@
 </app-card>
 
 <app-card title="Experiencias complementarias / Logros">
+  <section class="flex justify-flex-end">
+    <app-btn-add></app-btn-add>
+    <app-switch label="Publicar"></app-switch>
+  </section>
+  
   <table class="table-default">
     <thead>
       <tr>
@@ -177,6 +180,11 @@
 </app-card>
 
 <app-card title="Aptitudes">
+  <section class="flex justify-flex-end">
+    <app-btn-add></app-btn-add>
+    <app-switch label="Publicar"></app-switch>
+  </section>
+  
   <table class="table-default">
     <thead>
       <tr>
@@ -191,6 +199,11 @@
 </app-card>
 
 <app-card title="Idiomas">
+  <section class="flex justify-flex-end">
+    <app-btn-add></app-btn-add>
+    <app-switch label="Publicar"></app-switch>
+  </section>
+  
   <table class="table-default">
     <thead>
       <tr>
@@ -209,6 +222,11 @@
 </app-card>
 
 <app-card title="Computación">
+  <section class="flex justify-flex-end">
+    <app-btn-add></app-btn-add>
+    <app-switch label="Publicar"></app-switch>
+  </section>
+  
   <table class="table-default">
     <thead>
       <tr>
@@ -226,6 +244,11 @@
 </app-card>
 
 <app-card title="Referencias">
+  <section class="flex justify-flex-end">
+    <app-btn-add></app-btn-add>
+    <app-switch label="Publicar"></app-switch>
+  </section>
+  
   <table class="table-default">
     <thead>
       <tr>
@@ -246,16 +269,16 @@
   </table>
 </app-card>
 
-<section class="grid grid-cols-6 gap-x-1">
-  <section class="col-start-4">
-    <app-btn-primary text="Nuevo"></app-btn-primary>
+<section class="grid grid-cols-6 gap-x-1 lg:grid-cols-3 sm:block">
+  <section class="mb-2 col-start-4 lg:col-start-1">
+    <app-btn-primary text="Modificar"></app-btn-primary>
   </section>
 
-  <section class="col-start-5">
+  <section class="mb-2 col-start-5 lg:col-start-2">
     <app-btn-secondary text="Guardar"></app-btn-secondary>
   </section>
 
-  <section class="col-start-6">
+  <section class="mb-2 col-start-6 lg:col-start-3">
     <app-btn-secondary text="Cancelar"></app-btn-secondary>
   </section>
 </section>

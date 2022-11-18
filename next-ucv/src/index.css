@@ -372,7 +372,7 @@ body {
 
 html {
   scroll-behavior: smooth;
-  height: 100%;
+  height: 100vh;
   margin: 0px;
   background: url("/assets/images/front-page.png") no-repeat center center;
   background-size: cover;
@@ -5972,6 +5972,172 @@ input[type=date] {
     padding-left: 9.75rem;
   }
   .xl\:px-40 {
+    padding-right: 10rem;
+    padding-left: 10rem;
+  }
+}
+@media (max-width: 768px) {
+  .md\:px-0 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .md\:px-1 {
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+  }
+  .md\:px-2 {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .md\:px-3 {
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+  .md\:px-4 {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .md\:px-5 {
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+  }
+  .md\:px-6 {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+  }
+  .md\:px-7 {
+    padding-right: 1.75rem;
+    padding-left: 1.75rem;
+  }
+  .md\:px-8 {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .md\:px-9 {
+    padding-right: 2.25rem;
+    padding-left: 2.25rem;
+  }
+  .md\:px-10 {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+  .md\:px-11 {
+    padding-right: 2.75rem;
+    padding-left: 2.75rem;
+  }
+  .md\:px-12 {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  .md\:px-13 {
+    padding-right: 3.25rem;
+    padding-left: 3.25rem;
+  }
+  .md\:px-14 {
+    padding-right: 3.5rem;
+    padding-left: 3.5rem;
+  }
+  .md\:px-15 {
+    padding-right: 3.75rem;
+    padding-left: 3.75rem;
+  }
+  .md\:px-16 {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+  .md\:px-17 {
+    padding-right: 4.25rem;
+    padding-left: 4.25rem;
+  }
+  .md\:px-18 {
+    padding-right: 4.5rem;
+    padding-left: 4.5rem;
+  }
+  .md\:px-19 {
+    padding-right: 4.75rem;
+    padding-left: 4.75rem;
+  }
+  .md\:px-20 {
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+  .md\:px-21 {
+    padding-right: 5.25rem;
+    padding-left: 5.25rem;
+  }
+  .md\:px-22 {
+    padding-right: 5.5rem;
+    padding-left: 5.5rem;
+  }
+  .md\:px-23 {
+    padding-right: 5.75rem;
+    padding-left: 5.75rem;
+  }
+  .md\:px-24 {
+    padding-right: 6rem;
+    padding-left: 6rem;
+  }
+  .md\:px-25 {
+    padding-right: 6.25rem;
+    padding-left: 6.25rem;
+  }
+  .md\:px-26 {
+    padding-right: 6.5rem;
+    padding-left: 6.5rem;
+  }
+  .md\:px-27 {
+    padding-right: 6.75rem;
+    padding-left: 6.75rem;
+  }
+  .md\:px-28 {
+    padding-right: 7rem;
+    padding-left: 7rem;
+  }
+  .md\:px-29 {
+    padding-right: 7.25rem;
+    padding-left: 7.25rem;
+  }
+  .md\:px-30 {
+    padding-right: 7.5rem;
+    padding-left: 7.5rem;
+  }
+  .md\:px-31 {
+    padding-right: 7.75rem;
+    padding-left: 7.75rem;
+  }
+  .md\:px-32 {
+    padding-right: 8rem;
+    padding-left: 8rem;
+  }
+  .md\:px-33 {
+    padding-right: 8.25rem;
+    padding-left: 8.25rem;
+  }
+  .md\:px-34 {
+    padding-right: 8.5rem;
+    padding-left: 8.5rem;
+  }
+  .md\:px-35 {
+    padding-right: 8.75rem;
+    padding-left: 8.75rem;
+  }
+  .md\:px-36 {
+    padding-right: 9rem;
+    padding-left: 9rem;
+  }
+  .md\:px-37 {
+    padding-right: 9.25rem;
+    padding-left: 9.25rem;
+  }
+  .md\:px-38 {
+    padding-right: 9.5rem;
+    padding-left: 9.5rem;
+  }
+  .md\:px-39 {
+    padding-right: 9.75rem;
+    padding-left: 9.75rem;
+  }
+  .md\:px-40 {
     padding-right: 10rem;
     padding-left: 10rem;
   }
@@ -11829,6 +11995,130 @@ input[type=date] {
     scale: 5;
   }
 }
+@media (max-width: 768px) {
+  .md\:scale-1 {
+    scale: 0.25;
+  }
+  .md\:scale-2 {
+    scale: 0.5;
+  }
+  .md\:scale-3 {
+    scale: 0.75;
+  }
+  .md\:scale-4 {
+    scale: 1;
+  }
+  .md\:scale-5 {
+    scale: 1.25;
+  }
+  .md\:scale-6 {
+    scale: 1.5;
+  }
+  .md\:scale-7 {
+    scale: 1.75;
+  }
+  .md\:scale-8 {
+    scale: 2;
+  }
+  .md\:scale-9 {
+    scale: 2.25;
+  }
+  .md\:scale-10 {
+    scale: 2.5;
+  }
+  .md\:scale-11 {
+    scale: 2.75;
+  }
+  .md\:scale-12 {
+    scale: 3;
+  }
+  .md\:scale-13 {
+    scale: 3.25;
+  }
+  .md\:scale-14 {
+    scale: 3.5;
+  }
+  .md\:scale-15 {
+    scale: 3.75;
+  }
+  .md\:scale-16 {
+    scale: 4;
+  }
+  .md\:scale-17 {
+    scale: 4.25;
+  }
+  .md\:scale-18 {
+    scale: 4.5;
+  }
+  .md\:scale-19 {
+    scale: 4.75;
+  }
+  .md\:scale-20 {
+    scale: 5;
+  }
+}
+@media (max-width: 600px) {
+  .sm\:scale-1 {
+    scale: 0.25;
+  }
+  .sm\:scale-2 {
+    scale: 0.5;
+  }
+  .sm\:scale-3 {
+    scale: 0.75;
+  }
+  .sm\:scale-4 {
+    scale: 1;
+  }
+  .sm\:scale-5 {
+    scale: 1.25;
+  }
+  .sm\:scale-6 {
+    scale: 1.5;
+  }
+  .sm\:scale-7 {
+    scale: 1.75;
+  }
+  .sm\:scale-8 {
+    scale: 2;
+  }
+  .sm\:scale-9 {
+    scale: 2.25;
+  }
+  .sm\:scale-10 {
+    scale: 2.5;
+  }
+  .sm\:scale-11 {
+    scale: 2.75;
+  }
+  .sm\:scale-12 {
+    scale: 3;
+  }
+  .sm\:scale-13 {
+    scale: 3.25;
+  }
+  .sm\:scale-14 {
+    scale: 3.5;
+  }
+  .sm\:scale-15 {
+    scale: 3.75;
+  }
+  .sm\:scale-16 {
+    scale: 4;
+  }
+  .sm\:scale-17 {
+    scale: 4.25;
+  }
+  .sm\:scale-18 {
+    scale: 4.5;
+  }
+  .sm\:scale-19 {
+    scale: 4.75;
+  }
+  .sm\:scale-20 {
+    scale: 5;
+  }
+}
 .transition-1 {
   transition: 0.1s all;
 }
@@ -11893,16 +12183,42 @@ input[type=date] {
   .xl\:w-6-12 {
     width: 50%;
   }
+  .xl\:w-screen {
+    width: 100vw;
+  }
+  .xl\:w-full {
+    width: 100%;
+  }
 }
 @media (max-width: 992px) {
   .lg\:w-full {
     width: 100%;
   }
+  .lg\:w-screen {
+    width: 100vw;
+  }
   .lg\:w-9-12 {
     width: 75%;
   }
 }
+@media (max-width: 768px) {
+  .md\:w-full {
+    width: 100%;
+  }
+  .md\:w-screen {
+    width: 100vw;
+  }
+  .md\:w-9-12 {
+    width: 75%;
+  }
+}
 @media (max-width: 600px) {
+  .sm\:w-full {
+    width: 100%;
+  }
+  .sm\:w-screen {
+    width: 100vw;
+  }
   .sm\:w-11-12 {
     width: 91.666667%;
   }
@@ -13824,8 +14140,9 @@ input[type=date] {
   padding: 0.3rem 0.9rem;
   font-size: 14px;
   border-radius: 8px;
-  padding: 0.5rem 1.5rem;
+  padding: 0.2rem 1.5rem;
   background: rgba(168, 168, 168, 0.3);
+  height: 36.1px;
 }
 .input-date-rounded::placeholder {
   color: #ffffff;
@@ -13940,12 +14257,13 @@ input[type=date] {
   padding: 0.6rem;
   text-align: center;
   color: #ffffff;
-  font-size: calc(0.6vw + 0.6vh);
+  font-size: calc(0.5vw + 0.5vh);
+  text-transform: uppercase;
 }
 @media (max-width: 768px) {
   .table-default th,
 .table-default td {
-    font-size: calc(1vw + 1vh);
+    font-size: calc(0.9vw + 0.9vh);
   }
 }
 .table-default th {
@@ -13972,24 +14290,20 @@ input[type=date] {
   .table-default thead {
     display: none;
   }
-  .table-default tbody tr {
-    border-bottom: 1px solid #d1d1d1;
-  }
   .table-default td:before {
     position: absolute;
     content: attr(label);
-    font-size: 13px;
-    color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    color: #ffffff;
     font-weight: bold;
-    left: 0;
+    left: 10px;
   }
   .table-default td {
-    border: none;
     position: relative;
-    padding-left: 40%;
-    font-size: 13px;
-    color: #a8a8a8;
+    padding-left: 50%;
+    font-size: 12px;
     text-align: right;
+    margin: 0 0 5px 0;
   }
 }
 .text-white {
@@ -14427,6 +14741,66 @@ input[type=date] {
   .text-30 {
     font-size: calc(3.4vw + 3.4vh);
   }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 12px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 22px;
+  width: 22px;
+  left: -4px;
+  bottom: -6px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #4a6196;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #4a6196;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 4px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 #tooltip {

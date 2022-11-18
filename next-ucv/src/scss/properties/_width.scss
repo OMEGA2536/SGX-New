@@ -52,6 +52,13 @@
   .xl\:w-6-12 {
     width: 50%;
   }
+  .xl\:w-screen {
+    width: 100vw;
+  }
+
+  .xl\:w-full {
+    width: 100%;
+  }
 }
 
 @media (max-width: variables.$max-width-lg) {
@@ -59,12 +66,35 @@
     width: 100%;
   }
 
+  .lg\:w-screen {
+    width: 100vw;
+  }
   .lg\:w-9-12 {
     width: 75%;
   }
 }
 
+@media (max-width: variables.$max-width-md) {
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:w-screen {
+    width: 100vw;
+  }
+  .md\:w-9-12 {
+    width: 75%;
+  }
+}
+
 @media (max-width: variables.$max-width-sm) {
+  .sm\:w-full {
+    width: 100%;
+  }
+
+  .sm\:w-screen {
+    width: 100vw;
+  }
   .sm\:w-11-12 {
     width: 91.666667%;
   }
