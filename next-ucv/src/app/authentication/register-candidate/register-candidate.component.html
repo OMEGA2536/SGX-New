@@ -1,39 +1,75 @@
-<section class="grid grid-cols-2 gap-x-1">
-  <section class="form-control">
-    <input type="text" class="input-text" placeholder="DNI">
-  </section>
+<form  class="form-control" [formGroup]="registerForm">
+  <section class="grid grid-cols-2 gap-x-1">
 
-  <section class="form-control">
-    <input type="text" class="input-text" placeholder="Número de documento">
-  </section>
+      <section class="form-control">
+        <input type="text" class="input-text" placeholder="DNI" disabled>
+      </section>
 
-  <section class="form-control col-span-2">
-    <input type="text" class="input-text" placeholder="Nombres">
-  </section>
+      <section class="form-control">
+        <input type="text" class="input-text" placeholder="Número de documento" 
+        formControlName="nroDocumento" maxlength="8" (blur)="validateRequired('nroDocumento')" (keyup)="clearError('nroDocumento')">
+        <label *ngIf="requiredDoc" class="errorLabel">Documento es requerido</label>
+      </section>
 
-  <section class="form-control">
-    <input type="text" class="input-text" placeholder="Apellido paterno">
-  </section>
+      <section class="form-control col-span-2">
+        <input type="text" class="input-text" placeholder="Nombres"
+        formControlName="nombres" maxlength="25" (blur)="validateRequired('nombres')" (keyup)="clearError('nombres')">
+        <label *ngIf="requiredName" class="errorLabel">Nombres es requerido</label>
+      </section>
 
-  <section class="form-control">
-    <input type="text" class="input-text" placeholder="Apellido materno">
-  </section>
+      <section class="form-control">
+        <input type="text" class="input-text" placeholder="Apellido paterno"
+        formControlName="apellidoPaterno"  maxlength="50" (blur)="validateRequired('apellidoPaterno')" (keyup)="clearError('apellidoPaterno')">
+        <label *ngIf="requiredlastName" class="errorLabel">Apellido paterno es requerido</label>
+      </section>
 
-  <section class="form-control">
-    <app-select
-      placeholder="Carrera"
-    ></app-select>
-  </section>
+      <section class="form-control">
+        <input type="text" class="input-text" placeholder="Apellido materno"
+        formControlName="apellidoMaterno"  maxlength="50" (blur)="validateRequired('apellidoMaterno')" (keyup)="clearError('apellidoMaterno')">
+        <label *ngIf="requiredSecondLastName" class="errorLabel">Apellido materno es requerido</label>
+      </section>
 
-  <section class="form-control">
-    <input type="text" class="input-text" placeholder="Correo electrónico">
-  </section>
+      <section class="form-control">
+        <app-select formControlName="idCarrera"
+          placeholder="Carrera"
+          [options]="carrerasList"
+          optionText="descripcion"
+          optionValue="idCodigo"
+          (selected)="idCarrera = $event; onChangeCarrera($event);"
+        ></app-select>
+        <label *ngIf="requiredCareer" class="errorLabel">Carrera es requerido</label>
+      </section>
 
-  <section class="from-control">
-    <input type="password" class="input-password" placeholder="Contraseña">
-  </section>
+      <section class="form-control">
+        <input type="text" class="input-text" placeholder="Correo electrónico"
+        formControlName="email"  maxlength="35" (blur)="validateRequired('email'); validateEmail();" (keyup)="clearError('email')">
+        <label *ngIf="requiredEmail" class="errorLabel">{{txtEmail}}</label>
+      </section>
 
-  <section class="from-control">
-    <input type="password" class="input-password" placeholder="Repetir Contraseña">
+      <section class="from-control">
+        <input type="password" class="input-password" placeholder="Contraseña"
+        formControlName="contrasenia"  maxlength="20"  (blur)="validateRequired('contrasenia')" (keyup)="clearError('contrasenia')">
+        <!-- <i class="fa fa-book"></i> -->
+        <label *ngIf="requiredContrasenia" class="errorLabel">Contraseña es requerido</label>
+      </section>
+
+      <section class="from-control">
+        <input type="password" class="input-password" placeholder="Repetir Contraseña"   
+        (blur)="validateRequired('confirm'); validateConfirm();" (keyup)="clearError('confirm')"
+        formControlName="confirm" maxlength="20">
+        <label *ngIf="requiredConfirm" class="errorLabel">{{txtConfirm}}</label>
+      </section>
+    
+    
+      <button
+        type="button"
+        class="btn bg-secondary w-100 mt-7 mb-4 text-white"
+        (click)="registerCandidate(registerForm.value)"
+        [disabled]="!registerForm.valid"
+      >
+        Registrarse
+      </button>
+    
+
   </section>
-</section>
+</form> 

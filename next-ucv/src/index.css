@@ -403,12 +403,24 @@ input[type=date]::-webkit-calendar-picker-indicator {
   top: 0;
   width: auto;
 }
-
+i {
+  width: 2px;
+  right: 30px;
+  font-size: 20px;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 1;
+  color: white;
+}
 input[type=date] {
   display: inline-block;
   position: relative;
 }
 
+.errorLabel{
+  color: rgb(255, 102, 0); 
+  font-size: small;
+}
 .bg-primary {
   background: var(--light, #1c355e) var(--dark, #00a1df);
 }
@@ -416,7 +428,9 @@ input[type=date] {
 .bg-secondary {
   background: var(--light, #25b0dc) var(--dark, #25b0dc);
 }
-
+.bg-secondary:disabled {
+  background: #8bc2d3;
+}
 .bg-white {
   background: var(--light, #ffffff) var(--dark, #3e3d40);
 }
