@@ -5,9 +5,10 @@
     </section>
     <section class="flex items-center">
       <section class="flex-center">
-        <app-svg-user className="scale-3 h-20 md:none"></app-svg-user>
-        <p class="text-white text-8 w-22 md:none">
-          Razon Test
+        <app-svg-user *ngIf="user.foto == ''"  className="scale-3 h-20 md:none"></app-svg-user>
+        <img *ngIf="user.foto != ''" class="scale-3 h-20 md:none"  [src]="user.foto">
+        <p class="text-white text-8 w-22 md:none" style="font-size: smaller;">
+          {{txtName}}
         </p>
       </section>
 

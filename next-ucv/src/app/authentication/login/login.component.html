@@ -3,29 +3,38 @@
     
     <p class="text-white text-center text-8 text-600 mb-6">Iniciar sesión</p>
   
-    <form action="">
+    <form  class="form-control" [formGroup]="loginForm">
       <section class="form-control">
-        <app-select
+        <app-select  
           placeholder="Tipo de usuario"
           [options]="userTypes"
           optionText="type"
           optionValue="value"
-          (selected)="userType = $event"
+          (selected)="userType = $event; onChangeusuario($event)"
         ></app-select>
+        <label *ngIf="requiredTipo" class="errorLabel">Tipo de usuario es requerido</label>
       </section>
   
       <section class="form-control">
-        <app-select
+        <app-select 
           placeholder="Tipo de documento"
+          [options]="documentTypes"
+          optionText="type"
+          optionValue="value"
+          (selected)="documentType = $event"
         ></app-select>
       </section>
   
       <section class="form-control">
-        <input type="text" class="input-text" placeholder="Usuario">
+        <input type="text" class="input-text" placeholder="Usuario"  formControlName="usuario" maxlength="11"
+        (blur)="validateRequired('usuario')" (keyup)="clearError('usuario')">
+        <label *ngIf="requiredUser" class="errorLabel">Usuario es requerido</label>
       </section>
   
       <section class="form-control">
-        <input type="password" class="input-password" placeholder="Contraseña">
+        <input type="password" class="input-password" placeholder="Contraseña" formControlName="contrasenia" maxlength="20"
+        (blur)="validateRequired('contrasenia')" (keyup)="clearError('contrasenia')">
+        <label *ngIf="requiredContrasenia" class="errorLabel">Contraseña es requerida</label>
       </section>
       
       <section class="flex justify-space-between items-center">
@@ -43,7 +52,8 @@
       <button
         type="button"
         class="btn bg-secondary w-full mt-7 mb-4 text-white"
-        (click)="toMyDataView()"
+        [disabled]="!loginForm.valid"
+        (click)="Login()"
       >
         Ingresar
       </button>

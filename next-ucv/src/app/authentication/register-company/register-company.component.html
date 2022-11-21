@@ -1,43 +1,75 @@
-<section class="grid grid-cols-2 gap-x-1">
-  <section class="form-control">
-    <input type="text" class="input-text" placeholder="RUC">
+<form  class="form-control" [formGroup]="registerForm">
+  <section class="grid grid-cols-2 gap-x-1">
+    <section class="form-control">
+      <input type="text" class="input-text" placeholder="RUC" disabled>
+    </section>
+
+    <section class="form-control">
+      <input type="text" class="input-text" placeholder="Número de RUC"
+      formControlName="nroDocumento" maxlength="11" (blur)="validateRequired('nroDocumento')" (keyup)="clearError('nroDocumento')">
+        <label *ngIf="requiredDoc" class="errorLabel">Documento es requerido</label>
+    </section>
+
+    <section class="form-control col-span-2">
+      <input type="text" class="input-text" placeholder="Razón social"
+      formControlName="razonSocial" maxlength="100" (blur)="validateRequired('razonSocial')" (keyup)="clearError('razonSocial')">
+        <label *ngIf="requiredrazonSocial" class="errorLabel">Razón social es requerido</label>
+    </section>
+
+    <section class="form-control col-span-2">
+      <input type="text" class="input-text" placeholder="Nombre comercial"
+      formControlName="nombreComercial" maxlength="100">
+    </section>
+
+    <section class="form-control col-span-2">
+      <input type="text" class="input-text" placeholder="Correo electrónico"
+      formControlName="email"  maxlength="35" (blur)="validateRequired('email'); validateEmail();" (keyup)="clearError('email')">
+        <label *ngIf="requiredEmail" class="errorLabel">{{txtEmail}}</label>
+    </section>
+
+    <section class="form-control">
+      <app-select
+        placeholder="Rubro"
+        [options]="rubroList"
+        optionText="descripcion"
+        optionValue="idCodigo"
+        (selected)="idRubro = $event; onChangeRubro($event);"
+      ></app-select>
+      <label *ngIf="requiredRubro" class="errorLabel">Rubro es requerido</label>
+    </section>
+
+    <section class="form-control">
+      <app-select
+        placeholder="Condición"
+        [options]="condicionList"
+        optionText="descripcion"
+        optionValue="idCodigo"
+        (selected)="idCondicion = $event; onChangeCondicion($event);"
+      ></app-select>
+      <label *ngIf="requiredCondicion" class="errorLabel">Condición es requerido</label>
+    </section>
+
+    <section class="from-control">
+      <input type="password" class="input-password" placeholder="Contraseña"
+      formControlName="contrasenia"  maxlength="20"  (blur)="validateRequired('contrasenia')" (keyup)="clearError('contrasenia')">
+      <!-- <i class="fa fa-book"></i> -->
+      <label *ngIf="requiredContrasenia" class="errorLabel">Contraseña es requerido</label>
+    </section>
+
+    <section class="from-control">
+      <input type="password" class="input-password" placeholder="Repetir Contraseña"
+      (blur)="validateRequired('confirm'); validateConfirm();" (keyup)="clearError('confirm')"
+      formControlName="confirm" maxlength="20">
+      <label *ngIf="requiredConfirm" class="errorLabel">{{txtConfirm}}</label>
+    </section>
   </section>
 
-  <section class="form-control">
-    <input type="text" class="input-text" placeholder="Número de RUC">
-  </section>
-
-  <section class="form-control col-span-2">
-    <input type="text" class="input-text" placeholder="Razón social">
-  </section>
-
-  <section class="form-control col-span-2">
-    <input type="text" class="input-text" placeholder="Nombre comercial">
-  </section>
-
-  <section class="form-control col-span-2">
-    <app-select
-      placeholder="Correo electrónico"
-    ></app-select>
-  </section>
-
-  <section class="form-control">
-    <app-select
-      placeholder="Rubro"
-    ></app-select>
-  </section>
-
-  <section class="form-control">
-    <app-select
-      placeholder="Condición"
-    ></app-select>
-  </section>
-
-  <section class="from-control">
-    <input type="password" class="input-password" placeholder="Contraseña">
-  </section>
-
-  <section class="from-control">
-    <input type="password" class="input-password" placeholder="Repetir Contraseña">
-  </section>
-</section>
+  <button
+        type="button"
+        class="btn bg-secondary w-100 mt-7 mb-4 text-white"
+        (click)="registerEmpresa(registerForm.value)"
+        [disabled]="!registerForm.valid"
+      >
+        Registrarse
+      </button>
+</form>

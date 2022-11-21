@@ -7,11 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-bar.component.css']
 })
 export class TopBarComponent implements OnInit {
+  user: any;
+  txtName: string ='';
 
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.user =JSON.parse(localStorage.getItem('currentUser')!);
+    this.txtName = this.user.nombres;
   }
 
-  toLoginView = () => this.router.navigate(['/authentication/login']);
+ 
+  toLoginView(){
+    localStorage.removeItem('currentUser');
+    this.router.navigate(['/authentication/login']);
+  }
 }
