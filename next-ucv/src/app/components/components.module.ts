@@ -12,6 +12,7 @@ import { InputCheckboxComponent } from './input-checkbox/input-checkbox.componen
 import { InputDateComponent } from './input-date/input-date.component';
 import { SwitchComponent } from './switch/switch.component';
 import { BtnAddComponent } from './btn-add/btn-add.component';
+import { PaginatorComponent } from './paginator/paginator.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { BtnAddComponent } from './btn-add/btn-add.component';
     InputCheckboxComponent,
     InputDateComponent,
     SwitchComponent,
-    BtnAddComponent
+    BtnAddComponent,
+    PaginatorComponent
   ],
   imports: [
     CommonModule,
@@ -40,7 +42,8 @@ import { BtnAddComponent } from './btn-add/btn-add.component';
     InputCheckboxComponent,
     InputDateComponent,
     SwitchComponent,
-    BtnAddComponent
+    BtnAddComponent,
+    PaginatorComponent
   ]
 })
 export class ComponentsModule { }

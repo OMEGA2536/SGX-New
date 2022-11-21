@@ -1,3 +1,4 @@
+import { CompanySearchCvComponent } from './company-search-cv/company-search-cv.component';
 import { CandidateMyCvComponent } from './candidate-my-cv/candidate-my-cv.component';
 import { CandidateMyDataComponent } from './candidate-my-data/candidate-my-data.component';
 import { CompanyMyOffersComponent } from './company-my-offers/company-my-offers.component';
@@ -26,6 +27,13 @@ const routes: Routes = [
     component: CompanyMyOffersComponent,
     data: {
       section: 'CompanyMyOffers'
+    }
+  },
+  {
+    path: 'company/search-cv', 
+    component: CompanySearchCvComponent,
+    data: {
+      section: 'CompanySearchCv'
     }
   },
   {

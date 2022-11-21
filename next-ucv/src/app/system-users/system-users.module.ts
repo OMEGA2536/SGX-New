@@ -12,6 +12,7 @@ import { CandidateMyCvComponent } from './candidate-my-cv/candidate-my-cv.compon
 import { CompanyMyDataComponent } from './company-my-data/company-my-data.component';
 import { CompanyMyOffersComponent } from './company-my-offers/company-my-offers.component';
 import { CompanyPostOfferComponent } from './company-post-offer/company-post-offer.component';
+import { CompanySearchCvComponent } from './company-search-cv/company-search-cv.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { CompanyPostOfferComponent } from './company-post-offer/company-post-off
     CompanyMyDataComponent,
     CompanyMyOffersComponent,
     CompanyPostOfferComponent,
+    CompanySearchCvComponent,
   ],
   imports: [
     CommonModule,

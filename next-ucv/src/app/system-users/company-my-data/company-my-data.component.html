@@ -74,16 +74,20 @@
 
         <section class="form-control">
           <label for="" class="label">Imagen</label>
-          <!-- <textarea class="text-area-rounded" name="" id="" cols="30" rows="20"></textarea> -->
-          <section class="text-area-rounded"></section>
+
+          <img class="text-area-rounded object-cover" [src]="url" height="360" alt="">
 
           <section class="mt-4 flex-center">
-            <button 
+            <input type="file" id="image-company" 
+              class="none" 
+              (change)="onChangeFile($event)"
+            >
+            <label 
               class="bg-primary cursor-pointer rounded-2 py-1 px-10 text-white border-2-secondary text-6"
-              type="button"  
+              for="image-company"  
             >
               Seleccionar imagen
-            </button>
+          </label>
           </section>
         </section>
       </section>

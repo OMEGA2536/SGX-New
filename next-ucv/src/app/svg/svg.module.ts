@@ -14,6 +14,11 @@ import { SvgSearcherComponent } from './svg-searcher/svg-searcher.component';
 import { SvgCalendarComponent } from './svg-calendar/svg-calendar.component';
 import { SvgCircleSuccessComponent } from './svg-circle-success/svg-circle-success.component';
 import { SvgCircleDeleteComponent } from './svg-circle-delete/svg-circle-delete.component';
+import { SvgEyeComponent } from './svg-eye/svg-eye.component';
+import { SvgEditComponent } from './svg-edit/svg-edit.component';
+import { SvgDeleteComponent } from './svg-delete/svg-delete.component';
+import { SvgArrowLeftComponent } from './svg-arrow-left/svg-arrow-left.component';
+import { SvgArrowRightComponent } from './svg-arrow-right/svg-arrow-right.component';
 
 
 @NgModule({
@@ -29,7 +34,12 @@ import { SvgCircleDeleteComponent } from './svg-circle-delete/svg-circle-delete.
     SvgSearcherComponent,
     SvgCalendarComponent,
     SvgCircleSuccessComponent,
-    SvgCircleDeleteComponent
+    SvgCircleDeleteComponent,
+    SvgEyeComponent,
+    SvgEditComponent,
+    SvgDeleteComponent,
+    SvgArrowLeftComponent,
+    SvgArrowRightComponent
   ],
   imports: [
     CommonModule,
@@ -47,7 +57,12 @@ import { SvgCircleDeleteComponent } from './svg-circle-delete/svg-circle-delete.
     SvgSearcherComponent,
     SvgCalendarComponent,
     SvgCircleSuccessComponent,
-    SvgCircleDeleteComponent
+    SvgCircleDeleteComponent,
+    SvgEyeComponent,
+    SvgEditComponent,
+    SvgDeleteComponent,
+    SvgArrowLeftComponent,
+    SvgArrowRightComponent
   ]
 })
 export class SvgModule { }

@@ -32,10 +32,10 @@ export const companyMyOffers: MenuItem = {
 }
 
 export const companySearchResumes: MenuItem = {
-  path: '',
+  path: '/system-users/company/search-cv',
   svgComponent: SvgSearcherComponent,
   text: 'Buscar CVs',
-  section: 'CompanySearchResumes'
+  section: 'CompanySearchCv'
 }
 
 export const candidateMyData: MenuItem = {

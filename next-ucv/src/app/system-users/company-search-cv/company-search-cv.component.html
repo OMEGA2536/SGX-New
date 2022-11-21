@@ -1,0 +1,88 @@
+<p class="text-600 text-white text-9 mb-6">Buscar CVs</p>
+
+<!-- <section class="form-control mb-2">
+  <section class="flex">
+    <app-svg-searcher className="scale-2"></app-svg-searcher>
+    <input 
+      type="text" 
+      class="input-text-rounded" 
+      placeholder="Buscar ofertas" 
+      style="padding-left: 45px; margin-left: -45px;">
+  </section>
+</section> -->
+
+<section class="grid grid-cols-4 gap-x-1 md:grid-cols-1">
+  <section class="mb-10 col-span-1 lg:col-span-2 md:col-span-1">
+    <section class="flex-center rounded-t-3 py-4 bg-secondary">
+      <p class="text-white text-8">Filtros</p>
+    </section>
+    <section class="border-2-secondary rounded-b-3 px-4 pt-4 bg-secondary-300">
+      <section class="form-control">
+        <label for="" class="label">Carrera</label>
+        <app-select-rounded></app-select-rounded>
+      </section>
+
+      <section class="form-control">
+        <label for="" class="label">Tipo de estudio</label>
+        <app-select-rounded></app-select-rounded>
+      </section>
+
+      <section class="form-control">
+        <label for="" class="label">Rubro de empresa</label>
+        <app-select-rounded></app-select-rounded>
+      </section>
+
+      <section class="form-control">
+        <label for="" class="label">Area</label>
+        <app-select-rounded></app-select-rounded>
+      </section>
+
+      <section class="form-control">
+        <label for="" class="label">Ultimo cargo</label>
+        <app-select-rounded></app-select-rounded>
+      </section>
+
+      <section class="form-control">
+        <label for="" class="label">Idioma</label>
+        <app-select-rounded></app-select-rounded>
+      </section>
+
+      <section class="form-control">
+        <label for="" class="label">Años de experiencia</label>
+        <app-select-rounded></app-select-rounded>
+      </section>
+
+      <section class="form-control">
+        <app-btn-primary text="Buscar Cvs"></app-btn-primary>
+      </section>
+    </section>
+  </section>
+
+  <section class="col-span-3 lg:col-span-2 md:col-span-1">
+    <app-card title="Resultados">
+      
+      <table class="table-default">
+        <thead>
+          <tr>
+            <th>Candidato</th>
+            <th>Carrera</th>
+            <th>Expectativa Salarial</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of items; index as i">
+            <td>{{ item.candidate }}</td>
+            <td>{{ item.course }}</td>
+            <td>{{ item.salary }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <app-paginator
+
+        [totalItems]="items.length"
+      ></app-paginator>
+     
+    </app-card>
+  </section>
+</section>

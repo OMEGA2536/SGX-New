@@ -47,7 +47,7 @@ export class SelectComponent implements OnInit {
           return this.getOptionValue(option) == this.value;
       });
 
-      this.text = this.getOptionText(options[0]);
+      this.text = this.getOptionText(options[0]) || '';
     }
   }
 

@@ -23,9 +23,13 @@
     // border: 2px solid variables.$secondary-color;
     background: rgba(168, 168, 168, 0.3);
   }
-  thead th:last-child {
-    width: 50px;
-  }
+  // tbody td:first-child {
+  //   // background: gold;
+  //   // border-spacing: 0px;
+  // }
+  // thead th:last-child {
+  //   width: 50px;
+  // }
 }
 
 @media (max-width: variables.$max-width-md) {

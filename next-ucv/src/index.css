@@ -14275,9 +14275,6 @@ input[type=date] {
   border-radius: 10px;
   background: rgba(168, 168, 168, 0.3);
 }
-.table-default thead th:last-child {
-  width: 50px;
-}
 
 @media (max-width: 768px) {
   .table-default thead,
