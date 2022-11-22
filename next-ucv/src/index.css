@@ -410,7 +410,6 @@ i {
   line-height: 40px;
   cursor: pointer;
   z-index: 1;
-  color: white;
 }
 input[type=date] {
   display: inline-block;

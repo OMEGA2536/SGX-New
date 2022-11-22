@@ -28,6 +28,7 @@ export class LoginComponent implements OnInit {
   requiredTipo:boolean = false;
   requiredUser:boolean = false;
   requiredContrasenia:boolean = false;
+  valueDoc:number =0;
   constructor(private router: Router,
     private fb: FormBuilder,
     private authService: AuthenticationService,) {
@@ -113,6 +114,7 @@ export class LoginComponent implements OnInit {
       this.activateError('requiredTipo', false,'');
     }
     localStorage.setItem('userType', String(event));
+    //this.valueDoc =1;
   }
   validateRequired(controlName:string){
     let value = this.loginForm.get(controlName)?.value;
@@ -144,5 +146,8 @@ export class LoginComponent implements OnInit {
       this.activateError(controlName, false,'');
     }
     
+  }
+  checkedFun(){
+    console.log("emit")
   }
 }

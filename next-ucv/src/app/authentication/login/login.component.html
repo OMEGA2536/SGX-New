@@ -10,7 +10,7 @@
           [options]="userTypes"
           optionText="type"
           optionValue="value"
-          (selected)="userType = $event; onChangeusuario($event)"
+          (selected)="userType = $event; onChangeusuario($event); valueDoc=$event;"
         ></app-select>
         <label *ngIf="requiredTipo" class="errorLabel">Tipo de usuario es requerido</label>
       </section>
@@ -22,6 +22,7 @@
           optionText="type"
           optionValue="value"
           (selected)="documentType = $event"
+          [value]="valueDoc"
         ></app-select>
       </section>
   
@@ -39,7 +40,8 @@
       
       <section class="flex justify-space-between items-center">
         <section>
-          <app-input-checkbox [checked]="true">
+          <app-input-checkbox [checked]="true"
+          (change)="checkedFun()">
             <p class="text-6 text-white">Recordar contraseña</p>
           </app-input-checkbox>
         </section>

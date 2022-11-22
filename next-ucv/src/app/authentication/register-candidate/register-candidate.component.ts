@@ -79,6 +79,7 @@ export class RegisterCandidateComponent implements OnInit {
       email:['', Validators.required],
       contrasenia:['', Validators.required],
       confirm:['', Validators.required],
+      idCarrera:['']
     })
   }
   

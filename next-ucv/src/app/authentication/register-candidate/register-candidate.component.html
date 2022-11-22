@@ -30,7 +30,7 @@
       </section>
 
       <section class="form-control">
-        <app-select formControlName="idCarrera"
+        <app-select
           placeholder="Carrera"
           [options]="carrerasList"
           optionText="descripcion"
@@ -46,14 +46,17 @@
         <label *ngIf="requiredEmail" class="errorLabel">{{txtEmail}}</label>
       </section>
 
-      <section class="from-control">
-        <input type="password" class="input-password" placeholder="Contraseña"
-        formControlName="contrasenia"  maxlength="20"  (blur)="validateRequired('contrasenia')" (keyup)="clearError('contrasenia')">
-        <!-- <i class="fa fa-book"></i> -->
+      <section class="form-control ">
+        <section class="flex items-center">
+          <input type="password" class="input-password" placeholder="Contraseña" style="margin-right: -30px;"
+          formControlName="contrasenia"  maxlength="20"  (blur)="validateRequired('contrasenia')" (keyup)="clearError('contrasenia')">
+          <i class="fa fa-eye" style="color: #25b0dc;"></i>
+        </section>
+        
         <label *ngIf="requiredContrasenia" class="errorLabel">Contraseña es requerido</label>
       </section>
 
-      <section class="from-control">
+      <section class="form-control">
         <input type="password" class="input-password" placeholder="Repetir Contraseña"   
         (blur)="validateRequired('confirm'); validateConfirm();" (keyup)="clearError('confirm')"
         formControlName="confirm" maxlength="20">
