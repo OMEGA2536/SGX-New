@@ -1,41 +1,15 @@
-<section class="mt-8 flex justify-space-between items-center">
-  <section class="flex items-center">
-    <p class="text-white text-6 mr-2">Registros por página:</p>
-
-    <app-select 
-      class="w-18" 
-      placeholder="10"
-      [options]="numbersPerPage"
-      optionText="text"
-      optionValue="value"
-    ></app-select>
-  </section>
+<section class="mt-8 flex justify-flex-end items-center">
+  <p class="text-white text-6">{{ start }} - {{ end }} de {{ totalItems }}</p>
 
   <section class="flex items-center">
+    <app-svg-arrow-left
+      className="path-fill-white scale-2 mr-1 cursor-pointer" 
+      (click)="toPreviousPage()"
+    ></app-svg-arrow-left>
 
-    <p class="text-white text-6">1 - 1 de {{ totalItems }}</p>
-
-    <section class="flex items-center">
-      <app-svg-arrow-left
-        className="path-fill-white scale-2 mr-1 cursor-pointer" 
-        (click)="toPreviousPage()"
-      ></app-svg-arrow-left>
-  
-      <app-svg-arrow-right
-        className="path-fill-white scale-2 cursor-pointer"
-        (click)="toPreviousPage()"
-      ></app-svg-arrow-right>
-    </section>
+    <app-svg-arrow-right
+      className="path-fill-white scale-2 cursor-pointer"
+      (click)="toNextPage()"
+    ></app-svg-arrow-right>
   </section>
-
-  <!-- <section class="flex"> 
-    <section 
-      *ngFor="let page of arrayPagination; index as i"
-      class="text-primary text-600 rounded-2 py-2 px-3 text-6 cursor-pointer mr-1"
-      [class.bg-primary-200]="currentPage === page"
-      (click)="toPage(page)"
-    >
-      {{ page }}
-    </section>
-  </section> -->
 </section>

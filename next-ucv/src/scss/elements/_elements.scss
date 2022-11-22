@@ -45,3 +45,12 @@ input[type="date"] {
   display: inline-block;
   position: relative;
 }
+
+i {
+  width: 2px;
+  right: 30px;
+  font-size: 20px;
+  line-height: 40px;
+  cursor: pointer;
+  z-index: 1;
+}

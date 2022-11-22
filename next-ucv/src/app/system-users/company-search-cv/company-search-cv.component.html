@@ -70,7 +70,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let item of items; index as i">
+          <tr *ngFor="let item of visibleItems; index as i">
             <td>{{ item.candidate }}</td>
             <td>{{ item.course }}</td>
             <td>{{ item.salary }}</td>
@@ -78,9 +78,16 @@
         </tbody>
       </table>
 
-      <app-paginator
 
+      <!-- parseInt(String($itemsPerPageEncuestasCulminadas)) * ( currentPage.value - 1) + (index + 1); -->
+      <app-paginator
+        [currentPage]="currentPage"
         [totalItems]="items.length"
+        [itemsPerPage]="itemsPerPage"
+        (nextPage)="onChangePage($event)"
+        (previousPage)="onChangePage($event)"
+        [start]="startPosition + 1"
+        [end]="endPosition"
       ></app-paginator>
      
     </app-card>
