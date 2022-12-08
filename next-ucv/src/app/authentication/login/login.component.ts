@@ -64,6 +64,8 @@ export class LoginComponent implements OnInit {
   userType: number = 0;
   documentType: number = 0;
 
+  selectedChips: any[] = [];
+
   ngOnInit(): void {
   }
 

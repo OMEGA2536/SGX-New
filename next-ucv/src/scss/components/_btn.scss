@@ -13,12 +13,12 @@
   &-sm {
     @include mixins.calculate-font-size(0.6);
   }
-  // &-disabled-primary {
-  //   background: #b6deee;
-  // }
-  // &-disabled-secondary {
-  //   background: #9eeec3;
-  // }
+  &-disabled-primary {
+    background: rgba(variables.$primary-color, 0.4);
+  }
+  &-disabled-secondary {
+    background: rgba(variables.$secondary-color, 0.4);
+  }
   // &-lg {
   //   min-width: 15rem;
   // }

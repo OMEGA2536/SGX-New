@@ -13,6 +13,7 @@ import { InputDateComponent } from './input-date/input-date.component';
 import { SwitchComponent } from './switch/switch.component';
 import { BtnAddComponent } from './btn-add/btn-add.component';
 import { PaginatorComponent } from './paginator/paginator.component';
+import { InputChipsComponent } from './input-chips/input-chips.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { PaginatorComponent } from './paginator/paginator.component';
     InputDateComponent,
     SwitchComponent,
     BtnAddComponent,
-    PaginatorComponent
+    PaginatorComponent,
+    InputChipsComponent
   ],
   imports: [
     CommonModule,
@@ -43,7 +45,8 @@ import { PaginatorComponent } from './paginator/paginator.component';
     InputDateComponent,
     SwitchComponent,
     BtnAddComponent,
-    PaginatorComponent
+    PaginatorComponent,
+    InputChipsComponent
   ]
 })
 export class ComponentsModule { }
